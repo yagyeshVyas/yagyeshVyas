@@ -206,4 +206,81 @@ featured.forEach((r, i) => {
   writeFileSync(join(OUT, `repo-${i}.svg`), svg);
 });
 
-console.log(`Generated: stats.svg, langs.svg, ${featured.length} repo cards`);
+// ---------------------------------------------------------------- section banners
+const banners = [
+  ['stats',   'TELEMETRY',       C.cyan,   'live numbers, refreshed daily'],
+  ['lab',     'THE LAB',         C.violet, 'where the models get trained'],
+  ['arsenal', 'ARSENAL',         C.pink,   'tools of the trade'],
+  ['builds',  'FEATURED BUILDS', C.amber,  'shipped and public'],
+  ['connect', 'TRANSMISSION',    C.green,  'find me elsewhere'],
+];
+for (const [slug, label, color, note] of banners) {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 56" width="900" height="56" role="img" aria-label="${label}">
+  <style>${reducedMotion}</style>
+  <defs>
+    <linearGradient id="sw" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="${color}" stop-opacity="0"/>
+      <stop offset="50%" stop-color="${color}"/>
+      <stop offset="100%" stop-color="${color}" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <text x="18" y="36" font-family="${MONO}" font-size="18" font-weight="700" fill="${color}">&#9656;</text>
+  <text x="40" y="36" font-family="${MONO}" font-size="16" font-weight="700" fill="${C.text}" letter-spacing="5">${label}</text>
+  <rect x="${46 + label.length * 14}" y="24" width="10" height="15" fill="${color}">
+    <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/>
+  </rect>
+  <text x="882" y="36" font-family="${MONO}" font-size="10" fill="${C.faint}" text-anchor="end">// ${note}</text>
+  <line x1="18" y1="48" x2="882" y2="48" stroke="${C.border}" stroke-width="1"/>
+  <rect x="18" y="47" width="220" height="2" rx="1" fill="url(#sw)">
+    <animateTransform attributeName="transform" type="translate" values="-220,0; 900,0" dur="4.5s" repeatCount="indefinite"/>
+  </rect>
+</svg>`;
+  writeFileSync(join(OUT, `section-${slug}.svg`), svg);
+}
+
+// ---------------------------------------------------------------- daily.svg
+{
+  const objectives = [
+    'ship one thing, however small',
+    'make the model smaller, not the excuse bigger',
+    'read one paper, steal one idea (ethically)',
+    'delete more code than you write',
+    'benchmark before you believe',
+    'touch grass, then touch gradients',
+    'explain it to a rubber duck first',
+    'cache the embeddings, not the doubts',
+    'one more epoch is not a personality',
+    'write the README before the regret',
+    'profile first, optimize second',
+    'local-first: if it needs a key, it can wait',
+    'small commits, big dreams',
+    'test the edge case that scares you',
+  ];
+  const now = new Date();
+  const dayOfYear = Math.floor((now - new Date(Date.UTC(now.getUTCFullYear(), 0, 0))) / 86400000);
+  const pick = objectives[dayOfYear % objectives.length];
+  const stamp = now.toISOString().slice(0, 10);
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 64" width="900" height="64" role="img" aria-label="Today's training objective">
+  <style>${reducedMotion}</style>
+  <defs>
+    <linearGradient id="dg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="${C.cyan}"/><stop offset="50%" stop-color="${C.violet}"/><stop offset="100%" stop-color="${C.pink}"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="64" rx="12" fill="${C.panel}"/>
+  <rect width="900" height="64" rx="12" fill="none" stroke="${C.border}" stroke-width="1.5"/>
+  <rect x="0" y="0" width="4" height="64" rx="2" fill="url(#dg)"/>
+  <text x="24" y="27" font-family="${MONO}" font-size="10" fill="${C.cyan}" letter-spacing="3">TODAY'S TRAINING OBJECTIVE</text>
+  <text x="24" y="48" font-family="${MONO}" font-size="15" fill="${C.text}" opacity="0">${esc(pick)}
+    <animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.3s" fill="freeze"/>
+  </text>
+  <text x="876" y="27" font-family="${MONO}" font-size="10" fill="${C.faint}" text-anchor="end">${stamp}</text>
+  <circle cx="866" cy="44" r="4" fill="${C.green}">
+    <animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="856" y="48" font-family="${MONO}" font-size="10" fill="${C.green}" text-anchor="end">active</text>
+</svg>`;
+  writeFileSync(join(OUT, 'daily.svg'), svg);
+}
+
+console.log(`Generated: stats.svg, langs.svg, ${featured.length} repo cards, ${banners.length} banners, daily.svg`);
