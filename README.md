@@ -1,3 +1,6 @@
+<!-- Namaste greeting -->
+<img src="./assets/greeting.svg" width="100%" alt="Namaste! Welcome to my profile" />
+
 <!-- Hero banner -->
 <img src="./assets/header.svg" width="100%" alt="Yagyesh Vyas — AI/ML Engineer" />
 
