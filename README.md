@@ -55,6 +55,9 @@
   <a href="https://github.com/yagyeshVyas/linkedin-scraper"><img src="./assets/repo-3.svg" width="49%" alt="linkedin-scraper" /></a>
 </p>
 
+<!-- VibeGuard spotlight -->
+<a href="https://github.com/yagyeshVyas/VibeGuard"><img src="./assets/vibeguard-spotlight.svg" width="100%" alt="VibeGuard — AI security scanner spotlight" /></a>
+
 <!-- ======================= WORK WITH ME ======================= -->
 <p align="center">
   <img src="./assets/section-connect.svg" width="900" alt="Work with me" />
