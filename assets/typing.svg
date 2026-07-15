@@ -11,8 +11,7 @@
   <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" fill="#3fb950">
     <text x="20" y="38" font-weight="600">$ </text>
     <text x="44" y="38" fill="#e6edf3">
-      <!-- Characters reveal one-by-one via opacity timing -->
-      <tspan>I</tspan><tspan opacity="0"><animate attributeName="opacity" values="0;1" dur="0.01s" begin="0.08s" fill="freeze"/></tspan>
+      <tspan>I</tspan>
       <tspan opacity="0"><set attributeName="opacity" to="1" begin="0.08s"/>'</tspan>
       <tspan opacity="0"><set attributeName="opacity" to="1" begin="0.16s"/>m</tspan>
       <tspan opacity="0"><set attributeName="opacity" to="1" begin="0.24s"/> </tspan>
@@ -25,35 +24,38 @@
       <tspan opacity="0"><set attributeName="opacity" to="1" begin="0.80s"/>n</tspan>
       <tspan opacity="0"><set attributeName="opacity" to="1" begin="0.88s"/>g</tspan>
       <tspan opacity="0"><set attributeName="opacity" to="1" begin="0.96s"/> </tspan>
-      <tspan opacity="0"><set attributeName="opacity" to="1" begin="1.04s"/>d</tspan>
-      <tspan opacity="0"><set attributeName="opacity" to="1" begin="1.12s"/>e</tspan>
-      <tspan opacity="0"><set attributeName="opacity" to="1" begin="1.20s"/>l</tspan>
-      <tspan opacity="0"><set attributeName="opacity" to="1" begin="1.28s"/>i</tspan>
-      <tspan opacity="0"><set attributeName="opacity" to="1" begin="1.36s"/>g</tspan>
-      <tspan opacity="0"><set attributeName="opacity" to="1" begin="1.44s"/>h</tspan>
-      <tspan opacity="0"><set attributeName="opacity" to="1" begin="1.52s"/>t</tspan>
-      <tspan opacity="0"><set attributeName="opacity" to="1" begin="1.60s"/>f</tspan>
-      <tspan opacity="0"><set attributeName="opacity" to="1" begin="1.68s"/>u</tspan>
-      <tspan opacity="0"><set attributeName="opacity" to="1" begin="1.76s"/>l</tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="1.04s"/>l</tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="1.12s"/>o</tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="1.20s"/>c</tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="1.28s"/>a</tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="1.36s"/>l</tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="1.44s"/> </tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="1.52s"/>L</tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="1.60s"/>L</tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="1.68s"/>M</tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="1.76s"/>s</tspan>
       <tspan opacity="0"><set attributeName="opacity" to="1" begin="1.84s"/> </tspan>
-      <tspan opacity="0"><set attributeName="opacity" to="1" begin="1.92s"/>3</tspan>
-      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.00s"/>D</tspan>
-      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.08s"/> </tspan>
-      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.16s"/>&amp;</tspan>
-      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.24s"/> </tspan>
-      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.32s"/>m</tspan>
-      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.40s"/>o</tspan>
-      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.48s"/>t</tspan>
-      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.56s"/>i</tspan>
-      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.64s"/>o</tspan>
-      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.72s"/>n</tspan>
-      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.80s"/> </tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="1.92s"/>&amp;</tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.00s"/> </tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.08s"/>R</tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.16s"/>A</tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.24s"/>G</tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.32s"/> </tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.40s"/>p</tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.48s"/>i</tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.56s"/>p</tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.64s"/>e</tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.72s"/>l</tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.80s"/>i</tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.88s"/>n</tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="2.96s"/>e</tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="3.04s"/>s</tspan>
+      <tspan opacity="0"><set attributeName="opacity" to="1" begin="3.12s"/> </tspan>
     </text>
-    <rect x="378" y="22" width="10" height="22" fill="#3fb950">
+    <rect x="470" y="22" width="10" height="22" fill="#3fb950">
       <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
     </rect>
   </g>
-  <!-- Subtle terminal scrollbar hint -->
   <rect x="590" y="5" width="6" height="50" rx="3" fill="#21262d"/>
   <rect x="590" y="5" width="6" height="18" rx="3" fill="#58a6ff">
     <animate attributeName="y" values="5;37;5" dur="4s" repeatCount="indefinite"/>

@@ -60,12 +60,14 @@
 
 ---
 
-### 🎮 Currently building
+### 🧠 Currently building
 
 - 🔭 **personalforge** — Build your own offline AI from any documents. Free. No coding. LoRA fine-tuning + RAG + GGUF export
-- 🌱 **VibeGuard** — Free security & privacy scanner for AI-coded apps. 699 rules, 76 MCP tools, 13-layer defense
-- 👯 Looking to collaborate on AI tooling, browser automation, and security projects
-- 💬 Ask me about Python, AI/LLM, Playwright, security scanning, LoRA fine-tuning
+- 🛡️ **VibeGuard** — Free security & privacy scanner for AI-coded apps. 699 rules, 76 MCP tools, 13-layer defense
+- 🤖 **AI-Career-Suite** — AI-powered resume analyzer using OpenRouter + Streamlit
+- 🌱 Currently exploring agentic workflows, MCP servers, and local LLM orchestration
+- 💬 Ask me about LLMs, RAG, LoRA fine-tuning, model quantization (GGUF), prompt engineering, PyTorch
+- ⚡ Fun fact: I run production LLMs offline — no API keys, no cloud, no limits
 
 <br/>
 
