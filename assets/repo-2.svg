@@ -1,19 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 110" width="440" height="110" role="img" aria-label="AI-Career-Suite">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 140" width="440" height="140" role="img" aria-label="AI-Career-Suite">
   <style>@media (prefers-reduced-motion: reduce) {
   animate, animateTransform { display: none !important; }
   * { opacity: 1 !important; }
 }
-    .bd { animation: bp 4s ease-in-out infinite; animation-delay: 1.4s; }
-    @keyframes bp { 0%,100% { stroke-opacity: .4; } 50% { stroke-opacity: 1; } }
-    @media (prefers-reduced-motion: reduce) { .bd { animation: none; } }
+    .bd2 { animation: bp2 4s ease-in-out infinite; animation-delay: 1.4s; }
+    @keyframes bp2 { 0%,100% { stroke-opacity: .35; } 50% { stroke-opacity: .85; } }
+    @media (prefers-reduced-motion: reduce) { .bd2 { animation: none; } }
   </style>
-  <rect width="440" height="110" rx="14" fill="#0b0f1e"/>
-  <rect width="440" height="110" rx="14" fill="none" class="bd" stroke="#f472b6" stroke-width="1.5"/>
-  <rect x="0" y="0" width="4" height="110" rx="2" fill="#f472b6"/>
-  <text x="26" y="34" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="15" font-weight="700" fill="#e2e8f0">AI-Career-Suite</text>
-  <text x="26" y="58" font-family="'Segoe UI', Inter, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#94a3b8">AI-powered resume analyzer using OpenRouter + Streamlit</text>
-  <circle cx="32" cy="84" r="5" fill="#3572A5"/>
-  <text x="44" y="88" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#64748b">Python</text>
-  <text x="330" y="88" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#fbbf24">★ 2</text>
-  <text x="384" y="88" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#a78bfa">⑂ 1</text>
+  <defs>
+    <linearGradient id="glow2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#f472b6" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+  <rect width="440" height="140" rx="14" fill="#0b0f1e"/>
+  <rect width="440" height="140" rx="14" fill="none" class="bd2" stroke="#f472b6" stroke-width="1.5"/>
+  <!-- Accent bar -->
+  <rect x="0" y="0" width="4" height="140" rx="2" fill="#f472b6"/>
+  <!-- Top shimmer -->
+  <rect x="4" y="0" width="436" height="2" fill="url(#glow2)"/>
+  <!-- Repo icon + name -->
+  <text x="20" y="32" font-size="16">📦</text>
+  <text x="42" y="32" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="15" font-weight="700" fill="#e2e8f0">AI-Career-Suite</text>
+  <!-- Visibility badge -->
+  <rect x="400" y="18" width="22" height="14" rx="3" fill="#0b1224" stroke="#1b2340" stroke-width="0.6"/>
+  <text x="411" y="28" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="7" fill="#64748b" text-anchor="middle">pub</text>
+  <!-- Description (full, no truncation) -->
+  <text x="20" y="56" font-family="'Segoe UI', Inter, ui-sans-serif, system-ui, sans-serif" font-size="11.5" fill="#94a3b8">AI-powered resume analyzer using OpenRouter + Streamlit</text>
+  <!-- Topic tags -->
+  
+  <!-- Bottom divider -->
+  <line x1="20" y1="108" x2="420" y2="108" stroke="#1b2340" stroke-width="0.8"/>
+  <!-- Footer: language + stats -->
+  <circle cx="28" cy="126" r="4" fill="#3572A5"/>
+  <text x="38" y="130" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#64748b">Python</text>
+  <!-- Stars -->
+  <text x="320" y="130" font-size="9">⭐</text>
+  <text x="332" y="130" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#fbbf24">2</text>
+  <!-- Forks -->
+  <text x="370" y="130" font-size="9">⑂</text>
+  <text x="382" y="130" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#a78bfa">1</text>
 </svg>
