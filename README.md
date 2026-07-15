@@ -1,6 +1,3 @@
-<!-- Namaste greeting -->
-<img src="./assets/greeting.svg" width="100%" alt="Namaste! Welcome to my profile" />
-
 <!-- Hero banner -->
 <img src="./assets/header.svg" width="100%" alt="Yagyesh Vyas — AI/ML Engineer" />
 
@@ -27,8 +24,9 @@
   <img src="./assets/langs.svg" width="32%" alt="Most used languages" />
 </p>
 
+<!-- Contribution snake — real data, eaten live -->
 <p align="center">
-  <img src="./assets/contribution-wave.svg" width="900" alt="Activity wave" />
+  <img src="./assets/snake.svg" width="900" alt="Contribution snake devouring a year of commits" />
 </p>
 
 <!-- ======================= THE LAB ======================= -->
@@ -64,15 +62,6 @@
 - **personalforge** — Offline AI from any documents. LoRA fine-tuning + RAG + GGUF export. No API keys, runs 100% local.
 - **VibeGuard** — Security scanner for AI-generated apps. 699 rules, 76 MCP tools, 13-layer defense. Zero-trust sandbox.
 - **AI-Career-Suite** — AI resume analyzer powered by OpenRouter + Streamlit.
-
-<details>
-  <summary><b>Contribution snake</b></summary>
-  <br/>
-  <p align="center">
-    <img src="./assets/snake.svg" width="900" alt="Snake" />
-  </p>
-  <p align="center"><sub>Auto-regenerates daily via GitHub Action</sub></p>
-</details>
 
 <!-- ======================= TRANSMISSION ======================= -->
 <p align="center">

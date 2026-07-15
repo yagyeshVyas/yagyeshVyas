@@ -48,7 +48,10 @@ const query = `query($login: String!) {
       totalCommitContributions
       totalPullRequestContributions
       totalIssueContributions
-      contributionCalendar { totalContributions }
+      contributionCalendar {
+        totalContributions
+        weeks { contributionDays { contributionCount } }
+      }
     }
   }
 }`;
@@ -283,4 +286,93 @@ for (const [slug, label, color, note] of banners) {
   writeFileSync(join(OUT, 'daily.svg'), svg);
 }
 
-console.log(`Generated: stats.svg, langs.svg, ${featured.length} repo cards, ${banners.length} banners, daily.svg`);
+// ---------------------------------------------------------------- snake.svg
+// Custom contribution snake: serpentine path over the real contribution grid,
+// cells are "eaten" exactly as the head passes, everything regrows each loop.
+{
+  const weeks = cc.contributionCalendar.weeks.slice(-52);
+  const counts = weeks.map(w => {
+    const days = w.contributionDays.map(d => d.contributionCount);
+    while (days.length < 7) days.push(0);
+    return days;
+  });
+  const maxC = Math.max(1, ...counts.flat());
+  const lvl = (n) => n === 0 ? 0 : Math.min(4, Math.ceil((n / maxC) * 4));
+  const LEVELS = ['#101830', '#164e63', '#0e7490', '#22d3ee', '#a78bfa'];
+
+  const pitch = 16, cell = 13, x0 = 34, y0 = 56;
+  const cx = (w) => x0 + w * pitch + cell / 2;
+  const cyd = (d) => y0 + d * pitch + cell / 2;
+
+  // Serpentine path through cell centers + exact eat-time per cell
+  const DUR = 26; // seconds per lap
+  let d3 = `M${cx(0)},${cyd(0)}`;
+  let len = 0;
+  const eatAt = Array.from({ length: 52 }, () => new Array(7).fill(0));
+  for (let w = 0; w < 52; w++) {
+    const down = w % 2 === 0;
+    for (let i = 0; i < 7; i++) {
+      const row = down ? i : 6 - i;
+      if (!(w === 0 && i === 0)) {
+        if (i === 0) { d3 += ` L${cx(w)},${cyd(row)}`; len += pitch; }        // horizontal hop
+        else { d3 += ` L${cx(w)},${cyd(row)}`; len += pitch; }                // vertical step
+      }
+      eatAt[w][row] = len;
+    }
+  }
+  const totalLen = len;
+
+  let grid = '';
+  for (let w = 0; w < 52; w++)
+    for (let d = 0; d < 7; d++) {
+      const te = Math.min(0.9, eatAt[w][d] / totalLen);
+      const t2 = Math.min(0.905, te + 0.005);
+      grid += `<rect x="${x0 + w * pitch}" y="${y0 + d * pitch}" width="${cell}" height="${cell}" rx="3.5" fill="${LEVELS[lvl(counts[w][d])]}">`
+        + `<animate attributeName="opacity" values="1;1;0.08;0.08;1" keyTimes="0;${te.toFixed(4)};${t2.toFixed(4)};0.94;1" dur="${DUR}s" repeatCount="indefinite"/>`
+        + `</rect>\n`;
+    }
+
+  // Snake body: head + trailing segments (positive begin = lag behind head)
+  const segs = [
+    { r: 7.5, fill: '#f472b6', lag: 0,    glow: true },
+    { r: 6.5, fill: '#e879ba', lag: 0.28, glow: false },
+    { r: 5.5, fill: '#c084fc', lag: 0.56, glow: false },
+    { r: 4.5, fill: '#a78bfa', lag: 0.84, glow: false },
+    { r: 3.5, fill: '#818cf8', lag: 1.12, glow: false },
+    { r: 2.5, fill: '#22d3ee', lag: 1.40, glow: false },
+  ];
+  // Negative begin = animation "started in the past": segment is on the path
+  // from frame one, phase-shifted to trail the head by `lag` seconds.
+  const body = segs.map(s =>
+    `<circle r="${s.r}" fill="${s.fill}"${s.glow ? ' filter="url(#sg)"' : ''}>`
+    + `<animateMotion dur="${DUR}s" begin="${(-(DUR - s.lag)).toFixed(2)}s" repeatCount="indefinite" path="${d3}"/>`
+    + `</circle>`
+  ).join('\n  ');
+
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200" role="img" aria-label="Contribution snake — eats a year of commits">
+  <style>${reducedMotion}</style>
+  <defs>
+    <filter id="sg" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="shl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="${C.cyan}" stop-opacity="0"/><stop offset="50%" stop-color="${C.violet}"/><stop offset="100%" stop-color="${C.pink}" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="200" rx="14" fill="${C.bg}"/>
+  <rect width="900" height="200" rx="14" fill="none" stroke="${C.border}" stroke-width="1.5"/>
+  <text x="24" y="32" font-family="${MONO}" font-size="12" fill="${C.pink}" font-weight="600" letter-spacing="3">SNAKE.EXE</text>
+  <text x="124" y="32" font-family="${MONO}" font-size="10" fill="${C.faint}">// devouring ${fmt(cc.contributionCalendar.totalContributions)} contributions, one lap at a time</text>
+  <text x="746" y="32" font-family="${MONO}" font-size="9" fill="${C.faint}">less
+    <tspan dx="5" fill="#101830">■</tspan><tspan dx="1" fill="#164e63">■</tspan><tspan dx="1" fill="#0e7490">■</tspan><tspan dx="1" fill="#22d3ee">■</tspan><tspan dx="1" fill="#a78bfa">■</tspan>
+    <tspan dx="5">more</tspan>
+  </text>
+  <rect x="24" y="42" width="852" height="1.5" fill="url(#shl)" opacity="0.5"/>
+${grid}
+  ${body}
+</svg>`;
+  writeFileSync(join(OUT, 'snake.svg'), svg);
+}
+
+console.log(`Generated: stats.svg, langs.svg, ${featured.length} repo cards, ${banners.length} banners, daily.svg, snake.svg`);

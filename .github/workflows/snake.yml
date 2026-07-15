@@ -26,17 +26,10 @@ jobs:
         with:
           node-version: 20
 
-      - name: Generate stat cards
+      - name: Generate stat cards + snake
         run: node scripts/gen-stats.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Generate contribution snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: yagyeshVyas
-          outputs: |
-            assets/snake.svg?color_snake=#a78bfa&color_dots=#101830,#164e63,#0e7490,#22d3ee,#f472b6
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
