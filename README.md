@@ -20,9 +20,7 @@
 
 <p align="center">
   <img src="./assets/stats.svg" width="32%" alt="GitHub stats" />
-  <a href="https://github.com/yagyeshVyas">
-    <img src="./assets/streak.svg" width="33%" alt="Streak" />
-  </a>
+  <img src="./assets/streak.svg" width="33%" alt="Streak" />
   <img src="./assets/langs.svg" width="32%" alt="Most used languages" />
 </p>
 
@@ -42,16 +40,16 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/yagyeshVyas/personalforge"><img src="./assets/repo-0.svg" width="49%" alt="personalforge" /></a>
-  <a href="https://github.com/yagyeshVyas/VibeGuard"><img src="./assets/repo-1.svg" width="49%" alt="VibeGuard" /></a>
+  <img src="./assets/repo-0.svg" width="49%" alt="personalforge" />
+  <img src="./assets/repo-1.svg" width="49%" alt="VibeGuard" />
 </p>
 <p align="center">
-  <a href="https://github.com/yagyeshVyas/AI-Career-Suite"><img src="./assets/repo-2.svg" width="49%" alt="AI-Career-Suite" /></a>
-  <a href="https://github.com/yagyeshVyas/linkedin-scraper"><img src="./assets/repo-3.svg" width="49%" alt="linkedin-scraper" /></a>
+  <img src="./assets/repo-2.svg" width="49%" alt="AI-Career-Suite" />
+  <img src="./assets/repo-3.svg" width="49%" alt="linkedin-scraper" />
 </p>
 
 <!-- VibeGuard spotlight -->
-<a href="https://github.com/yagyeshVyas/VibeGuard"><img src="./assets/vibeguard-spotlight.svg" width="100%" alt="VibeGuard — AI security scanner spotlight" /></a>
+<img src="./assets/vibeguard-spotlight.svg" width="100%" alt="VibeGuard — AI security scanner spotlight" />
 
 <!-- ======================= WORK WITH ME ======================= -->
 <p align="center">
@@ -59,11 +57,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/yagyeshVyas"><img src="./assets/btn-github.svg" width="280" alt="GitHub" /></a>
+  <img src="./assets/btn-github.svg" width="280" alt="GitHub" />
   &nbsp;&nbsp;
-  <a href="https://linkedin.com/in/yagyeshvyas"><img src="./assets/btn-linkedin.svg" width="280" alt="LinkedIn" /></a>
+  <img src="./assets/btn-linkedin.svg" width="280" alt="LinkedIn" />
   &nbsp;&nbsp;
-  <a href="https://www.npmjs.com/~yagyeshvyas"><img src="./assets/btn-npm.svg" width="280" alt="npm" /></a>
+  <img src="./assets/btn-npm.svg" width="280" alt="npm" />
 </p>
 
 <p align="center">
