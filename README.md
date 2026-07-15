@@ -36,9 +36,6 @@
 
 <img src="./assets/capabilities.svg" width="100%" alt="Technical skills from resume — AI/ML, Languages, Cloud, Data, Frameworks, AI APIs" />
 
-<!-- Education & Certifications -->
-<img src="./assets/education.svg" width="100%" alt="Education and certifications" />
-
 <!-- ======================= PROJECTS ======================= -->
 <p align="center">
   <img src="./assets/section-builds.svg" width="900" alt="Projects" />
