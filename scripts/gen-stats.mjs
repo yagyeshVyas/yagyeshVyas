@@ -50,7 +50,7 @@ const query = `query($login: String!) {
       totalIssueContributions
       contributionCalendar {
         totalContributions
-        weeks { contributionDays { contributionCount } }
+        weeks { contributionDays { contributionCount date } }
       }
     }
   }
@@ -209,13 +209,100 @@ featured.forEach((r, i) => {
   writeFileSync(join(OUT, `repo-${i}.svg`), svg);
 });
 
+// ---------------------------------------------------------------- streak.svg
+{
+  const days = cc.contributionCalendar.weeks.flatMap(w => w.contributionDays);
+  days.sort((a, b) => a.date.localeCompare(b.date));
+  const today = new Date().toISOString().slice(0, 10);
+
+  let longest = 0, longestStart = '', longestEnd = '', run = 0, runStart = '';
+  for (const d of days) {
+    if (d.contributionCount > 0) {
+      if (run === 0) runStart = d.date;
+      run++;
+      if (run > longest) { longest = run; longestStart = runStart; longestEnd = d.date; }
+    } else if (d.date <= today) {
+      run = 0;
+    }
+  }
+  // current streak: walk backwards from today (today may still be 0 — allowed)
+  let current = 0, currentStart = '';
+  for (let i = days.length - 1; i >= 0; i--) {
+    if (days[i].date > today) continue;
+    if (days[i].contributionCount > 0) { current++; currentStart = days[i].date; }
+    else if (days[i].date === today) continue; // today empty doesn't break streak yet
+    else break;
+  }
+  const range = (a, b) => a && b ? `${a.slice(5).replace('-', '/')} – ${b.slice(5).replace('-', '/')}` : '—';
+  const firstDay = days.find(d => d.contributionCount > 0)?.date || today;
+
+  const circ = (2 * Math.PI * 56).toFixed(1);
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 195" width="440" height="195" role="img" aria-label="Contribution streak">
+  <style>${reducedMotion}</style>
+  <defs>
+    <linearGradient id="strG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="${C.violet}"/><stop offset="100%" stop-color="${C.pink}"/>
+    </linearGradient>
+    <linearGradient id="hgK" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="${C.cyan}" stop-opacity="0"/><stop offset="50%" stop-color="${C.violet}"/><stop offset="100%" stop-color="${C.pink}" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="kglow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="440" height="195" rx="14" fill="${C.bg}"/>
+  <rect width="440" height="195" rx="14" fill="none" stroke="${C.border}" stroke-width="1.5"/>
+  <text x="26" y="38" font-family="${MONO}" font-size="13" fill="${C.pink}" font-weight="600" letter-spacing="2">STREAK</text>
+  <rect x="26" y="50" width="388" height="1.5" fill="url(#hgK)" opacity="0.5"/>
+
+  <!-- left: total -->
+  <g text-anchor="middle" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.3s" fill="freeze"/>
+    <text x="82" y="112" font-family="${MONO}" font-size="26" font-weight="800" fill="${C.text}">${fmt(cc.contributionCalendar.totalContributions)}</text>
+    <text x="82" y="134" font-family="${SANS}" font-size="11" fill="${C.sub}">Contributions</text>
+    <text x="82" y="150" font-family="${MONO}" font-size="9" fill="${C.faint}">since ${firstDay.slice(5).replace('-', '/')}</text>
+  </g>
+
+  <!-- center: current streak ring -->
+  <g transform="translate(220,118)">
+    <circle r="56" fill="none" stroke="${C.border}" stroke-width="6"/>
+    <circle r="56" fill="none" stroke="url(#strG)" stroke-width="6" stroke-linecap="round"
+      stroke-dasharray="${circ}" stroke-dashoffset="${circ}" transform="rotate(-90)">
+      <animate attributeName="stroke-dashoffset" values="${circ};${(circ * 0.06).toFixed(1)}" dur="1.6s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.3 0 0.2 1"/>
+    </circle>
+    <circle r="62" fill="none" stroke="${C.pink}" stroke-width="1" stroke-dasharray="2 10" opacity="0.5">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="16s" repeatCount="indefinite"/>
+    </circle>
+    <text y="-2" font-family="${MONO}" font-size="34" font-weight="800" fill="${C.text}" text-anchor="middle" opacity="0">${current}
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.8s" fill="freeze"/>
+    </text>
+    <text y="20" font-family="${SANS}" font-size="11" fill="${C.pink}" text-anchor="middle" font-weight="600" opacity="0">day streak
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="1s" fill="freeze"/>
+    </text>
+    <text y="38" font-family="${MONO}" font-size="9" fill="${C.faint}" text-anchor="middle" opacity="0">${range(currentStart, today)}
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.1s" fill="freeze"/>
+    </text>
+  </g>
+
+  <!-- right: longest -->
+  <g text-anchor="middle" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.5s" fill="freeze"/>
+    <text x="358" y="112" font-family="${MONO}" font-size="26" font-weight="800" fill="${C.text}">${longest}</text>
+    <text x="358" y="134" font-family="${SANS}" font-size="11" fill="${C.sub}">Longest streak</text>
+    <text x="358" y="150" font-family="${MONO}" font-size="9" fill="${C.faint}">${range(longestStart, longestEnd)}</text>
+  </g>
+</svg>`;
+  writeFileSync(join(OUT, 'streak.svg'), svg);
+}
+
 // ---------------------------------------------------------------- section banners
 const banners = [
-  ['stats',   'TELEMETRY',       C.cyan,   'live numbers, refreshed daily'],
-  ['lab',     'THE LAB',         C.violet, 'where the models get trained'],
-  ['arsenal', 'ARSENAL',         C.pink,   'tools of the trade'],
-  ['builds',  'FEATURED BUILDS', C.amber,  'shipped and public'],
-  ['connect', 'TRANSMISSION',    C.green,  'find me elsewhere'],
+  ['stats',   'OVERVIEW', C.cyan,   'live metrics, refreshed daily'],
+  ['lab',     'THE LAB',  C.violet, 'systems at work'],
+  ['arsenal', 'STACK',    C.pink,   'tools and frameworks'],
+  ['builds',  'PROJECTS', C.amber,  'selected work'],
+  ['connect', 'CONTACT',  C.green,  'elsewhere on the internet'],
 ];
 for (const [slug, label, color, note] of banners) {
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 56" width="900" height="56" role="img" aria-label="${label}">
@@ -244,20 +331,16 @@ for (const [slug, label, color, note] of banners) {
 // ---------------------------------------------------------------- daily.svg
 {
   const objectives = [
-    'ship one thing, however small',
-    'make the model smaller, not the excuse bigger',
-    'read one paper, steal one idea (ethically)',
-    'delete more code than you write',
-    'benchmark before you believe',
-    'touch grass, then touch gradients',
-    'explain it to a rubber duck first',
-    'cache the embeddings, not the doubts',
-    'one more epoch is not a personality',
-    'write the README before the regret',
-    'profile first, optimize second',
-    'local-first: if it needs a key, it can wait',
-    'small commits, big dreams',
-    'test the edge case that scares you',
+    'local-first LLM tooling — zero-API-key workflows',
+    'RAG retrieval quality — chunking and reranking strategies',
+    'LoRA fine-tuning pipelines — smaller adapters, better transfer',
+    'GGUF quantization — pushing models onto consumer hardware',
+    'evaluation harnesses — measuring before believing',
+    'inference optimization — latency budgets on local GPUs',
+    'document ingestion — clean parsing for messy real-world files',
+    'embedding models — retrieval that understands intent',
+    'agentic workflows — tool use with guardrails',
+    'model distillation — keeping capability, dropping size',
   ];
   const now = new Date();
   const dayOfYear = Math.floor((now - new Date(Date.UTC(now.getUTCFullYear(), 0, 0))) / 86400000);
@@ -273,7 +356,7 @@ for (const [slug, label, color, note] of banners) {
   <rect width="900" height="64" rx="12" fill="${C.panel}"/>
   <rect width="900" height="64" rx="12" fill="none" stroke="${C.border}" stroke-width="1.5"/>
   <rect x="0" y="0" width="4" height="64" rx="2" fill="url(#dg)"/>
-  <text x="24" y="27" font-family="${MONO}" font-size="10" fill="${C.cyan}" letter-spacing="3">TODAY'S TRAINING OBJECTIVE</text>
+  <text x="24" y="27" font-family="${MONO}" font-size="10" fill="${C.cyan}" letter-spacing="3">CURRENT FOCUS</text>
   <text x="24" y="48" font-family="${MONO}" font-size="15" fill="${C.text}" opacity="0">${esc(pick)}
     <animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.3s" fill="freeze"/>
   </text>
@@ -362,8 +445,8 @@ for (const [slug, label, color, note] of banners) {
   </defs>
   <rect width="900" height="200" rx="14" fill="${C.bg}"/>
   <rect width="900" height="200" rx="14" fill="none" stroke="${C.border}" stroke-width="1.5"/>
-  <text x="24" y="32" font-family="${MONO}" font-size="12" fill="${C.pink}" font-weight="600" letter-spacing="3">SNAKE.EXE</text>
-  <text x="124" y="32" font-family="${MONO}" font-size="10" fill="${C.faint}">// devouring ${fmt(cc.contributionCalendar.totalContributions)} contributions, one lap at a time</text>
+  <text x="24" y="32" font-family="${MONO}" font-size="12" fill="${C.pink}" font-weight="600" letter-spacing="3">CONTRIBUTIONS</text>
+  <text x="160" y="32" font-family="${MONO}" font-size="10" fill="${C.faint}">last 12 months · ${fmt(cc.contributionCalendar.totalContributions)} total</text>
   <text x="746" y="32" font-family="${MONO}" font-size="9" fill="${C.faint}">less
     <tspan dx="5" fill="#101830">■</tspan><tspan dx="1" fill="#164e63">■</tspan><tspan dx="1" fill="#0e7490">■</tspan><tspan dx="1" fill="#22d3ee">■</tspan><tspan dx="1" fill="#a78bfa">■</tspan>
     <tspan dx="5">more</tspan>

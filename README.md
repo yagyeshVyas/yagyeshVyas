@@ -19,7 +19,7 @@
 <p align="center">
   <img src="./assets/stats.svg" width="32%" alt="GitHub stats" />
   <a href="https://github.com/yagyeshVyas">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=yagyeshVyas&theme=dark&hide_border=true&background=0b0f1e&ring=a78bfa&fire=f472b6&currStreakLabel=22d3ee&currStreakNum=e2e8f0&sideNums=64748b&sideLabels=475569" width="33%" alt="Streak" />
+    <img src="./assets/streak.svg" width="33%" alt="Streak" />
   </a>
   <img src="./assets/langs.svg" width="32%" alt="Most used languages" />
 </p>
