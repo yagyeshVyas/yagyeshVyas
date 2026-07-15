@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 140" width="100%" height="auto" preserveAspectRatio="none" role="img" aria-label="">
+  <defs>
+    <linearGradient id="w1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.05"/>
+    </linearGradient>
+    <linearGradient id="w2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.06"/>
+    </linearGradient>
+    <linearGradient id="w3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#0b0f1e" stop-opacity="0.9"/>
+    </linearGradient>
+    <clipPath id="wframe"><rect width="1000" height="140"/></clipPath>
+  </defs>
+  <style>
+    @media (prefers-reduced-motion: reduce) { animateTransform { display: none !important; } }
+  </style>
+  <g clip-path="url(#wframe)">
+    <!-- Each path spans 2000px = one wavelength repeated; shifting by 500 loops seamlessly -->
+    <path fill="url(#w1)" d="M0,70 Q125,30 250,70 T500,70 T750,70 T1000,70 T1250,70 T1500,70 V140 H0 Z">
+      <animateTransform attributeName="transform" type="translate" values="0,0; -500,0" dur="9s" repeatCount="indefinite"/>
+    </path>
+    <path fill="url(#w2)" d="M0,85 Q125,50 250,85 T500,85 T750,85 T1000,85 T1250,85 T1500,85 V140 H0 Z">
+      <animateTransform attributeName="transform" type="translate" values="-500,0; 0,0" dur="7s" repeatCount="indefinite"/>
+    </path>
+    <path fill="url(#w3)" d="M0,100 Q125,72 250,100 T500,100 T750,100 T1000,100 T1250,100 T1500,100 V140 H0 Z">
+      <animateTransform attributeName="transform" type="translate" values="0,0; -500,0" dur="5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>

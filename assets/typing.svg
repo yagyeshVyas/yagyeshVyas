@@ -1,28 +1,82 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 64" width="600" height="64" role="img" aria-label="Terminal typing">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 240" width="720" height="240" role="img" aria-label="Terminal session">
+  <defs>
+    <linearGradient id="barG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    <clipPath id="tframe"><rect width="720" height="240" rx="14"/></clipPath>
+  </defs>
   <style>
     @media (prefers-reduced-motion: reduce) {
       animate, set, animateTransform { display: none !important; }
       * { opacity: 1 !important; }
     }
+    text { font-family: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace; }
   </style>
-  <rect width="600" height="64" fill="#0a0e1a" rx="10"/>
-  <rect x="0" y="0" width="600" height="64" rx="10" fill="none" stroke="#1a2238" stroke-width="1"/>
 
-  <!-- Terminal dots -->
-  <circle cx="18" cy="16" r="4" fill="#f59e0b" opacity="0.8"/>
-  <circle cx="32" cy="16" r="4" fill="#818cf8" opacity="0.6"/>
-  <circle cx="46" cy="16" r="4" fill="#34d399" opacity="0.5"/>
+  <g clip-path="url(#tframe)">
+    <rect width="720" height="240" fill="#0b0f1e"/>
+    <rect width="720" height="240" rx="14" fill="none" stroke="#1b2340" stroke-width="1.5"/>
 
-  <!-- Prompt -->
-  <text x="20" y="48" font-family="JetBrains Mono, ui-monospace, monospace" font-size="16" font-weight="600">
-    <tspan fill="#f59e0b">&gt; </tspan><tspan fill="#e2e8f0">
-      <tspan>t</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="0.08s"/>r</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="0.16s"/>a</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="0.24s"/>i</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="0.32s"/>n</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="0.40s"/>_</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="0.48s"/>m</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="0.56s"/>o</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="0.64s"/>d</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="0.72s"/>e</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="0.80s"/>l</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="0.88s"/>.</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="0.96s"/>f</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="1.04s"/>i</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="1.12s"/>t</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="1.20s"/>(</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="1.28s"/>)</tspan>
-      <tspan fill="#64748b" opacity="0"><set attributeName="opacity" to="1" begin="1.4s"/>  # running locally, zero API keys</tspan>
-    </tspan>
-  </text>
+    <!-- Title bar -->
+    <rect width="720" height="36" fill="#080b17"/>
+    <line x1="0" y1="36" x2="720" y2="36" stroke="#1b2340" stroke-width="1"/>
+    <circle cx="22" cy="18" r="5.5" fill="#f472b6"/>
+    <circle cx="42" cy="18" r="5.5" fill="#fbbf24"/>
+    <circle cx="62" cy="18" r="5.5" fill="#34d399"/>
+    <text x="360" y="23" font-size="12" fill="#475569" text-anchor="middle">yagyesh@local — training</text>
 
-  <!-- Blinking cursor -->
-  <rect x="325" y="36" width="8" height="18" fill="#f59e0b" rx="1">
-    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
-  </rect>
+    <!-- Line 1: whoami -->
+    <text y="66" font-size="14">
+      <tspan x="24" fill="#34d399">➜</tspan><tspan dx="10" fill="#22d3ee">~</tspan><tspan dx="10" fill="#e2e8f0">whoami<set attributeName="opacity" to="1"/></tspan>
+    </text>
+    <text x="24" y="90" font-size="14" fill="#94a3b8" opacity="0">
+      AI/ML engineer — local LLMs, RAG pipelines, fine-tuning. No cloud required.
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.9s" fill="freeze"/>
+    </text>
+
+    <!-- Line 2: typed command -->
+    <text y="120" font-size="14" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.2s" begin="1.4s" fill="freeze"/>
+      <tspan x="24" fill="#34d399">➜</tspan><tspan dx="10" fill="#22d3ee">~</tspan>
+      <tspan dx="10" fill="#e2e8f0"><tspan>p</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="1.55s"/>y</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="1.65s"/>t</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="1.75s"/>h</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="1.85s"/>o</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="1.95s"/>n</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="2.05s"/> t</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="2.15s"/>r</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="2.25s"/>a</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="2.35s"/>i</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="2.45s"/>n</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="2.55s"/>.</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="2.65s"/>p</tspan><tspan opacity="0"><set attributeName="opacity" to="1" begin="2.75s"/>y</tspan></tspan>
+      <tspan fill="#a78bfa" opacity="0"><set attributeName="opacity" to="1" begin="2.95s"/> --model llama --lora --offline</tspan>
+    </text>
+
+    <!-- Line 3: progress -->
+    <text x="24" y="150" font-size="13" fill="#64748b" opacity="0">
+      Fine-tuning<tspan fill="#22d3ee"> epoch 3/3</tspan>
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.4s" fill="freeze"/>
+    </text>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="3.4s" fill="freeze"/>
+      <rect x="24" y="160" width="500" height="10" rx="5" fill="#080b17" stroke="#1b2340" stroke-width="1"/>
+      <rect x="24" y="160" width="0" height="10" rx="5" fill="url(#barG)">
+        <animate attributeName="width" values="0;500" dur="2.4s" begin="3.6s" fill="freeze" calcMode="spline" keySplines="0.3 0 0.2 1"/>
+      </rect>
+    </g>
+    <text x="536" y="169" font-size="12" fill="#475569" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.2s" begin="3.6s" fill="freeze"/>
+      <tspan opacity="1">loss ↓ 0.41</tspan>
+    </text>
+
+    <!-- Line 4: done -->
+    <text x="24" y="196" font-size="14" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="6.2s" fill="freeze"/>
+      <tspan fill="#34d399">✔ model saved</tspan>
+      <tspan fill="#64748b"> → adapters/yagyesh-lora.gguf</tspan>
+      <tspan fill="#fbbf24"> [100% local]</tspan>
+    </text>
+
+    <!-- Prompt + blinking cursor -->
+    <text y="222" font-size="14" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="6.8s" fill="freeze"/>
+      <tspan x="24" fill="#34d399">➜</tspan><tspan dx="10" fill="#22d3ee">~</tspan>
+    </text>
+    <rect x="62" y="210" width="9" height="16" rx="1.5" fill="#22d3ee" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.1s" begin="6.8s" fill="freeze"/>
+      <animate attributeName="fill-opacity" values="1;0;1" dur="1.1s" begin="6.9s" repeatCount="indefinite"/>
+    </rect>
+  </g>
 </svg>
