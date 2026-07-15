@@ -35,25 +35,17 @@
     <g transform="translate(24,24)">
 
       <!-- ============ ANIMATED AVATAR ============ -->
-      <!-- Glow background -->
       <circle cx="48" cy="48" r="60" fill="url(#avatarGlow)">
         <animate attributeName="r" values="55;65;55" dur="3s" repeatCount="indefinite"/>
       </circle>
-
-      <!-- Outer rotating gradient ring -->
       <circle cx="48" cy="48" r="49" fill="none" stroke="url(#avatarG)" stroke-width="3" stroke-linecap="round" stroke-dasharray="60 240">
         <animateTransform attributeName="transform" type="rotate" from="0 48 48" to="360 48 48" dur="4s" repeatCount="indefinite"/>
       </circle>
-
-      <!-- Inner counter-rotating dashed ring -->
       <circle cx="48" cy="48" r="44" fill="none" stroke="#22d3ee" stroke-width="0.8" stroke-dasharray="3 8" opacity="0.5">
         <animateTransform attributeName="transform" type="rotate" from="360 48 48" to="0 48 48" dur="8s" repeatCount="indefinite"/>
       </circle>
-
-      <!-- Avatar circle background -->
       <circle cx="48" cy="48" r="42" fill="#0b1224" stroke="#a78bfa" stroke-width="1.5"/>
 
-      <!-- Animated neural pattern inside avatar -->
       <g clip-path="url(#avatarClip)" opacity="0.6">
         <circle cx="28" cy="35" r="2" fill="#22d3ee"><animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/></circle>
         <circle cx="48" cy="28" r="2" fill="#a78bfa"><animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/></circle>
@@ -73,10 +65,8 @@
         </circle>
       </g>
 
-      <!-- YV initials on top -->
       <text x="48" y="56" class="sans" font-size="22" font-weight="800" fill="#e2e8f0" text-anchor="middle" opacity="0.9">YV</text>
 
-      <!-- Orbiting particles -->
       <g>
         <animateTransform attributeName="transform" type="rotate" from="0 48 48" to="360 48 48" dur="6s" repeatCount="indefinite"/>
         <circle cx="48" cy="3" r="2.5" fill="#22d3ee" opacity="0.9"/>
@@ -92,25 +82,26 @@
 
       <!-- Name + title -->
       <text x="0" y="130" class="sans" font-size="22" font-weight="700" fill="#e2e8f0">Yagyesh Vyas</text>
-      <text x="0" y="152" class="mono" font-size="12" fill="#22d3ee" letter-spacing="1">AI / ML ENGINEER</text>
+      <text x="0" y="152" class="mono" font-size="11" fill="#22d3ee" letter-spacing="1">AI / ML ENGINEER</text>
+      <text x="0" y="168" class="sans" font-size="10" fill="#64748b">LLM &amp; Generative AI Systems</text>
 
       <!-- Location -->
-      <text x="0" y="184" class="sans" font-size="12" fill="#64748b">San Francisco Bay Area</text>
+      <text x="0" y="190" class="sans" font-size="12" fill="#64748b">Richmond, VA</text>
 
-      <!-- Available dot -->
-      <circle cx="6" cy="202" r="3.5" fill="#34d399">
+      <!-- Available -->
+      <circle cx="6" cy="208" r="3.5" fill="#34d399">
         <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
       </circle>
-      <text x="16" y="206" class="sans" font-size="11" fill="#34d399">Available for full-time &amp; consulting</text>
+      <text x="16" y="212" class="sans" font-size="11" fill="#34d399">Open to full-time · OPT/CPT · H-1B sponsorship</text>
 
       <!-- Quick tags -->
-      <g transform="translate(0,224)" class="mono" font-size="10">
-        <rect x="0" y="0" width="54" height="20" rx="10" fill="#0b0f1e" stroke="#22d3ee" stroke-width="0.8" stroke-opacity="0.4"/>
-        <text x="27" y="14" fill="#22d3ee" text-anchor="middle">LLMs</text>
-        <rect x="62" y="0" width="48" height="20" rx="10" fill="#0b0f1e" stroke="#a78bfa" stroke-width="0.8" stroke-opacity="0.4"/>
-        <text x="86" y="14" fill="#a78bfa" text-anchor="middle">RAG</text>
-        <rect x="118" y="0" width="54" height="20" rx="10" fill="#0b0f1e" stroke="#f472b6" stroke-width="0.8" stroke-opacity="0.4"/>
-        <text x="145" y="14" fill="#f472b6" text-anchor="middle">LoRA</text>
+      <g transform="translate(0,228)" class="mono" font-size="10">
+        <rect x="0" y="0" width="58" height="20" rx="10" fill="#0b0f1e" stroke="#22d3ee" stroke-width="0.8" stroke-opacity="0.4"/>
+        <text x="29" y="14" fill="#22d3ee" text-anchor="middle">LangChain</text>
+        <rect x="66" y="0" width="66" height="20" rx="10" fill="#0b0f1e" stroke="#a78bfa" stroke-width="0.8" stroke-opacity="0.4"/>
+        <text x="99" y="14" fill="#a78bfa" text-anchor="middle">Fine-Tuning</text>
+        <rect x="140" y="0" width="44" height="20" rx="10" fill="#0b0f1e" stroke="#f472b6" stroke-width="0.8" stroke-opacity="0.4"/>
+        <text x="162" y="14" fill="#f472b6" text-anchor="middle">RAG</text>
       </g>
     </g>
 
@@ -124,18 +115,19 @@
       <text x="0" y="18" class="mono" font-size="11" fill="#f472b6" font-weight="600" letter-spacing="2">WHO I AM</text>
       <rect x="0" y="26" width="636" height="1" fill="#1b2340"/>
 
-      <text x="0" y="52" class="sans" font-size="14" fill="#e2e8f0">I build AI systems that run without cloud bills, API keys, or</text>
-      <text x="0" y="72" class="sans" font-size="14" fill="#e2e8f0">data leaving your machine. My work lives at the intersection</text>
-      <text x="0" y="92" class="sans" font-size="14" fill="#e2e8f0">of practical ML engineering and real-world deployment.</text>
+      <text x="0" y="52" class="sans" font-size="14" fill="#e2e8f0">Entry-level AI/ML Engineer with hands-on experience building</text>
+      <text x="0" y="72" class="sans" font-size="14" fill="#e2e8f0">production LLM applications, RAG pipelines, and automated AI</text>
+      <text x="0" y="92" class="sans" font-size="14" fill="#e2e8f0">workflows. Shipped open-source tools used by thousands worldwide.</text>
 
       <text x="0" y="128" class="mono" font-size="11" fill="#22d3ee" font-weight="600" letter-spacing="2">WHAT DRIVES ME</text>
       <rect x="0" y="136" width="636" height="1" fill="#1b2340"/>
 
-      <text x="0" y="160" class="sans" font-size="13" fill="#94a3b8"><tspan fill="#34d399" font-weight="600">&#9656;</tspan>  Making AI accessible — no API tax to use a model</text>
+      <text x="0" y="160" class="sans" font-size="13" fill="#94a3b8"><tspan fill="#34d399" font-weight="600">&#9656;</tspan>  Making AI accessible — no API tax, models run fully offline</text>
       <text x="0" y="180" class="sans" font-size="13" fill="#94a3b8"><tspan fill="#a78bfa" font-weight="600">&#9656;</tspan>  Security-first — AI code needs guardrails, not vibes</text>
       <text x="0" y="200" class="sans" font-size="13" fill="#94a3b8"><tspan fill="#22d3ee" font-weight="600">&#9656;</tspan>  Ship fast, measure always — if not measured, not done</text>
-      <text x="0" y="220" class="sans" font-size="13" fill="#94a3b8"><tspan fill="#fbbf24" font-weight="600">&#9656;</tspan>  Open source by default — tools outlive the project</text>
+      <text x="0" y="220" class="sans" font-size="13" fill="#94a3b8"><tspan fill="#fbbf24" font-weight="600">&#9656;</tspan>  Open source by default — tools should outlive the project</text>
 
+      <text x="0" y="252" class="sans" font-size="13" fill="#94a3b8"><tspan fill="#f472b6" font-weight="600">&#9656;</tspan>  M.S. Computer Science · GPA 3.88 · University of the Potomac</text>
     </g>
 
     <rect x="24" y="268" width="852" height="2" rx="1" fill="url(#abLine)" opacity="0.2"/>

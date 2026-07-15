@@ -1,34 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="100%" height="auto" role="img" aria-label="What I bring to the table">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="100%" height="auto" role="img" aria-label="Technical skills">
   <defs>
-    <linearGradient id="capBg" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="skBg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0b0f1e"/><stop offset="100%" stop-color="#0b1224"/>
     </linearGradient>
-    <linearGradient id="capLine" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="skLine" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/>
       <stop offset="50%" stop-color="#a78bfa"/>
       <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="capGlow1" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="capGlow2" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="capGlow3" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="capGlow4" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0"/>
-    </linearGradient>
-    <filter id="capFilter" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="2.5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <clipPath id="cframe"><rect width="900" height="360" rx="14"/></clipPath>
+    <clipPath id="skFrame"><rect width="900" height="520" rx="14"/></clipPath>
   </defs>
   <style>
     @media (prefers-reduced-motion: reduce) {
@@ -39,169 +19,161 @@
     .sans { font-family: "Segoe UI", Inter, ui-sans-serif, system-ui, sans-serif; }
   </style>
 
-  <g clip-path="url(#cframe)">
-    <rect width="900" height="360" fill="url(#capBg)"/>
-    <rect width="900" height="360" rx="14" fill="none" stroke="#1b2340" stroke-width="1.5"/>
+  <g clip-path="url(#skFrame)">
+    <rect width="900" height="520" fill="url(#skBg)"/>
+    <rect width="900" height="520" rx="14" fill="none" stroke="#1b2340" stroke-width="1.5"/>
 
     <!-- Header -->
-    <text x="24" y="36" class="mono" font-size="13" fill="#f472b6" font-weight="600" letter-spacing="2">WHAT I BRING</text>
-    <text x="155" y="36" class="mono" font-size="10" fill="#475569">// my strengths, not just my tools</text>
+    <text x="24" y="36" class="mono" font-size="13" fill="#f472b6" font-weight="600" letter-spacing="2">TECHNICAL SKILLS</text>
+    <text x="170" y="36" class="mono" font-size="10" fill="#475569">// from my resume — what I actually work with daily</text>
     <rect x="24" y="46" width="852" height="1" fill="#1b2340"/>
 
-    <!-- ============ Card 1: Model Engineering ============ -->
+    <!-- ============ Row 1: AI/ML + Languages ============ -->
+
+    <!-- AI / ML -->
     <g transform="translate(24,60)" opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.15s" fill="freeze"/>
-      <rect width="205" height="280" rx="12" fill="url(#capGlow1)"/>
-      <rect width="205" height="280" rx="12" fill="#0b1224" stroke="#22d3ee" stroke-width="1" stroke-opacity="0.3"/>
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.1s" fill="freeze"/>
+      <rect width="420" height="200" rx="10" fill="#0b1224" stroke="#22d3ee" stroke-width="1" stroke-opacity="0.3"/>
+      <rect x="0" y="0" width="420" height="3" rx="1.5" fill="#22d3ee"/>
+      <text x="20" y="30" class="mono" font-size="11" fill="#22d3ee" font-weight="600" letter-spacing="1">AI / ML</text>
+      <line x1="20" y1="38" x2="400" y2="38" stroke="#1b2340"/>
 
-      <!-- Animated icon: neural node pulse -->
-      <g transform="translate(20,24)" filter="url(#capFilter)">
-        <circle cx="16" cy="16" r="14" fill="none" stroke="#22d3ee" stroke-width="1.5" stroke-opacity="0.4">
-          <animate attributeName="r" values="14;20;14" dur="3s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0.4;0;0.4" dur="3s" repeatCount="indefinite"/>
-        </circle>
-        <circle cx="16" cy="16" r="8" fill="#0b0f1e" stroke="#22d3ee" stroke-width="1.5"/>
-        <circle cx="16" cy="16" r="3" fill="#22d3ee">
-          <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-        </circle>
+      <g class="sans" font-size="12" fill="#94a3b8">
+        <text x="20" y="60"><tspan fill="#22d3ee">●</tspan>  LLMs &amp; Generative AI</text>
+        <text x="220" y="60"><tspan fill="#22d3ee">●</tspan>  RAG Pipelines</text>
+        <text x="20" y="82"><tspan fill="#22d3ee">●</tspan>  LangChain</text>
+        <text x="220" y="82"><tspan fill="#22d3ee">●</tspan>  Prompt Engineering</text>
+        <text x="20" y="104"><tspan fill="#22d3ee">●</tspan>  Fine-Tuning (LoRA, Unsloth)</text>
+        <text x="220" y="104"><tspan fill="#22d3ee">●</tspan>  Vector DBs (ChromaDB)</text>
+        <text x="20" y="126"><tspan fill="#22d3ee">●</tspan>  GGUF / Quantization</text>
+        <text x="220" y="126"><tspan fill="#22d3ee">●</tspan>  Ollama</text>
+        <text x="20" y="148"><tspan fill="#22d3ee">●</tspan>  LM Studio</text>
       </g>
-
-      <text x="20" y="68" class="sans" font-size="15" font-weight="700" fill="#e2e8f0">Model Engineering</text>
-      <text x="20" y="86" class="sans" font-size="11" fill="#64748b">Fine-tune, quantize &amp; deploy</text>
-
-      <line x1="20" y1="100" x2="185" y2="100" stroke="#1b2340"/>
-
-      <g class="sans" font-size="11" fill="#94a3b8">
-        <text x="20" y="120">LoRA / QLoRA adapters on</text>
-        <text x="20" y="134">consumer GPUs — no A100 needed</text>
-        <text x="20" y="154">GGUF quantization (4-bit, 8-bit)</text>
-        <text x="20" y="168">for local inference</text>
-        <text x="20" y="188">Custom loss functions &amp;</text>
-        <text x="20" y="202">mixed-precision training</text>
-        <text x="20" y="222">Ollama / llama.cpp serving</text>
-      </g>
-
-      <!-- Highlight badge -->
-      <rect x="20" y="240" width="120" height="22" rx="11" fill="#0b0f1e" stroke="#22d3ee" stroke-width="0.8" stroke-opacity="0.4"/>
-      <text x="80" y="255" class="mono" font-size="9" fill="#22d3ee" text-anchor="middle">3+ years hands-on</text>
+      <!-- animated pulse -->
+      <circle cx="400" cy="180" r="4" fill="#22d3ee">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+      </circle>
     </g>
 
-    <!-- ============ Card 2: RAG & Retrieval ============ -->
-    <g transform="translate(239,60)" opacity="0">
+    <!-- Languages -->
+    <g transform="translate(456,60)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.2s" fill="freeze"/>
+      <rect width="420" height="200" rx="10" fill="#0b1224" stroke="#a78bfa" stroke-width="1" stroke-opacity="0.3"/>
+      <rect x="0" y="0" width="420" height="3" rx="1.5" fill="#a78bfa"/>
+      <text x="20" y="30" class="mono" font-size="11" fill="#a78bfa" font-weight="600" letter-spacing="1">LANGUAGES</text>
+      <line x1="20" y1="38" x2="400" y2="38" stroke="#1b2340"/>
+
+      <!-- Language pills with proficiency bars -->
+      <g transform="translate(20,56)">
+        <!-- Python -->
+        <text x="0" y="14" class="sans" font-size="13" fill="#e2e8f0" font-weight="600">Python</text>
+        <rect x="0" y="20" width="180" height="5" rx="2.5" fill="#1b2340"/>
+        <rect x="0" y="20" width="0" height="5" rx="2.5" fill="#a78bfa">
+          <animate attributeName="width" values="0;170" dur="1s" begin="0.4s" fill="freeze"/>
+        </rect>
+        <text x="190" y="25" class="mono" font-size="9" fill="#64748b">primary</text>
+
+        <!-- SQL -->
+        <text x="0" y="48" class="sans" font-size="13" fill="#e2e8f0" font-weight="600">SQL</text>
+        <rect x="0" y="54" width="180" height="5" rx="2.5" fill="#1b2340"/>
+        <rect x="0" y="54" width="0" height="5" rx="2.5" fill="#a78bfa">
+          <animate attributeName="width" values="0;140" dur="1s" begin="0.5s" fill="freeze"/>
+        </rect>
+        <text x="190" y="59" class="mono" font-size="9" fill="#64748b">proficient</text>
+
+        <!-- JavaScript -->
+        <text x="0" y="82" class="sans" font-size="13" fill="#e2e8f0" font-weight="600">JavaScript</text>
+        <rect x="0" y="88" width="180" height="5" rx="2.5" fill="#1b2340"/>
+        <rect x="0" y="88" width="0" height="5" rx="2.5" fill="#a78bfa">
+          <animate attributeName="width" values="0;120" dur="1s" begin="0.6s" fill="freeze"/>
+        </rect>
+        <text x="190" y="93" class="mono" font-size="9" fill="#64748b">working</text>
+
+        <!-- Bash -->
+        <text x="0" y="116" class="sans" font-size="13" fill="#e2e8f0" font-weight="600">Bash</text>
+        <rect x="0" y="122" width="180" height="5" rx="2.5" fill="#1b2340"/>
+        <rect x="0" y="122" width="0" height="5" rx="2.5" fill="#a78bfa">
+          <animate attributeName="width" values="0;90" dur="1s" begin="0.7s" fill="freeze"/>
+        </rect>
+        <text x="190" y="127" class="mono" font-size="9" fill="#64748b">scripting</text>
+      </g>
+    </g>
+
+    <!-- ============ Row 2: Cloud + Data & BI ============ -->
+
+    <!-- Cloud & Infra -->
+    <g transform="translate(24,272)" opacity="0">
       <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.3s" fill="freeze"/>
-      <rect width="205" height="280" rx="12" fill="url(#capGlow2)"/>
-      <rect width="205" height="280" rx="12" fill="#0b1224" stroke="#a78bfa" stroke-width="1" stroke-opacity="0.3"/>
+      <rect width="420" height="120" rx="10" fill="#0b1224" stroke="#f472b6" stroke-width="1" stroke-opacity="0.3"/>
+      <rect x="0" y="0" width="420" height="3" rx="1.5" fill="#f472b6"/>
+      <text x="20" y="30" class="mono" font-size="11" fill="#f472b6" font-weight="600" letter-spacing="1">CLOUD &amp; INFRA</text>
+      <line x1="20" y1="38" x2="400" y2="38" stroke="#1b2340"/>
 
-      <!-- Animated icon: doc → vector → search -->
-      <g transform="translate(20,24)" filter="url(#capFilter)">
-        <rect x="6" y="4" width="10" height="14" rx="1" fill="none" stroke="#a78bfa" stroke-width="1.5"/>
-        <line x1="20" y1="11" x2="26" y2="11" stroke="#a78bfa" stroke-width="1.5">
-          <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"/>
-        </line>
-        <circle cx="16" cy="16" r="14" fill="none" stroke="#a78bfa" stroke-width="1" stroke-opacity="0.3">
-          <animate attributeName="r" values="14;20;14" dur="3.5s" begin="0.5s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" values="0.3;0;0.3" dur="3.5s" begin="0.5s" repeatCount="indefinite"/>
-        </circle>
+      <g class="sans" font-size="12" fill="#94a3b8">
+        <text x="20" y="60"><tspan fill="#f472b6">●</tspan>  AWS (ML/AI Fundamentals)</text>
+        <text x="220" y="60"><tspan fill="#f472b6">●</tspan>  Kubernetes</text>
+        <text x="20" y="82"><tspan fill="#f472b6">●</tspan>  Docker</text>
+        <text x="220" y="82"><tspan fill="#f472b6">●</tspan>  REST APIs</text>
+        <text x="20" y="104"><tspan fill="#f472b6">●</tspan>  n8n Automation</text>
       </g>
-
-      <text x="20" y="68" class="sans" font-size="15" font-weight="700" fill="#e2e8f0">RAG &amp; Retrieval</text>
-      <text x="20" y="86" class="sans" font-size="11" fill="#64748b">Build knowledge-grounded AI</text>
-
-      <line x1="20" y1="100" x2="185" y2="100" stroke="#1b2340"/>
-
-      <g class="sans" font-size="11" fill="#94a3b8">
-        <text x="20" y="120">Document ingestion at scale</text>
-        <text x="20" y="134">(PDF, DOCX, web scrape)</text>
-        <text x="20" y="154">Semantic + keyword hybrid</text>
-        <text x="20" y="168">search with re-ranking</text>
-        <text x="20" y="188">Citation-grounded responses</text>
-        <text x="20" y="202">that trace back to source</text>
-        <text x="20" y="222">Vector store optimization</text>
-      </g>
-
-      <rect x="20" y="240" width="130" height="22" rx="11" fill="#0b0f1e" stroke="#a78bfa" stroke-width="0.8" stroke-opacity="0.4"/>
-      <text x="85" y="255" class="mono" font-size="9" fill="#a78bfa" text-anchor="middle">production shipped</text>
     </g>
 
-    <!-- ============ Card 3: AI Security ============ -->
-    <g transform="translate(454,60)" opacity="0">
-      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.45s" fill="freeze"/>
-      <rect width="205" height="280" rx="12" fill="url(#capGlow3)"/>
-      <rect width="205" height="280" rx="12" fill="#0b1224" stroke="#f472b6" stroke-width="1" stroke-opacity="0.3"/>
+    <!-- Data & BI -->
+    <g transform="translate(456,272)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.4s" fill="freeze"/>
+      <rect width="420" height="120" rx="10" fill="#0b1224" stroke="#fbbf24" stroke-width="1" stroke-opacity="0.3"/>
+      <rect x="0" y="0" width="420" height="3" rx="1.5" fill="#fbbf24"/>
+      <text x="20" y="30" class="mono" font-size="11" fill="#fbbf24" font-weight="600" letter-spacing="1">DATA &amp; BI</text>
+      <line x1="20" y1="38" x2="400" y2="38" stroke="#1b2340"/>
 
-      <!-- Animated icon: shield with scan line -->
-      <g transform="translate(20,24)" filter="url(#capFilter)">
-        <path d="M16,2 L28,6 V16 C28,24 22,30 16,32 C10,30 4,24 4,16 V6 Z" fill="#0b0f1e" stroke="#f472b6" stroke-width="1.5"/>
-        <path d="M16,2 L28,6 V16 C28,24 22,30 16,32 C10,30 4,24 4,16 V6 Z" fill="none" stroke="#f472b6" stroke-width="0.6" stroke-opacity="0.4">
-          <animate attributeName="stroke-width" values="0.6;2;0.6" dur="2.5s" repeatCount="indefinite"/>
-        </path>
-        <line x1="8" y1="14" x2="24" y2="14" stroke="#f472b6" stroke-width="1" opacity="0.7">
-          <animate attributeName="y1" values="8;24;8" dur="2.5s" repeatCount="indefinite"/>
-          <animate attributeName="y2" values="8;24;8" dur="2.5s" repeatCount="indefinite"/>
-        </line>
+      <g class="sans" font-size="12" fill="#94a3b8">
+        <text x="20" y="60"><tspan fill="#fbbf24">●</tspan>  Power BI</text>
+        <text x="220" y="60"><tspan fill="#fbbf24">●</tspan>  Streamlit</text>
+        <text x="20" y="82"><tspan fill="#fbbf24">●</tspan>  Pandas</text>
+        <text x="220" y="82"><tspan fill="#fbbf24">●</tspan>  Excel</text>
+        <text x="20" y="104"><tspan fill="#fbbf24">●</tspan>  Google Sheets</text>
       </g>
-
-      <text x="20" y="68" class="sans" font-size="15" font-weight="700" fill="#e2e8f0">AI Security</text>
-      <text x="20" y="86" class="sans" font-size="11" fill="#64748b">Guardrails for AI-generated code</text>
-
-      <line x1="20" y1="100" x2="185" y2="100" stroke="#1b2340"/>
-
-      <g class="sans" font-size="11" fill="#94a3b8">
-        <text x="20" y="120">Built VibeGuard — 764 rules,</text>
-        <text x="20" y="134">82 MCP tools, 18 languages</text>
-        <text x="20" y="154">Prompt injection detection</text>
-        <text x="20" y="168">&amp; AI firewall (regex + semantic)</text>
-        <text x="20" y="188">Agent action firewall — blocks</text>
-        <text x="20" y="202">secret exfiltration in real-time</text>
-        <text x="20" y="222">10 compliance frameworks</text>
-      </g>
-
-      <rect x="20" y="240" width="100" height="22" rx="11" fill="#0b0f1e" stroke="#f472b6" stroke-width="0.8" stroke-opacity="0.4"/>
-      <text x="70" y="255" class="mono" font-size="9" fill="#f472b6" text-anchor="middle">my own tool</text>
     </g>
 
-    <!-- ============ Card 4: Ship & Automate ============ -->
-    <g transform="translate(669,60)" opacity="0">
+    <!-- ============ Row 3: Frameworks + AI APIs ============ -->
+
+    <!-- Frameworks -->
+    <g transform="translate(24,404)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.5s" fill="freeze"/>
+      <rect width="420" height="100" rx="10" fill="#0b1224" stroke="#34d399" stroke-width="1" stroke-opacity="0.3"/>
+      <rect x="0" y="0" width="420" height="3" rx="1.5" fill="#34d399"/>
+      <text x="20" y="28" class="mono" font-size="11" fill="#34d399" font-weight="600" letter-spacing="1">FRAMEWORKS</text>
+      <line x1="20" y1="36" x2="400" y2="36" stroke="#1b2340"/>
+
+      <g class="sans" font-size="11.5" fill="#94a3b8">
+        <text x="20" y="56"><tspan fill="#34d399">●</tspan>  Flask</text>
+        <text x="120" y="56"><tspan fill="#34d399">●</tspan>  Playwright</text>
+        <text x="240" y="56"><tspan fill="#34d399">●</tspan>  BeautifulSoup</text>
+        <text x="20" y="78"><tspan fill="#34d399">●</tspan>  OpenPyXL</text>
+        <text x="120" y="78"><tspan fill="#34d399">●</tspan>  asyncio</text>
+        <text x="240" y="78"><tspan fill="#34d399">●</tspan>  SQLite</text>
+      </g>
+    </g>
+
+    <!-- AI APIs -->
+    <g transform="translate(456,404)" opacity="0">
       <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.6s" fill="freeze"/>
-      <rect width="205" height="280" rx="12" fill="url(#capGlow4)"/>
-      <rect width="205" height="280" rx="12" fill="#0b1224" stroke="#fbbf24" stroke-width="1" stroke-opacity="0.3"/>
+      <rect width="420" height="100" rx="10" fill="#0b1224" stroke="#22d3ee" stroke-width="1" stroke-opacity="0.3"/>
+      <rect x="0" y="0" width="420" height="3" rx="1.5" fill="#22d3ee"/>
+      <text x="20" y="28" class="mono" font-size="11" fill="#22d3ee" font-weight="600" letter-spacing="1">AI APIs</text>
+      <line x1="20" y1="36" x2="400" y2="36" stroke="#1b2340"/>
 
-      <!-- Animated icon: gear spinning -->
-      <g transform="translate(20,24)" filter="url(#capFilter)">
-        <g>
-          <animateTransform attributeName="transform" type="rotate" from="0 16 16" to="360 16 16" dur="4s" repeatCount="indefinite"/>
-          <circle cx="16" cy="16" r="6" fill="none" stroke="#fbbf24" stroke-width="1.5"/>
-          <line x1="16" y1="2" x2="16" y2="6" stroke="#fbbf24" stroke-width="1.5"/>
-          <line x1="16" y1="26" x2="16" y2="30" stroke="#fbbf24" stroke-width="1.5"/>
-          <line x1="2" y1="16" x2="6" y2="16" stroke="#fbbf24" stroke-width="1.5"/>
-          <line x1="26" y1="16" x2="30" y2="16" stroke="#fbbf24" stroke-width="1.5"/>
-          <line x1="6" y1="6" x2="9" y2="9" stroke="#fbbf24" stroke-width="1.5"/>
-          <line x1="23" y1="23" x2="26" y2="26" stroke="#fbbf24" stroke-width="1.5"/>
-          <line x1="6" y1="26" x2="9" y2="23" stroke="#fbbf24" stroke-width="1.5"/>
-          <line x1="23" y1="9" x2="26" y2="6" stroke="#fbbf24" stroke-width="1.5"/>
-        </g>
+      <g class="sans" font-size="11.5" fill="#94a3b8">
+        <text x="20" y="56"><tspan fill="#22d3ee">●</tspan>  OpenAI GPT-4</text>
+        <text x="150" y="56"><tspan fill="#22d3ee">●</tspan>  Anthropic Claude</text>
+        <text x="300" y="56"><tspan fill="#22d3ee">●</tspan>  Google Gemini</text>
+        <text x="20" y="78"><tspan fill="#22d3ee">●</tspan>  DeepSeek</text>
+        <text x="150" y="78"><tspan fill="#22d3ee">●</tspan>  Groq</text>
+        <text x="300" y="78"><tspan fill="#22d3ee">●</tspan>  OpenRouter</text>
       </g>
-
-      <text x="20" y="68" class="sans" font-size="15" font-weight="700" fill="#e2e8f0">Ship &amp; Automate</text>
-      <text x="20" y="86" class="sans" font-size="11" fill="#64748b">From idea to deployed pipeline</text>
-
-      <line x1="20" y1="100" x2="185" y2="100" stroke="#1b2340"/>
-
-      <g class="sans" font-size="11" fill="#94a3b8">
-        <text x="20" y="120">Browser automation with</text>
-        <text x="20" y="134">Playwright at scale</text>
-        <text x="20" y="154">Web scraping &amp; data pipelines</text>
-        <text x="20" y="168">for messy real-world sources</text>
-        <text x="20" y="188">Docker packaging &amp; CI/CD</text>
-        <text x="20" y="202">for 7 providers</text>
-        <text x="20" y="222">SBOM, license &amp; CVE scanning</text>
-      </g>
-
-      <rect x="20" y="240" width="110" height="22" rx="11" fill="#0b0f1e" stroke="#fbbf24" stroke-width="0.8" stroke-opacity="0.4"/>
-      <text x="75" y="255" class="mono" font-size="9" fill="#fbbf24" text-anchor="middle">full-stack delivery</text>
     </g>
 
-    <!-- Bottom flow -->
-    <rect x="24" y="350" width="852" height="2" rx="1" fill="url(#capLine)" opacity="0.2"/>
+    <!-- Bottom -->
+    <rect x="24" y="510" width="852" height="2" rx="1" fill="url(#skLine)" opacity="0.2"/>
   </g>
 </svg>

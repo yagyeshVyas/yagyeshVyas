@@ -103,10 +103,10 @@
       <text x="70" y="106" fill="#22d3ee" opacity="0">AI / ML ENGINEER
         <animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.03;0.29;0.333;1" values="0;1;1;0;0"/>
       </text>
-      <text x="70" y="106" fill="#a78bfa" opacity="0">LLM &amp; RAG BUILDER
+      <text x="70" y="106" fill="#a78bfa" opacity="0">LLM &amp; GENERATIVE AI
         <animate attributeName="opacity" dur="9s" begin="3s" repeatCount="indefinite" keyTimes="0;0.03;0.29;0.333;1" values="0;1;1;0;0"/>
       </text>
-      <text x="70" y="106" fill="#f472b6" opacity="0">LOCAL-FIRST AI
+      <text x="70" y="106" fill="#f472b6" opacity="0">OPEN SOURCE BUILDER
         <animate attributeName="opacity" dur="9s" begin="6s" repeatCount="indefinite" keyTimes="0;0.03;0.29;0.333;1" values="0;1;1;0;0"/>
       </text>
     </g>
