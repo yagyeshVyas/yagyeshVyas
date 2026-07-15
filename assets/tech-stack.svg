@@ -1,84 +1,70 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 110" width="720" height="110" role="img" aria-label="Animated tech stack">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 130" width="720" height="130" role="img" aria-label="ML tech stack">
   <style>
-    .pill { animation: float 4s ease-in-out infinite; }
-    .p1 { animation-delay: 0s; }
-    .p2 { animation-delay: 0.4s; }
-    .p3 { animation-delay: 0.8s; }
-    .p4 { animation-delay: 1.2s; }
-    .p5 { animation-delay: 0.2s; }
-    .p6 { animation-delay: 0.6s; }
-    .p7 { animation-delay: 1.0s; }
-    @keyframes float {
+    .card { animation: drift 5s ease-in-out infinite; }
+    .c1 { animation-delay: 0s; }
+    .c2 { animation-delay: 0.5s; }
+    .c3 { animation-delay: 1s; }
+    .c4 { animation-delay: 1.5s; }
+    .c5 { animation-delay: 0.3s; }
+    .c6 { animation-delay: 0.8s; }
+    @keyframes drift {
       0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-6px); }
+      50% { transform: translateY(-4px); }
     }
-    @media (prefers-reduced-motion: reduce) {
-      .pill { animation: none; }
-    }
+    @media (prefers-reduced-motion: reduce) { .card { animation: none; } }
   </style>
-  <rect width="720" height="110" fill="#0d1117" rx="12"/>
-  <text x="20" y="28" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#8b949e" font-weight="600">🧠 ML stack &amp; tools</text>
+  <rect width="720" height="130" fill="#0a0e1a" rx="12"/>
+  <rect width="720" height="130" rx="12" fill="none" stroke="#1a2238" stroke-width="1"/>
+
+  <!-- Label -->
+  <text x="20" y="28" font-family="JetBrains Mono, monospace" font-size="11" fill="#f59e0b" font-weight="500" letter-spacing="2">STACK</text>
+  <line x1="62" y1="24" x2="700" y2="24" stroke="#1a2238" stroke-width="1"/>
 
   <!-- Python -->
-  <g class="pill p1" transform="translate(20,42)">
-    <rect width="80" height="46" rx="23" fill="#21262d" stroke="#3572A5" stroke-width="1.5"/>
-    <circle cx="22" cy="23" r="9" fill="#3572A5"/>
-    <text x="22" y="27" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">Py</text>
-    <text x="38" y="28" font-size="12" fill="#e6edf3" font-weight="500">Python</text>
+  <g class="card c1" transform="translate(20,48)">
+    <rect width="104" height="62" rx="10" fill="#121829" stroke="#3572A5" stroke-width="1.5"/>
+    <rect x="0" y="0" width="104" height="3" rx="1.5" fill="#3572A5"/>
+    <text x="52" y="30" font-size="22" text-anchor="middle">🐍</text>
+    <text x="52" y="50" font-family="Inter, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="500">Python</text>
   </g>
 
   <!-- PyTorch -->
-  <g class="pill p2" transform="translate(108,42)">
-    <rect width="90" height="46" rx="23" fill="#21262d" stroke="#ee4c2c" stroke-width="1.5"/>
-    <circle cx="22" cy="23" r="9" fill="#ee4c2c"/>
-    <text x="22" y="27" font-size="9" font-weight="700" fill="#fff" text-anchor="middle">PT</text>
-    <text x="38" y="28" font-size="12" fill="#e6edf3" font-weight="500">PyTorch</text>
+  <g class="card c2" transform="translate(134,48)">
+    <rect width="104" height="62" rx="10" fill="#121829" stroke="#ee4c2c" stroke-width="1.5"/>
+    <rect x="0" y="0" width="104" height="3" rx="1.5" fill="#ee4c2c"/>
+    <text x="52" y="30" font-size="22" text-anchor="middle">🔥</text>
+    <text x="52" y="50" font-family="Inter, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="500">PyTorch</text>
   </g>
 
   <!-- HuggingFace -->
-  <g class="pill p3" transform="translate(206,42)">
-    <rect width="110" height="46" rx="23" fill="#21262d" stroke="#ffd21e" stroke-width="1.5"/>
-    <circle cx="22" cy="23" r="9" fill="#ffd21e"/>
-    <text x="22" y="27" font-size="12" text-anchor="middle">🤗</text>
-    <text x="38" y="28" font-size="12" fill="#e6edf3" font-weight="500">HF</text>
+  <g class="card c3" transform="translate(248,48)">
+    <rect width="104" height="62" rx="10" fill="#121829" stroke="#fbbf24" stroke-width="1.5"/>
+    <rect x="0" y="0" width="104" height="3" rx="1.5" fill="#fbbf24"/>
+    <text x="52" y="30" font-size="22" text-anchor="middle">🤗</text>
+    <text x="52" y="50" font-family="Inter, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="500">Transformers</text>
   </g>
 
   <!-- LangChain -->
-  <g class="pill p4" transform="translate(324,42)">
-    <rect width="92" height="46" rx="23" fill="#21262d" stroke="#34a853" stroke-width="1.5"/>
-    <circle cx="22" cy="23" r="9" fill="#1c3c3c"/>
-    <path d="M16 20l3 3-3 3 3 3 3-3 3 3 3-3-3-3 3-3-3-3-3 3-3-3Z" fill="#34a853" transform="scale(0.7) translate(9,7)"/>
-    <text x="38" y="28" font-size="12" fill="#e6edf3" font-weight="500">LangChain</text>
-  </g>
-
-  <!-- RAG -->
-  <g class="pill p5" transform="translate(424,42)">
-    <rect width="64" height="46" rx="23" fill="#21262d" stroke="#bc8cff" stroke-width="1.5"/>
-    <circle cx="22" cy="23" r="9" fill="#bc8cff"/>
-    <text x="22" y="27" font-size="7" font-weight="700" fill="#fff" text-anchor="middle">RAG</text>
-    <text x="38" y="28" font-size="12" fill="#e6edf3" font-weight="500">RAG</text>
-  </g>
-
-  <!-- LoRA -->
-  <g class="pill p6" transform="translate(496,42)">
-    <rect width="78" height="46" rx="23" fill="#21262d" stroke="#58a6ff" stroke-width="1.5"/>
-    <circle cx="22" cy="23" r="9" fill="#58a6ff"/>
-    <text x="22" y="27" font-size="7" font-weight="700" fill="#fff" text-anchor="middle">LoRA</text>
-    <text x="38" y="28" font-size="12" fill="#e6edf3" font-weight="500">Fine-tune</text>
+  <g class="card c4" transform="translate(362,48)">
+    <rect width="104" height="62" rx="10" fill="#121829" stroke="#34d399" stroke-width="1.5"/>
+    <rect x="0" y="0" width="104" height="3" rx="1.5" fill="#34d399"/>
+    <text x="52" y="30" font-size="20" text-anchor="middle">🔗</text>
+    <text x="52" y="50" font-family="Inter, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="500">LangChain</text>
   </g>
 
   <!-- Ollama -->
-  <g class="pill p7" transform="translate(582,42)">
-    <rect width="118" height="46" rx="23" fill="#21262d" stroke="#3fb950" stroke-width="1.5"/>
-    <circle cx="22" cy="23" r="9" fill="#3fb950"/>
-    <text x="22" y="27" font-size="8" font-weight="700" fill="#0d1117" text-anchor="middle">🦙</text>
-    <text x="38" y="28" font-size="12" fill="#e6edf3" font-weight="500">Ollama/GGUF</text>
+  <g class="card c5" transform="translate(476,48)">
+    <rect width="104" height="62" rx="10" fill="#121829" stroke="#818cf8" stroke-width="1.5"/>
+    <rect x="0" y="0" width="104" height="3" rx="1.5" fill="#818cf8"/>
+    <text x="52" y="30" font-size="20" text-anchor="middle">🦙</text>
+    <text x="52" y="50" font-family="Inter, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="500">Ollama</text>
   </g>
 
-  <!-- Shimmer bar -->
-  <rect x="0" y="106" width="720" height="3" fill="#21262d" rx="1.5"/>
-  <rect x="0" y="106" width="120" height="3" rx="1.5">
-    <animate attributeName="x" values="0;600;0" dur="6s" repeatCount="indefinite"/>
-    <animate attributeName="fill" values="#3572A5;#ee4c2c;#bc8cff;#3fb950;#3572A5" dur="6s" repeatCount="indefinite"/>
-  </rect>
+  <!-- LoRA -->
+  <g class="card c6" transform="translate(590,48)">
+    <rect width="110" height="62" rx="10" fill="#121829" stroke="#f59e0b" stroke-width="1.5"/>
+    <rect x="0" y="0" width="110" height="3" rx="1.5" fill="#f59e0b"/>
+    <text x="55" y="30" font-size="20" text-anchor="middle">⚙️</text>
+    <text x="55" y="50" font-family="Inter, sans-serif" font-size="12" fill="#e2e8f0" text-anchor="middle" font-weight="500">LoRA / GGUF</text>
+  </g>
 </svg>
