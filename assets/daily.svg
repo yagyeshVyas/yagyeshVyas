@@ -11,8 +11,8 @@
   <rect width="900" height="64" rx="12" fill="#0b1224"/>
   <rect width="900" height="64" rx="12" fill="none" stroke="#1b2340" stroke-width="1.5"/>
   <rect x="0" y="0" width="4" height="64" rx="2" fill="url(#dg)"/>
-  <text x="24" y="27" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#22d3ee" letter-spacing="3">TODAY'S TRAINING OBJECTIVE</text>
-  <text x="24" y="48" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="15" fill="#e2e8f0" opacity="0">ship one thing, however small
+  <text x="24" y="27" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#22d3ee" letter-spacing="3">CURRENT FOCUS</text>
+  <text x="24" y="48" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="15" fill="#e2e8f0" opacity="0">document ingestion — clean parsing for messy real-world files
     <animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.3s" fill="freeze"/>
   </text>
   <text x="876" y="27" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#475569" text-anchor="end">2026-07-15</text>
