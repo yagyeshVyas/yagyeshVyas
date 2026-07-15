@@ -333,11 +333,11 @@ featured.forEach((r, i) => {
 
 // ---------------------------------------------------------------- section banners
 const banners = [
-  ['stats',   'OVERVIEW',   C.cyan,   'live metrics, refreshed daily'],
-  ['lab',     'PIPELINE',   C.violet, 'how an idea becomes a model'],
-  ['arsenal', 'CAPABILITIES', C.pink, 'what I actually ship'],
-  ['builds',  'PROJECTS',   C.amber,  'selected work'],
-  ['connect', 'WORK WITH ME', C.green, 'let\u2019s build something'],
+  ['stats',   'OVERVIEW',     C.cyan,   'live metrics, refreshed daily'],
+  ['lab',     'ABOUT',        C.violet, 'who I am and what drives me'],
+  ['arsenal', 'CAPABILITIES', C.pink,   'what I actually ship'],
+  ['builds',  'PROJECTS',     C.amber,  'selected work'],
+  ['connect', 'WORK WITH ME', C.green,  'let\u2019s build something'],
 ];
 for (const [slug, label, color, note] of banners) {
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 56" width="900" height="56" role="img" aria-label="${label}">
@@ -361,47 +361,6 @@ for (const [slug, label, color, note] of banners) {
   </rect>
 </svg>`;
   writeFileSync(join(OUT, `section-${slug}.svg`), svg);
-}
-
-// ---------------------------------------------------------------- daily.svg
-{
-  const objectives = [
-    'local-first LLM tooling — zero-API-key workflows',
-    'RAG retrieval quality — chunking and reranking strategies',
-    'LoRA fine-tuning pipelines — smaller adapters, better transfer',
-    'GGUF quantization — pushing models onto consumer hardware',
-    'evaluation harnesses — measuring before believing',
-    'inference optimization — latency budgets on local GPUs',
-    'document ingestion — clean parsing for messy real-world files',
-    'embedding models — retrieval that understands intent',
-    'agentic workflows — tool use with guardrails',
-    'model distillation — keeping capability, dropping size',
-  ];
-  const now = new Date();
-  const dayOfYear = Math.floor((now - new Date(Date.UTC(now.getUTCFullYear(), 0, 0))) / 86400000);
-  const pick = objectives[dayOfYear % objectives.length];
-  const stamp = now.toISOString().slice(0, 10);
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 64" width="900" height="64" role="img" aria-label="Today's training objective">
-  <style>${reducedMotion}</style>
-  <defs>
-    <linearGradient id="dg" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="${C.cyan}"/><stop offset="50%" stop-color="${C.violet}"/><stop offset="100%" stop-color="${C.pink}"/>
-    </linearGradient>
-  </defs>
-  <rect width="900" height="64" rx="12" fill="${C.panel}"/>
-  <rect width="900" height="64" rx="12" fill="none" stroke="${C.border}" stroke-width="1.5"/>
-  <rect x="0" y="0" width="4" height="64" rx="2" fill="url(#dg)"/>
-  <text x="24" y="27" font-family="${MONO}" font-size="10" fill="${C.cyan}" letter-spacing="3">CURRENT FOCUS</text>
-  <text x="24" y="48" font-family="${MONO}" font-size="15" fill="${C.text}" opacity="0">${esc(pick)}
-    <animate attributeName="opacity" values="0;1" dur="0.8s" begin="0.3s" fill="freeze"/>
-  </text>
-  <text x="876" y="27" font-family="${MONO}" font-size="10" fill="${C.faint}" text-anchor="end">${stamp}</text>
-  <circle cx="866" cy="44" r="4" fill="${C.green}">
-    <animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/>
-  </circle>
-  <text x="856" y="48" font-family="${MONO}" font-size="10" fill="${C.green}" text-anchor="end">active</text>
-</svg>`;
-  writeFileSync(join(OUT, 'daily.svg'), svg);
 }
 
 // ---------------------------------------------------------------- snake.svg
