@@ -1,25 +1,45 @@
-name: Generate Snake
+name: Refresh profile assets
 
 on:
   schedule:
-    # Runs daily at 00:00 UTC
+    # Daily at 00:00 UTC
     - cron: "0 0 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/snake.yml"
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate stat cards
+        run: node scripts/gen-stats.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Generate contribution snake
         uses: Platane/snk@v3
         with:
           github_user_name: yagyeshVyas
           outputs: |
-            assets/github-snake.svg
-            assets/github-snake-dark.svg?palette=github-dark
+            assets/snake.svg?color_snake=#a78bfa&color_dots=#101830,#164e63,#0e7490,#22d3ee,#f472b6
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: update contribution snake"
+          commit_message: "chore: refresh profile assets"
           file_pattern: "assets/*.svg"
