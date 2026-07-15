@@ -29,11 +29,6 @@
 <!-- Impact -->
 <img src="./assets/impact.svg" width="100%" alt="Real impact — stars, forks, security rules, repos" />
 
-<!-- Contribution snake -->
-<p align="center">
-  <img src="./assets/snake.svg" width="900" alt="Contribution snake devouring a year of commits" />
-</p>
-
 <!-- ======================= CAPABILITIES ======================= -->
 <p align="center">
   <img src="./assets/section-arsenal.svg" width="900" alt="Capabilities" />
