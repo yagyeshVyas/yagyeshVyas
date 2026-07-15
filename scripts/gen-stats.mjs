@@ -41,6 +41,7 @@ const query = `query($login: String!) {
         ... on Repository {
           name description stargazerCount forkCount
           primaryLanguage { name color }
+          repositoryTopics(first: 3) { nodes { topic { name } } }
         }
       }
     }
@@ -175,7 +176,7 @@ let featured = u.pinnedItems.nodes;
 if (featured.length === 0) {
   const names = ['personalforge', 'VibeGuard', 'AI-Career-Suite', 'linkedin-scraper'];
   const rq = `query { user(login: "${USER}") { ${names.map((n, i) =>
-    `r${i}: repository(name: "${n}") { name description stargazerCount forkCount primaryLanguage { name color } }`
+    `r${i}: repository(name: "${n}") { name description stargazerCount forkCount primaryLanguage { name color } repositoryTopics(first: 3) { nodes { topic { name } } } }`
   ).join(' ')} } }`;
   const r2 = await fetch('https://api.github.com/graphql', {
     method: 'POST',
@@ -188,23 +189,57 @@ if (featured.length === 0) {
 
 featured.forEach((r, i) => {
   const accent = [C.cyan, C.violet, C.pink, C.amber][i % 4];
-  const desc = esc((r.description || '').length > 62 ? r.description.slice(0, 59) + '…' : r.description || '');
+  const accentDim = [C.cyan, C.violet, C.pink, C.amber][i % 4];
+  const fullDesc = esc(r.description || 'No description');
   const lang = r.primaryLanguage;
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 110" width="440" height="110" role="img" aria-label="${esc(r.name)}">
+  const topics = (r.repositoryTopics?.nodes || []).slice(0, 3).map(t => esc(t.topic.name));
+  const stars = fmt(r.stargazerCount);
+  const forks = fmt(r.forkCount);
+  const topicTags = topics.map((t, ti) =>
+    `<rect x="${20 + ti * 72}" y="80" width="64" height="17" rx="8" fill="#0b0f1e" stroke="${accent}" stroke-width="0.7" stroke-opacity="0.4"/>`
+    + `<text x="${52 + ti * 72}" y="92" class="mono" font-size="8" fill="${accent}" text-anchor="middle">${t}</text>`
+  ).join('');
+
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 140" width="440" height="140" role="img" aria-label="${esc(r.name)}">
   <style>${reducedMotion}
-    .bd { animation: bp 4s ease-in-out infinite; animation-delay: ${(i * 0.7).toFixed(1)}s; }
-    @keyframes bp { 0%,100% { stroke-opacity: .4; } 50% { stroke-opacity: 1; } }
-    @media (prefers-reduced-motion: reduce) { .bd { animation: none; } }
+    .bd${i} { animation: bp${i} 4s ease-in-out infinite; animation-delay: ${(i * 0.7).toFixed(1)}s; }
+    @keyframes bp${i} { 0%,100% { stroke-opacity: .35; } 50% { stroke-opacity: .85; } }
+    @media (prefers-reduced-motion: reduce) { .bd${i} { animation: none; } }
   </style>
-  <rect width="440" height="110" rx="14" fill="${C.bg}"/>
-  <rect width="440" height="110" rx="14" fill="none" class="bd" stroke="${accent}" stroke-width="1.5"/>
-  <rect x="0" y="0" width="4" height="110" rx="2" fill="${accent}"/>
-  <text x="26" y="34" font-family="${MONO}" font-size="15" font-weight="700" fill="${C.text}">${esc(r.name)}</text>
-  <text x="26" y="58" font-family="${SANS}" font-size="12" fill="${C.sub}">${desc}</text>
-  ${lang ? `<circle cx="32" cy="84" r="5" fill="${lang.color || C.muted}"/>
-  <text x="44" y="88" font-family="${MONO}" font-size="11" fill="${C.muted}">${esc(lang.name)}</text>` : ''}
-  <text x="330" y="88" font-family="${MONO}" font-size="11" fill="${C.amber}">★ ${fmt(r.stargazerCount)}</text>
-  <text x="384" y="88" font-family="${MONO}" font-size="11" fill="${C.violet}">⑂ ${fmt(r.forkCount)}</text>
+  <defs>
+    <linearGradient id="glow${i}" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="${accent}" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="${accent}" stop-opacity="0"/>
+      <stop offset="100%" stop-color="${accent}" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+  <rect width="440" height="140" rx="14" fill="${C.bg}"/>
+  <rect width="440" height="140" rx="14" fill="none" class="bd${i}" stroke="${accent}" stroke-width="1.5"/>
+  <!-- Accent bar -->
+  <rect x="0" y="0" width="4" height="140" rx="2" fill="${accent}"/>
+  <!-- Top shimmer -->
+  <rect x="4" y="0" width="436" height="2" fill="url(#glow${i})"/>
+  <!-- Repo icon + name -->
+  <text x="20" y="32" font-size="16">📦</text>
+  <text x="42" y="32" font-family="${MONO}" font-size="15" font-weight="700" fill="${C.text}">${esc(r.name)}</text>
+  <!-- Visibility badge -->
+  <rect x="400" y="18" width="22" height="14" rx="3" fill="${C.panel}" stroke="${C.border}" stroke-width="0.6"/>
+  <text x="411" y="28" font-family="${MONO}" font-size="7" fill="${C.muted}" text-anchor="middle">pub</text>
+  <!-- Description (full, no truncation) -->
+  <text x="20" y="56" font-family="${SANS}" font-size="11.5" fill="${C.sub}">${fullDesc.length > 70 ? fullDesc.slice(0, 67) + '…' : fullDesc}</text>
+  <!-- Topic tags -->
+  ${topicTags}
+  <!-- Bottom divider -->
+  <line x1="20" y1="108" x2="420" y2="108" stroke="${C.border}" stroke-width="0.8"/>
+  <!-- Footer: language + stats -->
+  ${lang ? `<circle cx="28" cy="126" r="4" fill="${lang.color || C.muted}"/>
+  <text x="38" y="130" font-family="${MONO}" font-size="10" fill="${C.muted}">${esc(lang.name)}</text>` : ''}
+  <!-- Stars -->
+  <text x="320" y="130" font-size="9">⭐</text>
+  <text x="332" y="130" font-family="${MONO}" font-size="11" font-weight="600" fill="${C.amber}">${stars}</text>
+  <!-- Forks -->
+  <text x="370" y="130" font-size="9">⑂</text>
+  <text x="382" y="130" font-family="${MONO}" font-size="11" font-weight="600" fill="${C.violet}">${forks}</text>
 </svg>`;
   writeFileSync(join(OUT, `repo-${i}.svg`), svg);
 });
@@ -298,11 +333,11 @@ featured.forEach((r, i) => {
 
 // ---------------------------------------------------------------- section banners
 const banners = [
-  ['stats',   'OVERVIEW', C.cyan,   'live metrics, refreshed daily'],
-  ['lab',     'THE LAB',  C.violet, 'systems at work'],
-  ['arsenal', 'STACK',    C.pink,   'tools and frameworks'],
-  ['builds',  'PROJECTS', C.amber,  'selected work'],
-  ['connect', 'CONTACT',  C.green,  'elsewhere on the internet'],
+  ['stats',   'OVERVIEW',   C.cyan,   'live metrics, refreshed daily'],
+  ['lab',     'PIPELINE',   C.violet, 'how an idea becomes a model'],
+  ['arsenal', 'CAPABILITIES', C.pink, 'what I actually ship'],
+  ['builds',  'PROJECTS',   C.amber,  'selected work'],
+  ['connect', 'WORK WITH ME', C.green, 'let\u2019s build something'],
 ];
 for (const [slug, label, color, note] of banners) {
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 56" width="900" height="56" role="img" aria-label="${label}">

@@ -29,21 +29,19 @@
   <img src="./assets/snake.svg" width="900" alt="Contribution snake devouring a year of commits" />
 </p>
 
-<!-- ======================= THE LAB ======================= -->
+<!-- ======================= PIPELINE ======================= -->
 <p align="center">
-  <img src="./assets/section-lab.svg" width="900" alt="The lab" />
+  <img src="./assets/section-lab.svg" width="900" alt="Pipeline" />
 </p>
 
-<img src="./assets/lab.svg" width="100%" alt="Animated AI lab scene — monitors training a model, GPU rack blinking, a drone assistant and a sleeping cat" />
+<img src="./assets/pipeline.svg" width="100%" alt="ML pipeline — Data to Train to Evaluate to Deploy" />
 
-<!-- ======================= ARSENAL ======================= -->
+<!-- ======================= CAPABILITIES ======================= -->
 <p align="center">
-  <img src="./assets/section-arsenal.svg" width="900" alt="Arsenal" />
+  <img src="./assets/section-arsenal.svg" width="900" alt="Capabilities" />
 </p>
 
-<p align="center">
-  <img src="./assets/tech-stack.svg" width="900" alt="Tech stack" />
-</p>
+<img src="./assets/capabilities.svg" width="100%" alt="What I can build — Local LLMs, RAG, AI Security, Automation" />
 
 <!-- ======================= FEATURED BUILDS ======================= -->
 <p align="center">
@@ -59,32 +57,12 @@
   <a href="https://github.com/yagyeshVyas/linkedin-scraper"><img src="./assets/repo-3.svg" width="49%" alt="linkedin-scraper" /></a>
 </p>
 
-- **personalforge** — Offline AI from any documents. LoRA fine-tuning + RAG + GGUF export. No API keys, runs 100% local.
-- **VibeGuard** — Security scanner for AI-generated apps. 699 rules, 76 MCP tools, 13-layer defense. Zero-trust sandbox.
-- **AI-Career-Suite** — AI resume analyzer powered by OpenRouter + Streamlit.
-
-<!-- ======================= TRANSMISSION ======================= -->
+<!-- ======================= WORK WITH ME ======================= -->
 <p align="center">
-  <img src="./assets/section-connect.svg" width="900" alt="Transmission" />
+  <img src="./assets/section-connect.svg" width="900" alt="Work with me" />
 </p>
 
-<p align="center">
-  <a href="https://github.com/yagyeshVyas">
-    <img src="https://img.shields.io/badge/GitHub-0b0f1e?style=for-the-badge&logo=github&logoColor=e2e8f0" alt="GitHub" />
-  </a>
-  &nbsp;
-  <a href="https://linkedin.com/in/yagyeshVyas">
-    <img src="https://img.shields.io/badge/LinkedIn-0b0f1e?style=for-the-badge&logo=linkedin&logoColor=22d3ee" alt="LinkedIn" />
-  </a>
-  &nbsp;
-  <a href="https://twitter.com/yagyeshVyas">
-    <img src="https://img.shields.io/badge/Twitter-0b0f1e?style=for-the-badge&logo=x&logoColor=a78bfa" alt="Twitter/X" />
-  </a>
-  &nbsp;
-  <a href="https://yagyesh.dev">
-    <img src="https://img.shields.io/badge/Website-0b0f1e?style=for-the-badge&logo=googlechrome&logoColor=f472b6" alt="Website" />
-  </a>
-</p>
+<img src="./assets/collab.svg" width="100%" alt="Availability, details, and contact channels" />
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=yagyeshVyas&label=VISITORS&color=a78bfa&style=flat-square&label_color=0b0f1e" alt="Visitors" />
