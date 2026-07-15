@@ -57,11 +57,11 @@
 </p>
 
 <p align="center">
-  <img src="./assets/btn-github.svg" width="280" alt="GitHub" />
+  <a href="https://github.com/yagyeshVyas"><img src="./assets/btn-github.svg" width="280" alt="GitHub" /></a>
   &nbsp;&nbsp;
-  <img src="./assets/btn-linkedin.svg" width="280" alt="LinkedIn" />
+  <a href="https://linkedin.com/in/yagyeshvyas"><img src="./assets/btn-linkedin.svg" width="280" alt="LinkedIn" /></a>
   &nbsp;&nbsp;
-  <img src="./assets/btn-npm.svg" width="280" alt="npm" />
+  <a href="https://www.npmjs.com/~yagyeshvyas"><img src="./assets/btn-npm.svg" width="280" alt="npm" /></a>
 </p>
 
 <p align="center">
