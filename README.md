@@ -1,5 +1,5 @@
-<!-- Cinematic intro animation -->
-<a href="#_"><img src="./assets/intro.svg" width="100%" alt="Enter profile" /></a>
+<!-- Demon Slayer intro GIF -->
+<a href="#_"><img src="https://media1.tenor.com/m/-qXEjoiy03QAAAAC/demon-slayer-kimetsu-no-yaiba.gif" width="100%" alt="Demon Slayer sword slash intro" /></a>
 
 <!-- Hero banner -->
 <a href="#_"><img src="./assets/header.svg" width="100%" alt="Yagyesh Vyas — AI/ML Engineer" /></a>
