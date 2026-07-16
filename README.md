@@ -24,6 +24,9 @@
   <a href="#_"><img src="./assets/langs.svg" width="32%" alt="Most used languages" /></a>
 </p>
 
+<!-- Contribution snake — eats a year of commits, regrows, repeats -->
+<a href="#_"><img src="./assets/snake.svg" width="100%" alt="Contribution snake — a year of commits" /></a>
+
 <!-- Impact -->
 <a href="#_"><img src="./assets/impact.svg" width="100%" alt="Real impact — stars, forks, security rules, repos" /></a>
 

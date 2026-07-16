@@ -7,6 +7,12 @@
       <feGaussianBlur stdDeviation="2" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <linearGradient id="ghShine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e2e8f0" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#e2e8f0" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#e2e8f0" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="ghClip"><rect width="280" height="120" rx="12"/></clipPath>
   </defs>
   <style>@media (prefers-reduced-motion: reduce){animate{display:none!important}*{opacity:1!important}}</style>
   <rect width="280" height="120" rx="12" fill="#0b1224" stroke="#1b2340" stroke-width="1"/>
@@ -21,7 +27,14 @@
   <text x="20" y="86" font-family="JetBrains Mono,monospace" font-size="10" fill="#94a3b8">10 repos</text>
   <text x="100" y="86" font-family="JetBrains Mono,monospace" font-size="10" fill="#fbbf24">★ 118</text>
   <text x="160" y="86" font-family="JetBrains Mono,monospace" font-size="10" fill="#a78bfa">⑂ 18</text>
-  <text x="250" y="86" font-family="JetBrains Mono,monospace" font-size="14" fill="#22d3ee" text-anchor="end">→</text>
+  <text x="250" y="86" font-family="JetBrains Mono,monospace" font-size="14" fill="#22d3ee" text-anchor="end">→
+    <animateTransform attributeName="transform" type="translate" values="0,0; 5,0; 0,0" dur="1.6s" repeatCount="indefinite"/>
+  </text>
+  <g clip-path="url(#ghClip)">
+    <rect x="-80" y="0" width="70" height="120" fill="url(#ghShine)" transform="skewX(-18)">
+      <animate attributeName="x" values="-80;340" dur="3.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
   <rect width="280" height="120" rx="12" fill="none" stroke="#e2e8f0" stroke-width="1" opacity="0">
     <animate attributeName="opacity" values="0;0.4;0;0.4;0" dur="4s" begin="0.5s" repeatCount="indefinite"/>
   </rect>

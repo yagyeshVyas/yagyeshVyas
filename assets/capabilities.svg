@@ -8,6 +8,11 @@
       <stop offset="50%" stop-color="#a78bfa"/>
       <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
     </linearGradient>
+    <linearGradient id="skBeam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#a78bfa" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
+    </linearGradient>
     <clipPath id="skFrame"><rect width="900" height="520" rx="14"/></clipPath>
   </defs>
   <style>
@@ -27,6 +32,14 @@
     <text x="24" y="36" class="mono" font-size="13" fill="#f472b6" font-weight="600" letter-spacing="2">TECHNICAL SKILLS</text>
     <text x="170" y="36" class="mono" font-size="10" fill="#475569">// from my resume — what I actually work with daily</text>
     <rect x="24" y="46" width="852" height="1" fill="#1b2340"/>
+    <rect x="24" y="45.5" width="180" height="2" rx="1" fill="url(#skLine)">
+      <animateTransform attributeName="transform" type="translate" values="-180,0; 900,0" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Vertical scanning beam sweeping the whole card -->
+    <rect x="0" y="0" width="3" height="520" fill="url(#skBeam)" opacity="0.35">
+      <animateTransform attributeName="transform" type="translate" values="-10,0; 910,0" dur="9s" repeatCount="indefinite"/>
+    </rect>
 
     <!-- ============ Row 1: AI/ML + Languages ============ -->
 
@@ -97,6 +110,9 @@
         </rect>
         <text x="190" y="127" class="mono" font-size="9" fill="#64748b">scripting</text>
       </g>
+      <circle cx="400" cy="180" r="4" fill="#a78bfa">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+      </circle>
     </g>
 
     <!-- ============ Row 2: Cloud + Data & BI ============ -->
@@ -116,6 +132,9 @@
         <text x="220" y="82"><tspan fill="#f472b6">●</tspan>  REST APIs</text>
         <text x="20" y="104"><tspan fill="#f472b6">●</tspan>  n8n Automation</text>
       </g>
+      <circle cx="400" cy="100" r="4" fill="#f472b6">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="1s" repeatCount="indefinite"/>
+      </circle>
     </g>
 
     <!-- Data & BI -->
@@ -133,6 +152,9 @@
         <text x="220" y="82"><tspan fill="#fbbf24">●</tspan>  Excel</text>
         <text x="20" y="104"><tspan fill="#fbbf24">●</tspan>  Google Sheets</text>
       </g>
+      <circle cx="400" cy="100" r="4" fill="#fbbf24">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+      </circle>
     </g>
 
     <!-- ============ Row 3: Frameworks + AI APIs ============ -->
@@ -153,6 +175,9 @@
         <text x="120" y="78"><tspan fill="#34d399">●</tspan>  asyncio</text>
         <text x="240" y="78"><tspan fill="#34d399">●</tspan>  SQLite</text>
       </g>
+      <circle cx="400" cy="80" r="4" fill="#34d399">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="0.7s" repeatCount="indefinite"/>
+      </circle>
     </g>
 
     <!-- AI APIs -->
@@ -171,6 +196,9 @@
         <text x="150" y="78"><tspan fill="#22d3ee">●</tspan>  Groq</text>
         <text x="300" y="78"><tspan fill="#22d3ee">●</tspan>  OpenRouter</text>
       </g>
+      <circle cx="400" cy="80" r="4" fill="#22d3ee">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="1.2s" repeatCount="indefinite"/>
+      </circle>
     </g>
 
     <!-- Bottom -->
