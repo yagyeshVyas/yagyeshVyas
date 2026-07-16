@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 64" width="100%" height="auto" role="img" aria-label="Identity, tokenized — name streaming through an LLM tokenizer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 64" width="100%" height="auto" role="img" aria-label="Identity, tokenized — name and skills streaming through an LLM tokenizer">
   <defs>
     <linearGradient id="tkFadeL" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#0b0f1e"/><stop offset="100%" stop-color="#0b0f1e" stop-opacity="0"/>
@@ -20,13 +20,13 @@
     <rect width="1000" height="64" fill="#0b0f1e"/>
     <rect width="1000" height="64" rx="12" fill="none" stroke="#1b2340" stroke-width="1.5"/>
 
-    <!-- Streaming token chips: one 706px period, three copies, seamless loop -->
+    <!-- Streaming token chips: name + skills, one 1432px period, two copies, seamless loop -->
     <g transform="translate(150,0)">
       <g>
-        <animateTransform attributeName="transform" type="translate" values="0,0; -706,0" dur="22s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="0,0; -1432,0" dur="44s" repeatCount="indefinite"/>
 
-        <!-- period copy at 0 / 706 / 1412 -->
         <g id="tkRow">
+          <!-- name + role -->
           <g transform="translate(0,19)">
             <rect width="34" height="26" rx="7" fill="#0b1224" stroke="#22d3ee" stroke-opacity="0.5"/>
             <text x="17" y="17" font-size="12" fill="#22d3ee" text-anchor="middle">&#288;Y</text>
@@ -64,24 +64,73 @@
             <text x="24.5" y="17" font-size="12" fill="#22d3ee" text-anchor="middle">&#288;Eng</text>
           </g>
           <g transform="translate(435,19)">
-            <rect width="56" height="26" rx="7" fill="#0b1224" stroke="#a78bfa" stroke-opacity="0.5"/>
-            <text x="28" y="17" font-size="12" fill="#a78bfa" text-anchor="middle">ineer</text>
+            <rect width="56" height="26" rx="7" fill="#0b1224" stroke="#22d3ee" stroke-opacity="0.5"/>
+            <text x="28" y="17" font-size="12" fill="#22d3ee" text-anchor="middle">ineer</text>
           </g>
+
+          <!-- skills -->
           <g transform="translate(501,19)">
-            <rect width="63" height="26" rx="7" fill="#0b1224" stroke="#f472b6" stroke-opacity="0.5"/>
-            <text x="31.5" y="17" font-size="12" fill="#f472b6" text-anchor="middle">&#288;local</text>
+            <rect width="70" height="26" rx="7" fill="#0b1224" stroke="#a78bfa" stroke-opacity="0.5"/>
+            <text x="35" y="17" font-size="12" fill="#a78bfa" text-anchor="middle">&#288;Python</text>
           </g>
-          <g transform="translate(574,19)">
+          <g transform="translate(581,19)">
+            <rect width="42" height="26" rx="7" fill="#0b1224" stroke="#f472b6" stroke-opacity="0.5"/>
+            <text x="21" y="17" font-size="12" fill="#f472b6" text-anchor="middle">&#288;Py</text>
+          </g>
+          <g transform="translate(633,19)">
+            <rect width="56" height="26" rx="7" fill="#0b1224" stroke="#f472b6" stroke-opacity="0.5"/>
+            <text x="28" y="17" font-size="12" fill="#f472b6" text-anchor="middle">Torch</text>
+          </g>
+          <g transform="translate(699,19)">
             <rect width="56" height="26" rx="7" fill="#0b1224" stroke="#fbbf24" stroke-opacity="0.5"/>
-            <text x="28" y="17" font-size="12" fill="#fbbf24" text-anchor="middle">&#288;LLMs</text>
+            <text x="28" y="17" font-size="12" fill="#fbbf24" text-anchor="middle">&#288;Lang</text>
           </g>
-          <g transform="translate(640,19)">
+          <g transform="translate(765,19)">
+            <rect width="56" height="26" rx="7" fill="#0b1224" stroke="#fbbf24" stroke-opacity="0.5"/>
+            <text x="28" y="17" font-size="12" fill="#fbbf24" text-anchor="middle">Chain</text>
+          </g>
+          <g transform="translate(831,19)">
+            <rect width="49" height="26" rx="7" fill="#0b1224" stroke="#22d3ee" stroke-opacity="0.5"/>
+            <text x="24.5" y="17" font-size="12" fill="#22d3ee" text-anchor="middle">&#288;RAG</text>
+          </g>
+          <g transform="translate(890,19)">
+            <rect width="42" height="26" rx="7" fill="#0b1224" stroke="#a78bfa" stroke-opacity="0.5"/>
+            <text x="21" y="17" font-size="12" fill="#a78bfa" text-anchor="middle">&#288;Lo</text>
+          </g>
+          <g transform="translate(942,19)">
+            <rect width="34" height="26" rx="7" fill="#0b1224" stroke="#a78bfa" stroke-opacity="0.5"/>
+            <text x="17" y="17" font-size="12" fill="#a78bfa" text-anchor="middle">RA</text>
+          </g>
+          <g transform="translate(986,19)">
+            <rect width="42" height="26" rx="7" fill="#0b1224" stroke="#f472b6" stroke-opacity="0.5"/>
+            <text x="21" y="17" font-size="12" fill="#f472b6" text-anchor="middle">&#288;GG</text>
+          </g>
+          <g transform="translate(1038,19)">
+            <rect width="34" height="26" rx="7" fill="#0b1224" stroke="#f472b6" stroke-opacity="0.5"/>
+            <text x="17" y="17" font-size="12" fill="#f472b6" text-anchor="middle">UF</text>
+          </g>
+          <g transform="translate(1082,19)">
+            <rect width="70" height="26" rx="7" fill="#0b1224" stroke="#fbbf24" stroke-opacity="0.5"/>
+            <text x="35" y="17" font-size="12" fill="#fbbf24" text-anchor="middle">&#288;Ollama</text>
+          </g>
+          <g transform="translate(1162,19)">
+            <rect width="70" height="26" rx="7" fill="#0b1224" stroke="#22d3ee" stroke-opacity="0.5"/>
+            <text x="35" y="17" font-size="12" fill="#22d3ee" text-anchor="middle">&#288;Chroma</text>
+          </g>
+          <g transform="translate(1242,19)">
+            <rect width="34" height="26" rx="7" fill="#0b1224" stroke="#22d3ee" stroke-opacity="0.5"/>
+            <text x="17" y="17" font-size="12" fill="#22d3ee" text-anchor="middle">DB</text>
+          </g>
+          <g transform="translate(1286,19)">
+            <rect width="70" height="26" rx="7" fill="#0b1224" stroke="#a78bfa" stroke-opacity="0.5"/>
+            <text x="35" y="17" font-size="12" fill="#a78bfa" text-anchor="middle">&#288;Docker</text>
+          </g>
+          <g transform="translate(1366,19)">
             <rect width="56" height="26" rx="7" fill="#0b1224" stroke="#34d399" stroke-opacity="0.7"/>
             <text x="28" y="17" font-size="12" fill="#34d399" text-anchor="middle">&lt;eos&gt;</text>
           </g>
         </g>
-        <use href="#tkRow" x="706"/>
-        <use href="#tkRow" x="1412"/>
+        <use href="#tkRow" x="1432"/>
       </g>
     </g>
 
