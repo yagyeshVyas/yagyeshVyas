@@ -1,6 +1,3 @@
-<!-- Intro animation GIF -->
-<a href="#_"><img src="./assets/intro.gif" width="100%" alt="Intro animation" /></a>
-
 <!-- Hero banner -->
 <a href="#_"><img src="./assets/header.svg" width="100%" alt="Yagyesh Vyas — AI/ML Engineer" /></a>
 
