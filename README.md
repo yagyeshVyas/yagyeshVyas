@@ -1,6 +1,9 @@
 <!-- Hero banner -->
 <a href="#_"><img src="./assets/header.svg" width="100%" alt="Yagyesh Vyas — AI/ML Engineer" /></a>
 
+<!-- Identity, tokenized — name streaming through an LLM tokenizer -->
+<a href="#_"><img src="./assets/tokens.svg" width="100%" alt="identity.encode() — name as BPE tokens" /></a>
+
 <!-- Terminal -->
 <p align="center">
   <a href="#_"><img src="./assets/typing.svg" width="720" alt="Terminal session" /></a>

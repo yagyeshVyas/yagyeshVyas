@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 64" width="100%" height="auto" role="img" aria-label="Identity, tokenized — name streaming through an LLM tokenizer">
+  <defs>
+    <linearGradient id="tkFadeL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0b0f1e"/><stop offset="100%" stop-color="#0b0f1e" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="tkFadeR" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0b0f1e" stop-opacity="0"/><stop offset="100%" stop-color="#0b0f1e"/>
+    </linearGradient>
+    <clipPath id="tkFrame"><rect width="1000" height="64" rx="12"/></clipPath>
+  </defs>
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      animate, animateTransform { display: none !important; }
+      * { opacity: 1 !important; }
+    }
+    text { font-family: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace; }
+  </style>
+
+  <g clip-path="url(#tkFrame)">
+    <rect width="1000" height="64" fill="#0b0f1e"/>
+    <rect width="1000" height="64" rx="12" fill="none" stroke="#1b2340" stroke-width="1.5"/>
+
+    <!-- Streaming token chips: one 706px period, three copies, seamless loop -->
+    <g transform="translate(150,0)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0,0; -706,0" dur="22s" repeatCount="indefinite"/>
+
+        <!-- period copy at 0 / 706 / 1412 -->
+        <g id="tkRow">
+          <g transform="translate(0,19)">
+            <rect width="34" height="26" rx="7" fill="#0b1224" stroke="#22d3ee" stroke-opacity="0.5"/>
+            <text x="17" y="17" font-size="12" fill="#22d3ee" text-anchor="middle">&#288;Y</text>
+          </g>
+          <g transform="translate(44,19)">
+            <rect width="34" height="26" rx="7" fill="#0b1224" stroke="#a78bfa" stroke-opacity="0.5"/>
+            <text x="17" y="17" font-size="12" fill="#a78bfa" text-anchor="middle">ag</text>
+          </g>
+          <g transform="translate(88,19)">
+            <rect width="49" height="26" rx="7" fill="#0b1224" stroke="#f472b6" stroke-opacity="0.5"/>
+            <text x="24.5" y="17" font-size="12" fill="#f472b6" text-anchor="middle">yesh</text>
+          </g>
+          <g transform="translate(147,19)">
+            <rect width="42" height="26" rx="7" fill="#0b1224" stroke="#fbbf24" stroke-opacity="0.5"/>
+            <text x="21" y="17" font-size="12" fill="#fbbf24" text-anchor="middle">&#288;Vy</text>
+          </g>
+          <g transform="translate(199,19)">
+            <rect width="34" height="26" rx="7" fill="#0b1224" stroke="#22d3ee" stroke-opacity="0.5"/>
+            <text x="17" y="17" font-size="12" fill="#22d3ee" text-anchor="middle">as</text>
+          </g>
+          <g transform="translate(243,19)">
+            <rect width="42" height="26" rx="7" fill="#0b1224" stroke="#a78bfa" stroke-opacity="0.5"/>
+            <text x="21" y="17" font-size="12" fill="#a78bfa" text-anchor="middle">&#288;AI</text>
+          </g>
+          <g transform="translate(295,19)">
+            <rect width="27" height="26" rx="7" fill="#0b1224" stroke="#f472b6" stroke-opacity="0.5"/>
+            <text x="13.5" y="17" font-size="12" fill="#f472b6" text-anchor="middle">/</text>
+          </g>
+          <g transform="translate(332,19)">
+            <rect width="34" height="26" rx="7" fill="#0b1224" stroke="#fbbf24" stroke-opacity="0.5"/>
+            <text x="17" y="17" font-size="12" fill="#fbbf24" text-anchor="middle">ML</text>
+          </g>
+          <g transform="translate(376,19)">
+            <rect width="49" height="26" rx="7" fill="#0b1224" stroke="#22d3ee" stroke-opacity="0.5"/>
+            <text x="24.5" y="17" font-size="12" fill="#22d3ee" text-anchor="middle">&#288;Eng</text>
+          </g>
+          <g transform="translate(435,19)">
+            <rect width="56" height="26" rx="7" fill="#0b1224" stroke="#a78bfa" stroke-opacity="0.5"/>
+            <text x="28" y="17" font-size="12" fill="#a78bfa" text-anchor="middle">ineer</text>
+          </g>
+          <g transform="translate(501,19)">
+            <rect width="63" height="26" rx="7" fill="#0b1224" stroke="#f472b6" stroke-opacity="0.5"/>
+            <text x="31.5" y="17" font-size="12" fill="#f472b6" text-anchor="middle">&#288;local</text>
+          </g>
+          <g transform="translate(574,19)">
+            <rect width="56" height="26" rx="7" fill="#0b1224" stroke="#fbbf24" stroke-opacity="0.5"/>
+            <text x="28" y="17" font-size="12" fill="#fbbf24" text-anchor="middle">&#288;LLMs</text>
+          </g>
+          <g transform="translate(640,19)">
+            <rect width="56" height="26" rx="7" fill="#0b1224" stroke="#34d399" stroke-opacity="0.7"/>
+            <text x="28" y="17" font-size="12" fill="#34d399" text-anchor="middle">&lt;eos&gt;</text>
+          </g>
+        </g>
+        <use href="#tkRow" x="706"/>
+        <use href="#tkRow" x="1412"/>
+      </g>
+    </g>
+
+    <!-- Edge fades over the stream -->
+    <rect x="130" width="90" height="64" fill="url(#tkFadeL)"/>
+    <rect x="910" width="90" height="64" fill="url(#tkFadeR)"/>
+
+    <!-- Fixed label plate -->
+    <rect width="150" height="64" fill="#0b0f1e"/>
+    <line x1="150" y1="12" x2="150" y2="52" stroke="#1b2340" stroke-width="1"/>
+    <text x="20" y="29" font-size="11" fill="#22d3ee" font-weight="600" letter-spacing="2">TOKENIZER</text>
+    <text x="20" y="46" font-size="9" fill="#475569">identity.encode()</text>
+    <circle cx="132" cy="25" r="3" fill="#34d399">
+      <animate attributeName="opacity" values="1;0.25;1" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
