@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="100%" height="auto" role="img" aria-label="Demon Slayer intro">
+  <defs>
+    <linearGradient id="slashG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#22d3ee" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="60%" stop-color="#a78bfa" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#f472b6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="bladeG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="50%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <linearGradient id="revealG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b0f1e"/>
+      <stop offset="100%" stop-color="#0b0f1e" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="nameG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    <radialGradient id="burstG" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="30%" stop-color="#22d3ee" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="dsGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="dsFrame"><rect width="900" height="280" rx="14"/></clipPath>
+  </defs>
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      animate, animateTransform, animateMotion, set { display: none !important; }
+      * { opacity: 1 !important; }
+    }
+  </style>
+
+  <g clip-path="url(#dsFrame)">
+    <!-- Dark background -->
+    <rect width="900" height="280" fill="#050810"/>
+
+    <!-- Dim grid pattern -->
+    <g opacity="0.06" stroke="#22d3ee" stroke-width="0.5">
+      <path d="M0 40 H900 M0 80 H900 M0 120 H900 M0 160 H900 M0 200 H900 M0 240 H900"/>
+      <path d="M90 0 V280 M180 0 V280 M270 0 V280 M360 0 V280 M450 0 V280 M540 0 V280 M630 0 V280 M720 0 V280 M810 0 V280"/>
+    </g>
+
+    <!-- ============ PHASE 1: DARKNESS (0-1.5s) ============ -->
+    <!-- Japanese text appearing -->
+    <text x="450" y="100" font-family="serif" font-size="48" font-weight="700" fill="#1b2340" text-anchor="middle" opacity="0">
+      悪鬼滅殺
+      <animate attributeName="opacity" values="0;0.6" dur="1s" begin="0.3s" fill="freeze"/>
+      <animate attributeName="opacity" values="0.6;0" dur="0.3s" begin="1.5s" fill="freeze"/>
+    </text>
+
+    <!-- ============ PHASE 2: SWORD DRAW & SLASH (1.5-3s) ============ -->
+
+    <!-- Katana blade — draws across with stroke-dashoffset -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.1s" begin="1.5s" fill="freeze"/>
+      <animate attributeName="opacity" values="1;0" dur="0.3s" begin="3s" fill="freeze"/>
+
+      <!-- Blade path -->
+      <path d="M80,200 Q300,120 820,60" fill="none" stroke="url(#bladeG)" stroke-width="4" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" filter="url(#dsGlow)">
+        <animate attributeName="stroke-dashoffset" values="100;0" dur="1s" begin="1.6s" fill="freeze" calcMode="spline" keySplines="0.2 0 0.3 1"/>
+      </path>
+
+      <!-- Blade glow trail -->
+      <path d="M80,200 Q300,120 820,60" fill="none" stroke="#22d3ee" stroke-width="8" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" opacity="0.3" filter="url(#dsGlow)">
+        <animate attributeName="stroke-dashoffset" values="100;0" dur="1s" begin="1.6s" fill="freeze" calcMode="spline" keySplines="0.2 0 0.3 1"/>
+      </path>
+
+      <!-- Sword guard (tsuba) -->
+      <circle cx="80" cy="200" r="6" fill="#1b2340" stroke="#fbbf24" stroke-width="1.5" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.1s" begin="1.6s" fill="freeze"/>
+      </circle>
+      <!-- Handle -->
+      <rect x="60" y="198" width="30" height="4" rx="2" fill="#1b2340" opacity="0">
+        <animate attributeName="opacity" values="0;1" dur="0.1s" begin="1.6s" fill="freeze"/>
+      </rect>
+    </g>
+
+    <!-- ============ PHASE 3: SLASH BURST (2.6-3.2s) ============ -->
+
+    <!-- Bright slash line (the cut) -->
+    <path d="M80,200 Q300,120 820,60" fill="none" stroke="url(#slashG)" stroke-width="2" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.1s" begin="2.6s" fill="freeze"/>
+      <animate attributeName="stroke-dashoffset" values="100;0" dur="0.4s" begin="2.6s" fill="freeze" calcMode="spline" keySplines="0.3 0 0.1 1"/>
+      <animate attributeName="stroke-width" values="2;12;2" dur="0.6s" begin="2.6s" fill="freeze"/>
+      <animate attributeName="opacity" values="1;0.3" dur="0.5s" begin="3s" fill="freeze"/>
+    </path>
+
+    <!-- Light burst at slash center -->
+    <circle cx="450" cy="140" r="0" fill="url(#burstG)" filter="url(#dsGlow)">
+      <animate attributeName="r" values="0;250;300" dur="0.5s" begin="2.7s" fill="freeze" calcMode="spline" keySplines="0.1 0 0.1 1"/>
+      <animate attributeName="opacity" values="0;1;0" dur="0.8s" begin="2.7s" fill="freeze"/>
+    </circle>
+
+    <!-- Spark particles from slash -->
+    <g filter="url(#dsGlow)">
+      <circle cx="300" cy="120" r="2" fill="#ffffff" opacity="0">
+        <animate attributeName="opacity" values="0;1;0" dur="0.6s" begin="2.7s" fill="freeze"/>
+        <animate attributeName="cy" values="120;80" dur="0.6s" begin="2.7s" fill="freeze"/>
+      </circle>
+      <circle cx="450" cy="140" r="2.5" fill="#22d3ee" opacity="0">
+        <animate attributeName="opacity" values="0;1;0" dur="0.5s" begin="2.8s" fill="freeze"/>
+        <animate attributeName="cy" values="140;90" dur="0.5s" begin="2.8s" fill="freeze"/>
+      </circle>
+      <circle cx="600" cy="100" r="2" fill="#a78bfa" opacity="0">
+        <animate attributeName="opacity" values="0;1;0" dur="0.6s" begin="2.9s" fill="freeze"/>
+        <animate attributeName="cy" values="100;60" dur="0.6s" begin="2.9s" fill="freeze"/>
+      </circle>
+      <circle cx="250" cy="160" r="1.5" fill="#f472b6" opacity="0">
+        <animate attributeName="opacity" values="0;1;0" dur="0.5s" begin="2.8s" fill="freeze"/>
+        <animate attributeName="cy" values="160;210" dur="0.5s" begin="2.8s" fill="freeze"/>
+      </circle>
+      <circle cx="520" cy="130" r="2" fill="#fbbf24" opacity="0">
+        <animate attributeName="opacity" values="0;1;0" dur="0.6s" begin="3s" fill="freeze"/>
+        <animate attributeName="cy" values="130;180" dur="0.6s" begin="3s" fill="freeze"/>
+      </circle>
+      <circle cx="700" cy="80" r="1.5" fill="#ffffff" opacity="0">
+        <animate attributeName="opacity" values="0;1;0" dur="0.5s" begin="3.1s" fill="freeze"/>
+        <animate attributeName="cy" values="80;120" dur="0.5s" begin="3.1s" fill="freeze"/>
+      </circle>
+    </g>
+
+    <!-- Screen flash white then fade -->
+    <rect width="900" height="280" fill="#ffffff" opacity="0">
+      <animate attributeName="opacity" values="0;0.9;0" dur="0.4s" begin="2.7s" fill="freeze"/>
+    </rect>
+
+    <!-- ============ PHASE 4: REVEAL (3.2s+) ============ -->
+
+    <!-- Dark overlay fading away to reveal profile -->
+    <rect width="900" height="280" fill="#0b0f1e" opacity="1">
+      <animate attributeName="opacity" values="1;0" dur="0.5s" begin="3.2s" fill="freeze"/>
+    </rect>
+
+    <!-- Revealed content: Name + title -->
+    <text x="450" y="120" font-family="Segoe UI,Inter,sans-serif" font-size="36" font-weight="800" fill="url(#nameG)" text-anchor="middle" opacity="0">
+      Yagyesh Vyas
+      <animate attributeName="opacity" values="0;0;1" dur="0.6s" begin="3.4s" fill="freeze" keyTimes="0;0.5;1"/>
+    </text>
+
+    <text x="450" y="150" font-family="JetBrains Mono,monospace" font-size="14" fill="#22d3ee" text-anchor="middle" letter-spacing="3" opacity="0">
+      AI / ML ENGINEER
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="3.8s" fill="freeze"/>
+    </text>
+
+    <text x="450" y="172" font-family="Segoe UI,Inter,sans-serif" font-size="12" fill="#64748b" text-anchor="middle" opacity="0">
+      LLM &amp; Generative AI Systems
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="4s" fill="freeze"/>
+    </text>
+
+    <!-- Slash scar (remains as decoration) -->
+    <path d="M80,200 Q300,120 820,60" fill="none" stroke="url(#slashG)" stroke-width="1" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" opacity="0">
+      <animate attributeName="stroke-dashoffset" values="100;0" dur="0.4s" begin="3.2s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;0.15" dur="0.3s" begin="3.2s" fill="freeze"/>
+    </path>
+
+    <!-- Bottom accent line (draws in after reveal) -->
+    <rect x="100" y="200" width="0" height="2" rx="1" fill="url(#nameG)" opacity="0">
+      <animate attributeName="width" values="0;700" dur="0.8s" begin="4.2s" fill="freeze" calcMode="spline" keySplines="0.2 0 0.3 1"/>
+      <animate attributeName="opacity" values="0;0.6" dur="0.3s" begin="4.2s" fill="freeze"/>
+    </rect>
+
+    <!-- Subtle breathing glow after reveal -->
+    <circle cx="450" cy="120" r="200" fill="url(#burstG)" opacity="0">
+      <animate attributeName="opacity" values="0;0.1;0.05" dur="4s" begin="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="200;220;200" dur="4s" begin="4.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Enter profile hint -->
+    <text x="450" y="240" font-family="JetBrains Mono,monospace" font-size="11" fill="#475569" text-anchor="middle" opacity="0">
+      ▼ profile below ▼
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="5s" fill="freeze"/>
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" begin="5.5s" repeatCount="indefinite"/>
+    </text>
+  </g>
+</svg>
