@@ -1,6 +1,9 @@
 <!-- Cinematic intro animation -->
 <a href="#_"><img src="./assets/intro.svg" width="100%" alt="Enter profile" /></a>
 
+<!-- Hero banner -->
+<a href="#_"><img src="./assets/header.svg" width="100%" alt="Yagyesh Vyas — AI/ML Engineer" /></a>
+
 <!-- Terminal -->
 <p align="center">
   <a href="#_"><img src="./assets/typing.svg" width="720" alt="Terminal session" /></a>
