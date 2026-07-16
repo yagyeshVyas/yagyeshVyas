@@ -1,5 +1,5 @@
 <!-- Hero banner -->
-<img src="./assets/header.svg" width="100%" alt="Yagyesh Vyas — AI/ML Engineer" />
+<a href="https://github.com/yagyeshVyas"><img src="./assets/header.svg" width="100%" alt="Yagyesh Vyas — AI/ML Engineer" /></a>
 
 <!-- Terminal -->
 <p align="center">
@@ -11,7 +11,7 @@
   <img src="./assets/section-lab.svg" width="900" alt="About" />
 </p>
 
-<img src="./assets/about.svg" width="100%" alt="About Yagyesh — who I am, what drives me" />
+<a href="https://github.com/yagyeshVyas"><img src="./assets/about.svg" width="100%" alt="About Yagyesh — who I am, what drives me" /></a>
 
 <!-- ======================= OVERVIEW ======================= -->
 <p align="center">
@@ -25,14 +25,14 @@
 </p>
 
 <!-- Impact -->
-<img src="./assets/impact.svg" width="100%" alt="Real impact — stars, forks, security rules, repos" />
+<a href="https://github.com/yagyeshVyas"><img src="./assets/impact.svg" width="100%" alt="Real impact — stars, forks, security rules, repos" /></a>
 
 <!-- ======================= CAPABILITIES ======================= -->
 <p align="center">
   <img src="./assets/section-arsenal.svg" width="900" alt="Capabilities" />
 </p>
 
-<img src="./assets/capabilities.svg" width="100%" alt="Technical skills from resume — AI/ML, Languages, Cloud, Data, Frameworks, AI APIs" />
+<a href="https://github.com/yagyeshVyas"><img src="./assets/capabilities.svg" width="100%" alt="Technical skills from resume — AI/ML, Languages, Cloud, Data, Frameworks, AI APIs" /></a>
 
 <!-- ======================= PROJECTS ======================= -->
 <p align="center">
@@ -49,7 +49,7 @@
 </p>
 
 <!-- VibeGuard spotlight -->
-<img src="./assets/vibeguard-spotlight.svg" width="100%" alt="VibeGuard — AI security scanner spotlight" />
+<a href="https://github.com/yagyeshVyas"><img src="./assets/vibeguard-spotlight.svg" width="100%" alt="VibeGuard — AI security scanner spotlight" /></a>
 
 <!-- ======================= WORK WITH ME ======================= -->
 <p align="center">
