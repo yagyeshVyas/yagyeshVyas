@@ -1,4 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="100%" height="auto" role="img" aria-label="Enter profile">
+const fs = require('fs');
+
+const sparks = [];
+const sparkData = [
+  [200,450,'#22d3ee',3.4],[350,400,'#a78bfa',3.5],[500,300,'#f472b6',3.6],
+  [650,250,'#fbbf24',3.7],[150,500,'#fff',3.5],[400,500,'#22d3ee',3.6],
+  [700,200,'#a78bfa',3.8],[550,450,'#f472b6',3.9],[250,350,'#fbbf24',4.0]
+];
+sparkData.forEach(([x,y,c,delay],i) => {
+  sparks.push(`<circle cx="${x}" cy="${y}" r="2" fill="${c}" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="0.7s" begin="${delay}s" fill="freeze"/><animate attributeName="cy" values="${y};${y-70}" dur="0.7s" begin="${delay}s" fill="freeze"/><animate attributeName="cx" values="${x};${x>450?x+40:x-40}" dur="0.7s" begin="${delay}s" fill="freeze"/></circle>`);
+});
+
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="100%" height="auto" role="img" aria-label="Enter profile">
   <defs>
     <linearGradient id="iSlash" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
@@ -106,15 +118,7 @@
 
     <!-- SPARKS -->
     <g filter="url(#iGlow)">
-      <circle cx="200" cy="450" r="2" fill="#22d3ee" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="0.7s" begin="3.4s" fill="freeze"/><animate attributeName="cy" values="450;380" dur="0.7s" begin="3.4s" fill="freeze"/><animate attributeName="cx" values="200;160" dur="0.7s" begin="3.4s" fill="freeze"/></circle>
-      <circle cx="350" cy="400" r="2" fill="#a78bfa" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="0.7s" begin="3.5s" fill="freeze"/><animate attributeName="cy" values="400;330" dur="0.7s" begin="3.5s" fill="freeze"/><animate attributeName="cx" values="350;310" dur="0.7s" begin="3.5s" fill="freeze"/></circle>
-      <circle cx="500" cy="300" r="2" fill="#f472b6" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="0.7s" begin="3.6s" fill="freeze"/><animate attributeName="cy" values="300;230" dur="0.7s" begin="3.6s" fill="freeze"/><animate attributeName="cx" values="500;540" dur="0.7s" begin="3.6s" fill="freeze"/></circle>
-      <circle cx="650" cy="250" r="2" fill="#fbbf24" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="0.7s" begin="3.7s" fill="freeze"/><animate attributeName="cy" values="250;180" dur="0.7s" begin="3.7s" fill="freeze"/><animate attributeName="cx" values="650;690" dur="0.7s" begin="3.7s" fill="freeze"/></circle>
-      <circle cx="150" cy="500" r="2" fill="#fff" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="0.7s" begin="3.5s" fill="freeze"/><animate attributeName="cy" values="500;430" dur="0.7s" begin="3.5s" fill="freeze"/><animate attributeName="cx" values="150;110" dur="0.7s" begin="3.5s" fill="freeze"/></circle>
-      <circle cx="400" cy="500" r="2" fill="#22d3ee" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="0.7s" begin="3.6s" fill="freeze"/><animate attributeName="cy" values="500;430" dur="0.7s" begin="3.6s" fill="freeze"/><animate attributeName="cx" values="400;360" dur="0.7s" begin="3.6s" fill="freeze"/></circle>
-      <circle cx="700" cy="200" r="2" fill="#a78bfa" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="0.7s" begin="3.8s" fill="freeze"/><animate attributeName="cy" values="200;130" dur="0.7s" begin="3.8s" fill="freeze"/><animate attributeName="cx" values="700;740" dur="0.7s" begin="3.8s" fill="freeze"/></circle>
-      <circle cx="550" cy="450" r="2" fill="#f472b6" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="0.7s" begin="3.9s" fill="freeze"/><animate attributeName="cy" values="450;380" dur="0.7s" begin="3.9s" fill="freeze"/><animate attributeName="cx" values="550;590" dur="0.7s" begin="3.9s" fill="freeze"/></circle>
-      <circle cx="250" cy="350" r="2" fill="#fbbf24" opacity="0"><animate attributeName="opacity" values="0;1;0" dur="0.7s" begin="4s" fill="freeze"/><animate attributeName="cy" values="350;280" dur="0.7s" begin="4s" fill="freeze"/><animate attributeName="cx" values="250;210" dur="0.7s" begin="4s" fill="freeze"/></circle>
+      ${sparks.join('\n      ')}
     </g>
 
     <!-- SCREEN FLASH -->
@@ -199,4 +203,7 @@
       <animate attributeName="width" values="0;900" dur="1s" begin="7s" fill="freeze"/>
     </rect>
   </g>
-</svg>
+</svg>`;
+
+fs.writeFileSync('assets/intro.svg', svg);
+console.log('intro.svg generated');
