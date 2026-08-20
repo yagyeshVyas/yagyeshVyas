@@ -9,12 +9,6 @@
   <a href="#_"><img src="./assets/typing.svg" width="720" alt="Terminal session" /></a>
 </p>
 
-<!-- Quick links — GitHub twice, npm twice (also in the bottom button row) -->
-<p align="center">
-  <a href="https://github.com/yagyeshVyas"><img src="./assets/btn-github.svg" width="280" alt="GitHub" /></a>
-  <a href="https://www.npmjs.com/~yagyeshvyas"><img src="./assets/btn-npm.svg" width="280" alt="npm" /></a>
-</p>
-
 <!-- ======================= ABOUT ======================= -->
 <p align="center">
   <a href="#_"><img src="./assets/section-lab.svg" width="900" alt="About" /></a>
