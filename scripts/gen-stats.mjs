@@ -531,15 +531,15 @@ ${grid}
   writeFileSync(join(OUT, 'impact.svg'), svg);
 }
 
-// ---------------------------------------------------------------- collab.svg + btn-github.svg
-// Replace hardcoded totals with live ones (keeps the hand-crafted designs).
+// ---------------------------------------------------------------- collab.svg
+// Replace hardcoded totals with live ones (keeps the hand-crafted design).
 {
   const subs = [
     [/(\d+) repos/g, `${u.repositories.totalCount} repos`],
     [/★ \d+/g, `★ ${fmt(stars)}`],
     [/⑂ \d+/g, `⑂ ${fmt(forks)}`],
   ];
-  for (const name of ['collab.svg', 'btn-github.svg']) {
+  for (const name of ['collab.svg']) {
     const p = join(OUT, name);
     let src = readFileSync(p, 'utf8');
     for (const [re, rep] of subs) src = src.replace(re, rep);
@@ -547,4 +547,4 @@ ${grid}
   }
 }
 
-console.log(`Generated: stats.svg, langs.svg, ${featured.length} repo cards, ${banners.length} banners, snake.svg, impact.svg, collab.svg, btn-github.svg`);
+console.log(`Generated: stats.svg, langs.svg, ${featured.length} repo cards, ${banners.length} banners, snake.svg, impact.svg, collab.svg`);
