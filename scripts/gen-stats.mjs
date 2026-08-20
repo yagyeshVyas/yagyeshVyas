@@ -3,7 +3,7 @@
 // Outputs: assets/stats.svg, assets/langs.svg, assets/repo-{0..3}.svg
 // Env: GITHUB_TOKEN (repo-read is enough; Actions' default token works).
 
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -337,6 +337,7 @@ const banners = [
   ['lab',     'ABOUT',        C.violet, 'who I am and what drives me'],
   ['arsenal', 'CAPABILITIES', C.pink,   'what I actually ship'],
   ['builds',  'PROJECTS',     C.amber,  'selected work'],
+  ['education', 'EDUCATION',  '#f97316', 'degrees, certifications, learning'],
   ['connect', 'WORK WITH ME', C.green,  'let\u2019s build something'],
 ];
 for (const [slug, label, color, note] of banners) {
@@ -452,4 +453,98 @@ ${grid}
   writeFileSync(join(OUT, 'snake.svg'), svg);
 }
 
-console.log(`Generated: stats.svg, langs.svg, ${featured.length} repo cards, ${banners.length} banners, daily.svg, snake.svg`);
+// ---------------------------------------------------------------- impact.svg
+// Live totals: stars, forks, public repos. Rules count is a static product metric.
+{
+  const publicRepos = u.repositories.totalCount;
+  const cards = [
+    { icon: '⭐', accent: C.cyan,   value: fmt(stars),      label: 'GitHub stars earned',  sub: 'across all public repos',       delay: '0.2s' },
+    { icon: '⑂', accent: C.violet, value: fmt(forks),      label: 'Repository forks',     sub: 'people building on my work',    delay: '0.4s' },
+    { icon: '🛡️', accent: C.pink,   value: '766',           label: 'Security rules shipped', sub: 'in VibeGuard — 84 MCP tools', delay: '0.6s' },
+    { icon: '📦', accent: C.green,  value: fmt(publicRepos), label: 'Public repositories', sub: 'all open source, built in public', delay: '0.8s' },
+  ];
+  const cardSvg = cards.map((c, i) => `
+  <g transform="translate(${24 + i * 215},60)" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="${c.delay}" fill="freeze"/>
+    <rect width="205" height="120" rx="10" fill="${C.panel}" class="imb${i}" stroke="${c.accent}" stroke-width="1"/>
+    <rect x="0" y="0" width="205" height="3" rx="1.5" fill="${c.accent}"/>
+    <text x="20" y="36" font-size="24">${c.icon}
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-3; 0,0" dur="3s" begin="${0.7 + i * 0.7}s" repeatCount="indefinite"/>
+    </text>
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.4s" begin="${0.5 + i * 0.2}s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="scale" values="0.6;1.08;1" keyTimes="0;0.7;1" dur="0.6s" begin="${0.5 + i * 0.2}s" fill="freeze" additive="sum"/>
+      <text x="20" y="76" class="mono" font-size="36" font-weight="800" fill="${c.accent}" filter="url(#imGlow)">${c.value}</text>
+    </g>
+    <text x="20" y="96" class="sans" font-size="11" fill="${C.muted}">${c.label}</text>
+    <text x="20" y="110" class="mono" font-size="9" fill="${C.faint}">${c.sub}</text>
+    <circle cx="185" cy="100" r="3" fill="${c.accent}">
+      <animate attributeName="opacity" values="1;0.2;1" dur="2s" begin="${0.5 + i * 0.5}s" repeatCount="indefinite"/>
+    </circle>
+  </g>`).join('');
+
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="100%" height="auto" role="img" aria-label="Real impact — numbers from shipped projects">
+  <defs>
+    <linearGradient id="imG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="${C.bg}"/><stop offset="100%" stop-color="${C.panel}"/>
+    </linearGradient>
+    <linearGradient id="imLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="${C.cyan}" stop-opacity="0"/>
+      <stop offset="50%" stop-color="${C.violet}"/>
+      <stop offset="100%" stop-color="${C.pink}" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="imGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="imFrame"><rect width="900" height="200" rx="14"/></clipPath>
+  </defs>
+  <style>
+    ${reducedMotion}
+    .mono { font-family: ${MONO}; }
+    .sans { font-family: ${SANS}; }
+    .imb0 { animation: imp 4s ease-in-out infinite; }
+    .imb1 { animation: imp 4s ease-in-out infinite 1s; }
+    .imb2 { animation: imp 4s ease-in-out infinite 2s; }
+    .imb3 { animation: imp 4s ease-in-out infinite 3s; }
+    @keyframes imp { 0%,100% { stroke-opacity: .3; } 50% { stroke-opacity: .9; } }
+  </style>
+
+  <g clip-path="url(#imFrame)">
+    <rect width="900" height="200" fill="url(#imG)"/>
+    <rect width="900" height="200" rx="14" fill="none" stroke="${C.border}" stroke-width="1.5"/>
+
+    <!-- Header -->
+    <text x="24" y="36" class="mono" font-size="13" fill="${C.amber}" font-weight="600" letter-spacing="2">IMPACT</text>
+    <text x="100" y="36" class="mono" font-size="10" fill="${C.faint}">// live numbers, refreshed daily</text>
+    <rect x="24" y="46" width="852" height="1" fill="${C.border}"/>
+    <rect x="24" y="45.5" width="180" height="2" rx="1" fill="url(#imLine)">
+      <animateTransform attributeName="transform" type="translate" values="-180,0; 900,0" dur="4s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- 4 metric cards -->${cardSvg}
+
+    <!-- Bottom line -->
+    <rect x="24" y="190" width="852" height="2" rx="1" fill="url(#imLine)" opacity="0.2"/>
+  </g>
+</svg>`;
+  writeFileSync(join(OUT, 'impact.svg'), svg);
+}
+
+// ---------------------------------------------------------------- collab.svg + btn-github.svg
+// Replace hardcoded totals with live ones (keeps the hand-crafted designs).
+{
+  const subs = [
+    [/(\d+) repos/g, `${u.repositories.totalCount} repos`],
+    [/★ \d+/g, `★ ${fmt(stars)}`],
+    [/⑂ \d+/g, `⑂ ${fmt(forks)}`],
+  ];
+  for (const name of ['collab.svg', 'btn-github.svg']) {
+    const p = join(OUT, name);
+    let src = readFileSync(p, 'utf8');
+    for (const [re, rep] of subs) src = src.replace(re, rep);
+    writeFileSync(p, src);
+  }
+}
+
+console.log(`Generated: stats.svg, langs.svg, ${featured.length} repo cards, ${banners.length} banners, snake.svg, impact.svg, collab.svg, btn-github.svg`);

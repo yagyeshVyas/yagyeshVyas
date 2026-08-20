@@ -57,10 +57,19 @@
 <!-- VibeGuard spotlight -->
 <a href="https://github.com/yagyeshVyas/VibeGuard"><img src="./assets/vibeguard-spotlight.svg" width="100%" alt="VibeGuard" /></a>
 
+<!-- ======================= EDUCATION ======================= -->
+<p align="center">
+  <a href="#_"><img src="./assets/section-education.svg" width="900" alt="Education" /></a>
+</p>
+
+<a href="#_"><img src="./assets/education.svg" width="100%" alt="Education & certifications" /></a>
+
 <!-- ======================= WORK WITH ME ======================= -->
 <p align="center">
   <a href="#_"><img src="./assets/section-connect.svg" width="900" alt="Work with me" /></a>
 </p>
+
+<a href="#_"><img src="./assets/collab.svg" width="100%" alt="Connect with Yagyesh" /></a>
 
 <p align="center">
   <a href="https://github.com/yagyeshVyas"><img src="./assets/btn-github.svg" width="280" alt="GitHub" /></a>
@@ -77,4 +86,4 @@
 <!-- Animated wave footer -->
 <a href="#_"><img src="./assets/footer.svg" width="100%" alt="" /></a>
 
-<p align="center"><sub>Built with care, not templates. Every pixel hand-coded SVG.</sub></p>
+<p align="center"><sub>Every pixel hand-coded SVG · metrics auto-refresh daily via GitHub Actions</sub></p>
