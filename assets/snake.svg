@@ -199,8 +199,8 @@
 <rect x="434" y="56" width="13" height="13" rx="3.5" fill="#101830"><animate attributeName="opacity" values="1;1;0.08;0.08;1" keyTimes="0;0.4986;0.5036;0.94;1" dur="26s" repeatCount="indefinite"/></rect>
 <rect x="434" y="72" width="13" height="13" rx="3.5" fill="#101830"><animate attributeName="opacity" values="1;1;0.08;0.08;1" keyTimes="0;0.4959;0.5009;0.94;1" dur="26s" repeatCount="indefinite"/></rect>
 <rect x="434" y="88" width="13" height="13" rx="3.5" fill="#101830"><animate attributeName="opacity" values="1;1;0.08;0.08;1" keyTimes="0;0.4931;0.4981;0.94;1" dur="26s" repeatCount="indefinite"/></rect>
-<rect x="434" y="104" width="13" height="13" rx="3.5" fill="#164e63"><animate attributeName="opacity" values="1;1;0.08;0.08;1" keyTimes="0;0.4904;0.4954;0.94;1" dur="26s" repeatCount="indefinite"/></rect>
-<rect x="434" y="120" width="13" height="13" rx="3.5" fill="#101830"><animate attributeName="opacity" values="1;1;0.08;0.08;1" keyTimes="0;0.4876;0.4926;0.94;1" dur="26s" repeatCount="indefinite"/></rect>
+<rect x="434" y="104" width="13" height="13" rx="3.5" fill="#101830"><animate attributeName="opacity" values="1;1;0.08;0.08;1" keyTimes="0;0.4904;0.4954;0.94;1" dur="26s" repeatCount="indefinite"/></rect>
+<rect x="434" y="120" width="13" height="13" rx="3.5" fill="#164e63"><animate attributeName="opacity" values="1;1;0.08;0.08;1" keyTimes="0;0.4876;0.4926;0.94;1" dur="26s" repeatCount="indefinite"/></rect>
 <rect x="434" y="136" width="13" height="13" rx="3.5" fill="#101830"><animate attributeName="opacity" values="1;1;0.08;0.08;1" keyTimes="0;0.4848;0.4898;0.94;1" dur="26s" repeatCount="indefinite"/></rect>
 <rect x="434" y="152" width="13" height="13" rx="3.5" fill="#101830"><animate attributeName="opacity" values="1;1;0.08;0.08;1" keyTimes="0;0.4821;0.4871;0.94;1" dur="26s" repeatCount="indefinite"/></rect>
 <rect x="450" y="56" width="13" height="13" rx="3.5" fill="#101830"><animate attributeName="opacity" values="1;1;0.08;0.08;1" keyTimes="0;0.5014;0.5064;0.94;1" dur="26s" repeatCount="indefinite"/></rect>
