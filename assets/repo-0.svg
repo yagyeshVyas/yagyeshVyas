@@ -37,7 +37,7 @@
   <text x="38" y="130" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="10" fill="#64748b">Python</text>
   <!-- Stars -->
   <text x="320" y="130" font-size="9">⭐</text>
-  <text x="332" y="130" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#fbbf24">95</text>
+  <text x="332" y="130" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#fbbf24">96</text>
   <!-- Forks -->
   <text x="370" y="130" font-size="9">⑂</text>
   <text x="382" y="130" font-family="'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#a78bfa">11</text>
