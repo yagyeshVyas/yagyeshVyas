@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 318" width="1000" height="318" role="img" aria-label="Toolbox: Python, PyTorch, Hugging Face, LoRA, RAG, GGUF, JavaScript, Electron, Playwright, SAST, MCP, Swift, Flutter.">
+  <title>Toolbox: Python, PyTorch, Hugging Face, LoRA, RAG, GGUF, JavaScript, Electron, Playwright, SAST, MCP, Swift, Flutter.</title>
+  <style>
+  .mtoolbox{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace}
+  .stoolbox{font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif}
+  .rtoolbox{font-family:Georgia, 'Times New Roman', serif}
+  @media (prefers-reduced-motion: reduce) {
+  .mo { display: none !important; }
+  * { animation: none !important; }
+}
+</style>
+  <defs>
+    <clipPath id="toolbox-frame"><rect width="1000" height="318" rx="18"/></clipPath>
+    <linearGradient id="toolbox-shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0A0F19"/><stop offset="100%" stop-color="#06090F"/>
+    </linearGradient>
+    <pattern id="toolbox-dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.9" fill="#243349" opacity="0.55"/>
+    </pattern>
+    <linearGradient id="toolbox-ruleG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4EF0C0" stop-opacity="0"/><stop offset="50%" stop-color="#4EF0C0" stop-opacity="0.9"/><stop offset="100%" stop-color="#4EF0C0" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="toolbox-rule"><rect x="30" y="60" width="940" height="4"/></clipPath>
+    <radialGradient id="toolbox-tint" cx="50%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#4EF0C0" stop-opacity="0.07"/><stop offset="70%" stop-color="#4EF0C0" stop-opacity="0"/>
+    </radialGradient>
+    
+  </defs>
+  <g clip-path="url(#toolbox-frame)">
+    <rect width="1000" height="318" fill="url(#toolbox-shell)"/>
+    <rect width="1000" height="318" fill="url(#toolbox-dots)"/>
+    <rect width="1000" height="318" fill="url(#toolbox-tint)"/>
+    
+    <text x="30" y="45" class="mtoolbox" font-size="10" letter-spacing="1.6" fill="#4EF0C0">05</text>
+    <text x="58.4" y="45" class="mtoolbox" font-size="10.5" letter-spacing="3.4" fill="#9BA9BE">TOOLBOX</text>
+    <text x="970" y="45" class="mtoolbox" font-size="9.5" letter-spacing="1.2" fill="#6C7C93" text-anchor="end">EVIDENCED BY PUBLIC CODE</text>
+    <line x1="30" y1="62" x2="970" y2="62" stroke="#17202F" stroke-width="1"/>
+    <g clip-path="url(#toolbox-rule)">
+      <rect class="mo" x="-90" y="61.2" width="90" height="1.6" fill="url(#toolbox-ruleG)">
+        <animate attributeName="x" values="-90;1000" dur="7s" begin="1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <rect x="1" y="1" width="998" height="1" fill="#FFFFFF" opacity="0.035"/>
+    
+      <text x="56" y="106" class="mtoolbox" font-size="9" letter-spacing="2.2" fill="#4EF0C0">AI / ML</text>
+      <line x1="56" y1="118" x2="206" y2="118" stroke="#243349" stroke-width="1"/>
+      <rect class="mo" x="56" y="117.2" width="46" height="1.6" fill="#4EF0C0" opacity="0.5">
+        <animate attributeName="x" values="56;160;56" dur="8s" repeatCount="indefinite"/>
+      </rect>
+        <rect x="56" y="144" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="68" y="148" class="stoolbox" font-size="12" fill="#9BA9BE">Python</text><line x1="56" y1="159" x2="252" y2="159" stroke="#17202F" stroke-width="0.7"/>
+        <rect x="56" y="170" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="68" y="174" class="stoolbox" font-size="12" fill="#9BA9BE">PyTorch</text><line x1="56" y1="185" x2="252" y2="185" stroke="#17202F" stroke-width="0.7"/>
+        <rect x="56" y="196" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="68" y="200" class="stoolbox" font-size="12" fill="#9BA9BE">Hugging Face</text><line x1="56" y1="211" x2="252" y2="211" stroke="#17202F" stroke-width="0.7"/>
+        <rect x="56" y="222" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="68" y="226" class="stoolbox" font-size="12" fill="#9BA9BE">LoRA fine-tuning</text><line x1="56" y1="237" x2="252" y2="237" stroke="#17202F" stroke-width="0.7"/>
+        <rect x="56" y="248" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="68" y="252" class="stoolbox" font-size="12" fill="#9BA9BE">RAG · ChromaDB</text><line x1="56" y1="263" x2="252" y2="263" stroke="#17202F" stroke-width="0.7"/>
+        <rect x="56" y="274" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="68" y="278" class="stoolbox" font-size="12" fill="#9BA9BE">GGUF export</text><line x1="272" y1="92" x2="272" y2="282" stroke="#17202F" stroke-width="1"/>
+      <text x="296" y="106" class="mtoolbox" font-size="9" letter-spacing="2.2" fill="#4EF0C0">ENGINEERING</text>
+      <line x1="296" y1="118" x2="446" y2="118" stroke="#243349" stroke-width="1"/>
+      <rect class="mo" x="296" y="117.2" width="46" height="1.6" fill="#4EF0C0" opacity="0.5">
+        <animate attributeName="x" values="296;400;296" dur="8s" repeatCount="indefinite"/>
+      </rect>
+        <rect x="296" y="144" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="308" y="148" class="stoolbox" font-size="12" fill="#9BA9BE">JavaScript</text><line x1="296" y1="159" x2="492" y2="159" stroke="#17202F" stroke-width="0.7"/>
+        <rect x="296" y="170" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="308" y="174" class="stoolbox" font-size="12" fill="#9BA9BE">Node.js</text><line x1="296" y1="185" x2="492" y2="185" stroke="#17202F" stroke-width="0.7"/>
+        <rect x="296" y="196" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="308" y="200" class="stoolbox" font-size="12" fill="#9BA9BE">Electron</text><line x1="296" y1="211" x2="492" y2="211" stroke="#17202F" stroke-width="0.7"/>
+        <rect x="296" y="222" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="308" y="226" class="stoolbox" font-size="12" fill="#9BA9BE">Playwright</text><line x1="296" y1="237" x2="492" y2="237" stroke="#17202F" stroke-width="0.7"/>
+        <rect x="296" y="248" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="308" y="252" class="stoolbox" font-size="12" fill="#9BA9BE">Streamlit</text><line x1="296" y1="263" x2="492" y2="263" stroke="#17202F" stroke-width="0.7"/>
+        <rect x="296" y="274" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="308" y="278" class="stoolbox" font-size="12" fill="#9BA9BE">GitHub Actions</text><line x1="512" y1="92" x2="512" y2="282" stroke="#17202F" stroke-width="1"/>
+      <text x="536" y="106" class="mtoolbox" font-size="9" letter-spacing="2.2" fill="#4EF0C0">SECURITY</text>
+      <line x1="536" y1="118" x2="686" y2="118" stroke="#243349" stroke-width="1"/>
+      <rect class="mo" x="536" y="117.2" width="46" height="1.6" fill="#4EF0C0" opacity="0.5">
+        <animate attributeName="x" values="536;640;536" dur="8s" repeatCount="indefinite"/>
+      </rect>
+        <rect x="536" y="144" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="548" y="148" class="stoolbox" font-size="12" fill="#9BA9BE">SAST</text><line x1="536" y1="159" x2="732" y2="159" stroke="#17202F" stroke-width="0.7"/>
+        <rect x="536" y="170" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="548" y="174" class="stoolbox" font-size="12" fill="#9BA9BE">Prompt injection</text><line x1="536" y1="185" x2="732" y2="185" stroke="#17202F" stroke-width="0.7"/>
+        <rect x="536" y="196" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="548" y="200" class="stoolbox" font-size="12" fill="#9BA9BE">MCP firewall</text><line x1="536" y1="211" x2="732" y2="211" stroke="#17202F" stroke-width="0.7"/>
+        <rect x="536" y="222" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="548" y="226" class="stoolbox" font-size="12" fill="#9BA9BE">AppContainer</text><line x1="536" y1="237" x2="732" y2="237" stroke="#17202F" stroke-width="0.7"/>
+        <rect x="536" y="248" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="548" y="252" class="stoolbox" font-size="12" fill="#9BA9BE">SARIF</text><line x1="536" y1="263" x2="732" y2="263" stroke="#17202F" stroke-width="0.7"/>
+        <rect x="536" y="274" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="548" y="278" class="stoolbox" font-size="12" fill="#9BA9BE">Secret scanning</text><line x1="752" y1="92" x2="752" y2="282" stroke="#17202F" stroke-width="1"/>
+      <text x="776" y="106" class="mtoolbox" font-size="9" letter-spacing="2.2" fill="#4EF0C0">MOBILE / WEB</text>
+      <line x1="776" y1="118" x2="926" y2="118" stroke="#243349" stroke-width="1"/>
+      <rect class="mo" x="776" y="117.2" width="46" height="1.6" fill="#4EF0C0" opacity="0.5">
+        <animate attributeName="x" values="776;880;776" dur="8s" repeatCount="indefinite"/>
+      </rect>
+        <rect x="776" y="144" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="788" y="148" class="stoolbox" font-size="12" fill="#9BA9BE">Swift</text><line x1="776" y1="159" x2="972" y2="159" stroke="#17202F" stroke-width="0.7"/>
+        <rect x="776" y="170" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="788" y="174" class="stoolbox" font-size="12" fill="#9BA9BE">Flutter</text><line x1="776" y1="185" x2="972" y2="185" stroke="#17202F" stroke-width="0.7"/>
+        <rect x="776" y="196" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="788" y="200" class="stoolbox" font-size="12" fill="#9BA9BE">HTML / CSS</text><line x1="776" y1="211" x2="972" y2="211" stroke="#17202F" stroke-width="0.7"/>
+        <rect x="776" y="222" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="788" y="226" class="stoolbox" font-size="12" fill="#9BA9BE">Browser extensions</text><line x1="776" y1="237" x2="972" y2="237" stroke="#17202F" stroke-width="0.7"/>
+        <rect x="776" y="248" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="788" y="252" class="stoolbox" font-size="12" fill="#9BA9BE">IPA via CI</text><line x1="776" y1="263" x2="972" y2="263" stroke="#17202F" stroke-width="0.7"/>
+        <rect x="776" y="274" width="2.5" height="2.5" rx="0.5" fill="#243349"/>
+        <text x="788" y="278" class="stoolbox" font-size="12" fill="#9BA9BE">Windows</text>
+  </g>
+  <rect x="0.75" y="0.75" width="998.5" height="316.5" rx="17.25" fill="none" stroke="#17202F" stroke-width="1.5"/>
+  <g stroke="#243349" stroke-width="1" opacity="0.75">
+    <path d="M16 23V16h7" fill="none"/>
+    <path d="M977 16h7v7" fill="none"/>
+    <path d="M16 295v7h7" fill="none"/>
+    <path d="M977 302h7v7" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 296" width="490" height="296" role="img" aria-label="VibeGuard: 7 stars. Free offline security scanner and MCP/runtime firewall for AI-coded apps. 861 rules, 95 MCP tools, verified Windows AppContainer isolation, signed human approvals, SARIF, zero telemetry.">
+  <title>VibeGuard: 7 stars. Free offline security scanner and MCP/runtime firewall for AI-coded apps. 861 rules, 95 MCP tools, verified Windows AppContainer isolation, signed human approvals, SARIF, zero telemetry.</title><style>.mo{display:none!important}*{animation:none!important}</style>
+  <style>
+  .mflag1{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace}
+  .sflag1{font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif}
+  .rflag1{font-family:Georgia, 'Times New Roman', serif}
+  @media (prefers-reduced-motion: reduce) {
+  .mo { display: none !important; }
+  * { animation: none !important; }
+}
+</style>
+  <defs>
+    <clipPath id="flag1-frame"><rect width="490" height="296" rx="18"/></clipPath>
+    <linearGradient id="flag1-shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0A0F19"/><stop offset="100%" stop-color="#06090F"/>
+    </linearGradient>
+    <pattern id="flag1-dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.9" fill="#243349" opacity="0.55"/>
+    </pattern>
+    <linearGradient id="flag1-ruleG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4EF0C0" stop-opacity="0"/><stop offset="50%" stop-color="#4EF0C0" stop-opacity="0.9"/><stop offset="100%" stop-color="#4EF0C0" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="flag1-rule"><rect x="30" y="60" width="430" height="4"/></clipPath>
+    <radialGradient id="flag1-tint" cx="50%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#4EF0C0" stop-opacity="0.07"/><stop offset="70%" stop-color="#4EF0C0" stop-opacity="0"/>
+    </radialGradient>
+    
+    <radialGradient id="flag1-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F5C778" stop-opacity="0.16"/><stop offset="100%" stop-color="#F5C778" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="flag1-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F5C778" stop-opacity="0.9"/><stop offset="100%" stop-color="#F5C778" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#flag1-frame)">
+    <rect width="490" height="296" fill="url(#flag1-shell)"/>
+    <rect width="490" height="296" fill="url(#flag1-dots)"/>
+    <rect width="490" height="296" fill="url(#flag1-tint)"/>
+    
+    <text x="30" y="45" class="mflag1" font-size="10" letter-spacing="1.6" fill="#4EF0C0">04.2</text>
+    <text x="69.8" y="45" class="mflag1" font-size="10.5" letter-spacing="3.4" fill="#9BA9BE">FLAGSHIP</text>
+    <text x="460" y="45" class="mflag1" font-size="9.5" letter-spacing="1.2" fill="#6C7C93" text-anchor="end"></text>
+    <line x1="30" y1="62" x2="460" y2="62" stroke="#17202F" stroke-width="1"/>
+    <g clip-path="url(#flag1-rule)">
+      <rect class="mo" x="-90" y="61.2" width="90" height="1.6" fill="url(#flag1-ruleG)">
+        <animate attributeName="x" values="-90;490" dur="7s" begin="1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <rect x="1" y="1" width="488" height="1" fill="#FFFFFF" opacity="0.035"/>
+    
+    <style>
+      @keyframes flag-arrow { 0%, 100% { transform: translate(0, 0) } 50% { transform: translate(2px, -2px) } }
+      .flag-arrow { animation: flag-arrow 4s ease-in-out infinite; }
+    </style>
+    <circle cx="430" cy="96" r="150" fill="url(#flag1-glow)"/>
+    <text x="32" y="112" class="sflag1" font-size="23" font-weight="700" letter-spacing="-0.4" fill="#E9EFF8">VibeGuard</text>
+    <text x="458" y="118" class="mflag1" font-size="46" font-weight="700" letter-spacing="-2" fill="#E9EFF8" text-anchor="end">7</text>
+    <text x="458" y="140" class="mflag1" font-size="8.5" letter-spacing="1.8" fill="#F5C778" text-anchor="end">★ STARS</text>
+    <text x="32" y="152" class="sflag1" font-size="11.5" fill="#9BA9BE">Offline scanner and runtime firewall for AI-written</text><text x="32" y="168" class="sflag1" font-size="11.5" fill="#9BA9BE">code. Hundreds of rules, MCP tooling, signed approvals,</text><text x="32" y="184" class="sflag1" font-size="11.5" fill="#9BA9BE">zero telemetry.</text>
+    <g>
+      <rect x="32" y="198" width="58" height="22" rx="11" fill="#0B121C" stroke="#243349" stroke-width="1"/>
+      <rect x="42" y="207.5" width="3" height="3" rx="0.5" fill="#F5C778"/>
+      <text x="52" y="212.3" class="mflag1" font-size="8.5" letter-spacing="0.9" fill="#9BA9BE">SAST</text>
+    </g><g>
+      <rect x="97" y="198" width="58" height="22" rx="11" fill="#0B121C" stroke="#243349" stroke-width="1"/>
+      <rect x="107" y="207.5" width="3" height="3" rx="0.5" fill="#F5C778"/>
+      <text x="117" y="212.3" class="mflag1" font-size="8.5" letter-spacing="0.9" fill="#9BA9BE">MCP</text>
+    </g><g>
+      <rect x="162" y="198" width="75" height="22" rx="11" fill="#0B121C" stroke="#243349" stroke-width="1"/>
+      <rect x="172" y="207.5" width="3" height="3" rx="0.5" fill="#F5C778"/>
+      <text x="182" y="212.3" class="mflag1" font-size="8.5" letter-spacing="0.9" fill="#9BA9BE">SANDBOX</text>
+    </g>
+    <line x1="32" y1="244" x2="458" y2="244" stroke="#17202F" stroke-width="1"/>
+    <circle cx="38" cy="268" r="3.5" fill="#F1E05A"/>
+      <text x="49" y="271" class="mflag1" font-size="9" fill="#6C7C93">JavaScript</text>
+    <text x="180" y="271" class="mflag1" font-size="9" fill="#6C7C93">2 FORKS</text>
+    <text x="248" y="271" class="mflag1" font-size="9" fill="#6C7C93">MIT</text>
+    <g>
+      <circle cx="452" cy="262" r="14" fill="none" stroke="#F5C778" stroke-opacity="0.45" stroke-width="1"/>
+      <g class="flag-arrow">
+        <text x="452" y="267" class="mflag1" font-size="12" fill="#F5C778" text-anchor="middle">↗</text>
+      </g>
+    </g>
+    <line x1="30" y1="63" x2="180" y2="63" stroke="url(#flag1-line)" stroke-width="1.5"/>
+    <text x="458" y="46" class="mflag1" font-size="8" letter-spacing="1.5" fill="#425167" text-anchor="end">02 / 02</text>
+  </g>
+  <rect x="0.75" y="0.75" width="488.5" height="294.5" rx="17.25" fill="none" stroke="#17202F" stroke-width="1.5"/>
+  <g stroke="#243349" stroke-width="1" opacity="0.75">
+    <path d="M16 23V16h7" fill="none"/>
+    <path d="M467 16h7v7" fill="none"/>
+    <path d="M16 273v7h7" fill="none"/>
+    <path d="M467 280h7v7" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 54" width="1000" height="54" role="img" aria-label="Stack ticker: LLM fine-tuning, RAG, LoRA, GGUF, local inference, AI security, MCP, Swift, Flutter, Playwright.">
+  <title>Stack ticker: LLM fine-tuning, RAG, LoRA, GGUF, local inference, AI security, MCP, Swift, Flutter, Playwright.</title><style>.mo{display:none!important}*{animation:none!important}</style>
+  <style>
+  .mticker{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace}
+  .sticker{font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif}
+  .rticker{font-family:Georgia, 'Times New Roman', serif}
+  @media (prefers-reduced-motion: reduce) {
+  .mo { display: none !important; }
+  * { animation: none !important; }
+}
+</style>
+  <defs>
+    <clipPath id="ticker-frame"><rect width="1000" height="54" rx="18"/></clipPath>
+    <linearGradient id="ticker-shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0A0F19"/><stop offset="100%" stop-color="#06090F"/>
+    </linearGradient>
+    <pattern id="ticker-dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.9" fill="#243349" opacity="0.55"/>
+    </pattern>
+    <linearGradient id="ticker-ruleG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4EF0C0" stop-opacity="0"/><stop offset="50%" stop-color="#4EF0C0" stop-opacity="0.9"/><stop offset="100%" stop-color="#4EF0C0" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="ticker-rule"><rect x="30" y="60" width="940" height="4"/></clipPath>
+    <radialGradient id="ticker-tint" cx="50%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#4EF0C0" stop-opacity="0.07"/><stop offset="70%" stop-color="#4EF0C0" stop-opacity="0"/>
+    </radialGradient>
+    
+    <linearGradient id="ticker-fadeL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0A0F19"/><stop offset="100%" stop-color="#0A0F19" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ticker-fadeR" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0%" stop-color="#0A0F19"/><stop offset="100%" stop-color="#0A0F19" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#ticker-frame)">
+    <rect width="1000" height="54" fill="url(#ticker-shell)"/>
+    <rect width="1000" height="54" fill="url(#ticker-dots)"/>
+    
+    
+    
+    
+    <style>
+      @keyframes ticker-run { from { transform: translateX(0) } to { transform: translateX(-2081.2999999999997px) } }
+      .ticker-run { animation: ticker-run 52s linear infinite; }
+    </style>
+    <g class="ticker-run">
+      <g><text x="0.0" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">LLM FINE-TUNING</text><text x="137.3" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="169.3" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">RAG PIPELINES</text><text x="290.2" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="322.2" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">LoRA TUNING</text><text x="427.3" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="459.3" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">GGUF</text><text x="508.5" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="540.5" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">LOCAL INFERENCE</text><text x="679.0" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="711.0" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">AI SECURITY</text><text x="815.3" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="847.3" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">MCP SERVERS</text><text x="953.6" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="985.6" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">BROWSER AUTOMATION</text><text x="1149.0" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="1181.0" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">SWIFT / iOS</text><text x="1284.1" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="1316.1" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">FLUTTER</text><text x="1390.2" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="1422.2" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">PLAYWRIGHT</text><text x="1520.2" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="1552.2" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">PYTHON</text><text x="1618.0" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="1650.0" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">ELECTRON</text><text x="1732.4" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="1764.4" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">ZERO TELEMETRY</text><text x="1895.6" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="1927.6" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">OFFLINE-FIRST</text><text x="2049.3" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text></g><g transform="translate(2081.2999999999997 0)"><text x="0.0" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">LLM FINE-TUNING</text><text x="137.3" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="169.3" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">RAG PIPELINES</text><text x="290.2" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="322.2" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">LoRA TUNING</text><text x="427.3" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="459.3" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">GGUF</text><text x="508.5" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="540.5" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">LOCAL INFERENCE</text><text x="679.0" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="711.0" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">AI SECURITY</text><text x="815.3" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="847.3" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">MCP SERVERS</text><text x="953.6" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="985.6" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">BROWSER AUTOMATION</text><text x="1149.0" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="1181.0" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">SWIFT / iOS</text><text x="1284.1" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="1316.1" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">FLUTTER</text><text x="1390.2" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="1422.2" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">PLAYWRIGHT</text><text x="1520.2" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="1552.2" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">PYTHON</text><text x="1618.0" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="1650.0" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">ELECTRON</text><text x="1732.4" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="1764.4" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">ZERO TELEMETRY</text><text x="1895.6" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text><text x="1927.6" y="32" class="mticker" font-size="10" letter-spacing="2.1" fill="#9BA9BE">OFFLINE-FIRST</text><text x="2049.3" y="32" class="mticker" font-size="8" fill="#4EF0C0" opacity="0.8">✦</text></g>
+    </g>
+    <rect x="0" y="1" width="110" height="52" fill="url(#ticker-fadeL)"/>
+    <rect x="890" y="1" width="110" height="52" fill="url(#ticker-fadeR)"/>
+  </g>
+  <rect x="0.75" y="0.75" width="998.5" height="52.5" rx="17.25" fill="none" stroke="#17202F" stroke-width="1.5"/>
+  <g stroke="#243349" stroke-width="1" opacity="0.75">
+    <path d="M16 23V16h7" fill="none"/>
+    <path d="M977 16h7v7" fill="none"/>
+    <path d="M16 31v7h7" fill="none"/>
+    <path d="M977 38h7v7" fill="none"/>
+  </g>
+</svg>

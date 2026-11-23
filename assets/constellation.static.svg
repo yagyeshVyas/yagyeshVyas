@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="1000" height="500" role="img" aria-label="Repository constellation: personalforge with 96 stars, linkedin-scraper with 21 stars, VibeGuard with 7 stars, chromex with 3 stars, AI-Career-Suite with 2 stars, glance-ai with 1 stars, retrogame-boy with 1 stars, yagyeshVyas with 1 stars.">
+  <title>Repository constellation: personalforge with 96 stars, linkedin-scraper with 21 stars, VibeGuard with 7 stars, chromex with 3 stars, AI-Career-Suite with 2 stars, glance-ai with 1 stars, retrogame-boy with 1 stars, yagyeshVyas with 1 stars.</title><style>.mo{display:none!important}*{animation:none!important}</style>
+  <style>
+  .mconstellation{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace}
+  .sconstellation{font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif}
+  .rconstellation{font-family:Georgia, 'Times New Roman', serif}
+  @media (prefers-reduced-motion: reduce) {
+  .mo { display: none !important; }
+  * { animation: none !important; }
+}
+</style>
+  <defs>
+    <clipPath id="constellation-frame"><rect width="1000" height="500" rx="18"/></clipPath>
+    <linearGradient id="constellation-shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0A0F19"/><stop offset="100%" stop-color="#06090F"/>
+    </linearGradient>
+    <pattern id="constellation-dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.9" fill="#243349" opacity="0.55"/>
+    </pattern>
+    <linearGradient id="constellation-ruleG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4EF0C0" stop-opacity="0"/><stop offset="50%" stop-color="#4EF0C0" stop-opacity="0.9"/><stop offset="100%" stop-color="#4EF0C0" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="constellation-rule"><rect x="30" y="60" width="940" height="4"/></clipPath>
+    <radialGradient id="constellation-tint" cx="50%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#4EF0C0" stop-opacity="0.07"/><stop offset="70%" stop-color="#4EF0C0" stop-opacity="0"/>
+    </radialGradient>
+    
+  </defs>
+  <g clip-path="url(#constellation-frame)">
+    <rect width="1000" height="500" fill="url(#constellation-shell)"/>
+    <rect width="1000" height="500" fill="url(#constellation-dots)"/>
+    <rect width="1000" height="500" fill="url(#constellation-tint)"/>
+    
+    <text x="30" y="45" class="mconstellation" font-size="10" letter-spacing="1.6" fill="#4EF0C0">03</text>
+    <text x="58.4" y="45" class="mconstellation" font-size="10.5" letter-spacing="3.4" fill="#9BA9BE">CONSTELLATION</text>
+    <text x="970" y="45" class="mconstellation" font-size="9.5" letter-spacing="1.2" fill="#6C7C93" text-anchor="end">8 PUBLIC REPOS · SORTED BY STARS</text>
+    <line x1="30" y1="62" x2="970" y2="62" stroke="#17202F" stroke-width="1"/>
+    <g clip-path="url(#constellation-rule)">
+      <rect class="mo" x="-90" y="61.2" width="90" height="1.6" fill="url(#constellation-ruleG)">
+        <animate attributeName="x" values="-90;1000" dur="7s" begin="1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <rect x="1" y="1" width="998" height="1" fill="#FFFFFF" opacity="0.035"/>
+    
+    <style>
+      @keyframes constel-edge { to { stroke-dashoffset: -64 } }
+      .constel-edge { animation: constel-edge 7s linear infinite; }
+    </style>
+    <g opacity="0.9"><circle cx="484.4" cy="199.6" r="1.1" fill="#CFE0FF" opacity="0.25"/><circle cx="538.3" cy="338.5" r="0.7" fill="#CFE0FF" opacity="0.21"/><circle cx="858.0" cy="266.5" r="1.0" fill="#CFE0FF" opacity="0.22"/><circle cx="343.2" cy="387.9" r="1.1" fill="#CFE0FF" opacity="0.24"/><circle cx="856.6" cy="323.5" r="1.0" fill="#CFE0FF" opacity="0.12"/><circle cx="251.5" cy="180.7" r="1.2" fill="#CFE0FF" opacity="0.19"/><circle cx="558.3" cy="294.5" r="0.8" fill="#CFE0FF" opacity="0.16"/><circle cx="524.9" cy="403.9" r="1.3" fill="#CFE0FF" opacity="0.10"/><circle cx="815.2" cy="381.5" r="1.1" fill="#CFE0FF" opacity="0.22"/><circle cx="719.6" cy="97.1" r="0.5" fill="#CFE0FF" opacity="0.24"/><circle cx="423.4" cy="356.5" r="0.9" fill="#CFE0FF" opacity="0.13"/><circle cx="105.0" cy="182.3" r="0.8" fill="#CFE0FF" opacity="0.24"/><circle cx="250.6" cy="387.5" r="0.6" fill="#CFE0FF" opacity="0.26"/><circle cx="439.2" cy="341.8" r="1.3" fill="#CFE0FF" opacity="0.25"/><circle cx="520.6" cy="197.4" r="1.3" fill="#CFE0FF" opacity="0.23"/><circle cx="63.5" cy="278.5" r="0.9" fill="#CFE0FF" opacity="0.22"/><circle cx="455.9" cy="112.3" r="1.1" fill="#CFE0FF" opacity="0.29"/><circle cx="473.2" cy="375.5" r="1.1" fill="#CFE0FF" opacity="0.13"/><circle cx="278.0" cy="86.7" r="0.7" fill="#CFE0FF" opacity="0.14"/><circle cx="526.2" cy="331.7" r="1.3" fill="#CFE0FF" opacity="0.27"/><circle cx="44.1" cy="262.9" r="1.2" fill="#CFE0FF" opacity="0.25"/><circle cx="369.3" cy="399.9" r="0.6" fill="#CFE0FF" opacity="0.27"/><circle cx="842.6" cy="218.0" r="0.6" fill="#CFE0FF" opacity="0.16"/><circle cx="361.9" cy="244.5" r="0.8" fill="#CFE0FF" opacity="0.18"/><circle cx="65.4" cy="102.0" r="1.1" fill="#CFE0FF" opacity="0.13"/><circle cx="516.9" cy="402.0" r="1.2" fill="#CFE0FF" opacity="0.12"/><circle cx="77.7" cy="107.6" r="1.0" fill="#CFE0FF" opacity="0.28"/><circle cx="459.9" cy="293.8" r="1.0" fill="#CFE0FF" opacity="0.12"/><circle cx="845.4" cy="406.8" r="0.7" fill="#CFE0FF" opacity="0.16"/><circle cx="824.7" cy="264.7" r="1.4" fill="#CFE0FF" opacity="0.16"/><circle cx="440.1" cy="130.6" r="1.2" fill="#CFE0FF" opacity="0.19"/><circle cx="567.6" cy="174.3" r="1.3" fill="#CFE0FF" opacity="0.15"/><circle cx="661.7" cy="376.6" r="0.9" fill="#CFE0FF" opacity="0.11"/><circle cx="318.1" cy="234.1" r="1.0" fill="#CFE0FF" opacity="0.09"/><circle cx="297.9" cy="207.3" r="1.1" fill="#CFE0FF" opacity="0.29"/><circle cx="728.0" cy="177.4" r="0.9" fill="#CFE0FF" opacity="0.21"/><circle cx="862.2" cy="235.9" r="0.5" fill="#CFE0FF" opacity="0.11"/><circle cx="417.2" cy="318.9" r="0.9" fill="#CFE0FF" opacity="0.13"/><circle cx="888.1" cy="271.2" r="0.7" fill="#CFE0FF" opacity="0.11"/><circle cx="877.4" cy="234.9" r="0.5" fill="#CFE0FF" opacity="0.27"/><circle cx="862.1" cy="277.8" r="1.3" fill="#CFE0FF" opacity="0.20"/><circle cx="853.5" cy="401.7" r="0.7" fill="#CFE0FF" opacity="0.28"/><circle cx="393.5" cy="379.7" r="0.7" fill="#CFE0FF" opacity="0.27"/><circle cx="442.3" cy="385.9" r="1.3" fill="#CFE0FF" opacity="0.09"/><circle cx="501.7" cy="263.0" r="1.2" fill="#CFE0FF" opacity="0.27"/><circle cx="188.2" cy="349.9" r="1.0" fill="#CFE0FF" opacity="0.30"/><circle cx="901.0" cy="113.7" r="1.4" fill="#CFE0FF" opacity="0.25"/><circle cx="697.6" cy="176.3" r="1.2" fill="#CFE0FF" opacity="0.26"/><circle cx="563.5" cy="243.3" r="1.3" fill="#CFE0FF" opacity="0.22"/><circle cx="929.2" cy="127.6" r="0.8" fill="#CFE0FF" opacity="0.12"/><circle cx="638.5" cy="112.7" r="1.0" fill="#CFE0FF" opacity="0.28"/><circle cx="683.6" cy="193.7" r="1.1" fill="#CFE0FF" opacity="0.18"/><circle cx="530.3" cy="316.5" r="0.8" fill="#CFE0FF" opacity="0.18"/><circle cx="848.7" cy="262.1" r="1.4" fill="#CFE0FF" opacity="0.21"/><circle cx="932.7" cy="405.9" r="0.9" fill="#CFE0FF" opacity="0.25"/><circle cx="483.8" cy="399.2" r="0.9" fill="#CFE0FF" opacity="0.24"/><circle cx="942.0" cy="382.3" r="0.9" fill="#CFE0FF" opacity="0.22"/><circle cx="860.7" cy="175.6" r="1.1" fill="#CFE0FF" opacity="0.24"/><circle cx="286.5" cy="167.7" r="0.7" fill="#CFE0FF" opacity="0.29"/><circle cx="822.2" cy="237.9" r="1.2" fill="#CFE0FF" opacity="0.21"/><circle cx="233.9" cy="252.8" r="0.7" fill="#CFE0FF" opacity="0.09"/><circle cx="938.6" cy="432.4" r="0.8" fill="#CFE0FF" opacity="0.15"/><circle cx="416.4" cy="321.1" r="0.7" fill="#CFE0FF" opacity="0.11"/><circle cx="821.0" cy="175.0" r="1.0" fill="#CFE0FF" opacity="0.11"/><circle cx="773.3" cy="120.2" r="1.0" fill="#CFE0FF" opacity="0.09"/><circle cx="632.7" cy="358.0" r="0.8" fill="#CFE0FF" opacity="0.30"/><circle cx="330.3" cy="88.3" r="1.1" fill="#CFE0FF" opacity="0.23"/><circle cx="357.8" cy="382.4" r="0.6" fill="#CFE0FF" opacity="0.14"/><circle cx="177.7" cy="311.9" r="0.7" fill="#CFE0FF" opacity="0.10"/><circle cx="507.5" cy="286.7" r="0.9" fill="#CFE0FF" opacity="0.11"/><circle cx="524.7" cy="306.7" r="1.1" fill="#CFE0FF" opacity="0.21"/><circle cx="583.6" cy="138.3" r="0.7" fill="#CFE0FF" opacity="0.21"/><circle cx="112.1" cy="333.8" r="0.6" fill="#CFE0FF" opacity="0.22"/><circle cx="819.5" cy="248.3" r="1.2" fill="#CFE0FF" opacity="0.24"/><circle cx="742.2" cy="335.6" r="1.1" fill="#CFE0FF" opacity="0.15"/><circle cx="759.5" cy="430.1" r="1.1" fill="#CFE0FF" opacity="0.13"/><circle cx="366.3" cy="405.7" r="1.4" fill="#CFE0FF" opacity="0.09"/><circle cx="194.4" cy="435.8" r="1.2" fill="#CFE0FF" opacity="0.13"/><circle cx="489.4" cy="303.8" r="1.0" fill="#CFE0FF" opacity="0.20"/><circle cx="615.3" cy="150.0" r="0.7" fill="#CFE0FF" opacity="0.20"/><circle cx="292.7" cy="148.1" r="0.6" fill="#CFE0FF" opacity="0.13"/><circle cx="744.8" cy="248.5" r="1.0" fill="#CFE0FF" opacity="0.12"/><circle cx="473.8" cy="152.6" r="0.8" fill="#CFE0FF" opacity="0.29"/><circle cx="865.8" cy="122.3" r="1.2" fill="#CFE0FF" opacity="0.11"/></g>
+    <g transform="rotate(-8 500 262)">
+      <ellipse cx="500" cy="262" rx="332" ry="132" fill="none" stroke="#243349" stroke-width="0.8" stroke-dasharray="2 9" opacity="0.6"/>
+    </g>
+    <g transform="rotate(6 500 262)">
+      <ellipse cx="500" cy="262" rx="214" ry="86" fill="none" stroke="#243349" stroke-width="0.7" stroke-dasharray="1 7" opacity="0.5"/>
+    </g>
+    <path class="constel-edge" d="M 500 262 Q 409.0 230.0 318 170" fill="none" stroke="#4EF0C0" stroke-width="1.1" stroke-dasharray="2 6" opacity="0.55">
+    </path><path class="" d="M 500 262 Q 656.0 244.0 812 262" fill="none" stroke="#243349" stroke-width="0.8" stroke-dasharray="2 6" opacity="0.6">
+    </path><path class="constel-edge" d="M 500 262 Q 603.0 220.0 706 150" fill="none" stroke="#F5C778" stroke-width="1.1" stroke-dasharray="2 6" opacity="0.55">
+    </path><path class="" d="M 500 262 Q 594.0 296.0 688 366" fill="none" stroke="#243349" stroke-width="0.8" stroke-dasharray="2 6" opacity="0.6">
+    </path><path class="" d="M 500 262 Q 330.0 261.0 160 232" fill="none" stroke="#243349" stroke-width="0.8" stroke-dasharray="2 6" opacity="0.6">
+    </path><path class="" d="M 500 262 Q 484.0 312.0 468 398" fill="none" stroke="#243349" stroke-width="0.8" stroke-dasharray="2 6" opacity="0.6">
+    </path><path class="" d="M 500 262 Q 388.0 320.0 276 350" fill="none" stroke="#243349" stroke-width="0.8" stroke-dasharray="2 6" opacity="0.6">
+    </path>
+    
+      <g>
+        <circle cx="318" cy="170" r="44.00499947927514" fill="#4EF0C0" opacity="0.05"/>
+        <circle class="mo" cx="318" cy="170" r="30.004999479275146" fill="none" stroke="#4EF0C0" stroke-width="1" opacity="0">
+          <animate attributeName="r" values="30.004999479275146;56.00499947927514" dur="6s" begin="0s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.35;0" dur="6s" begin="0s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="318" cy="170" r="30.004999479275146" fill="#081019" stroke="#4EF0C0" stroke-width="1.5" opacity="0.98"/>
+        <circle cx="318" cy="170" r="5.400899906269526" fill="#4EF0C0"/>
+        
+        <text x="362.00499947927517" y="170" class="mconstellation" font-size="10.5" fill="#E9EFF8">personalforge</text>
+        <text x="362.00499947927517" y="184" class="mconstellation" font-size="8.5" letter-spacing="0.6" fill="#F5C778">★ 96</text>
+      </g>
+      <g>
+        <circle cx="812" cy="262" r="31.22731045264181" fill="#7D97BC" opacity="0.05"/>
+        
+        <circle cx="812" cy="262" r="17.22731045264181" fill="#081019" stroke="#7D97BC" stroke-width="1" opacity="0.98"/>
+        <circle cx="812" cy="262" r="3.1009158814755255" fill="#7D97BC"/>
+        
+        <text x="780.7726895473581" y="262" class="mconstellation" font-size="10.5" fill="#E9EFF8" text-anchor="end">linkedin-scraper</text>
+        <text x="780.7726895473581" y="276" class="mconstellation" font-size="8.5" letter-spacing="0.6" fill="#F5C778" text-anchor="end">★ 21</text>
+      </g>
+      <g>
+        <circle cx="706" cy="150" r="26.482090712108246" fill="#F5C778" opacity="0.05"/>
+        <circle class="mo" cx="706" cy="150" r="12.482090712108247" fill="none" stroke="#F5C778" stroke-width="1" opacity="0">
+          <animate attributeName="r" values="12.482090712108247;38.482090712108246" dur="6s" begin="1.6s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.35;0" dur="6s" begin="1.6s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="706" cy="150" r="12.482090712108247" fill="#081019" stroke="#F5C778" stroke-width="1.5" opacity="0.98"/>
+        <circle cx="706" cy="150" r="2.2467763281794846" fill="#F5C778"/>
+        
+        <text x="732.4820907121083" y="150" class="mconstellation" font-size="10.5" fill="#E9EFF8">VibeGuard</text>
+        <text x="732.4820907121083" y="164" class="mconstellation" font-size="8.5" letter-spacing="0.6" fill="#F5C778">★ 7</text>
+      </g>
+      <g>
+        <circle cx="688" cy="366" r="24.243524478543748" fill="#7D97BC" opacity="0.05"/>
+        
+        <circle cx="688" cy="366" r="10.24352447854375" fill="#081019" stroke="#7D97BC" stroke-width="1" opacity="0.98"/>
+        <circle cx="688" cy="366" r="1.8438344061378749" fill="#7D97BC"/>
+        
+        <text x="712.2435244785438" y="366" class="mconstellation" font-size="10.5" fill="#E9EFF8">chromex</text>
+        <text x="712.2435244785438" y="380" class="mconstellation" font-size="8.5" letter-spacing="0.6" fill="#F5C778">★ 3</text>
+      </g>
+      <g>
+        <circle cx="160" cy="232" r="23.464823227814083" fill="#7D97BC" opacity="0.05"/>
+        
+        <circle cx="160" cy="232" r="9.464823227814083" fill="#081019" stroke="#7D97BC" stroke-width="1" opacity="0.98"/>
+        <circle cx="160" cy="232" r="1.8" fill="#7D97BC"/>
+        
+        <text x="183.4648232278141" y="232" class="mconstellation" font-size="10.5" fill="#E9EFF8">AI-Career-Suite</text>
+        <text x="183.4648232278141" y="246" class="mconstellation" font-size="8.5" letter-spacing="0.6" fill="#F5C778">★ 2</text>
+      </g>
+      <g>
+        <circle cx="468" cy="398" r="22.45" fill="#7D97BC" opacity="0.05"/>
+        
+        <circle cx="468" cy="398" r="8.45" fill="#081019" stroke="#7D97BC" stroke-width="1" opacity="0.98"/>
+        <circle cx="468" cy="398" r="1.8" fill="#7D97BC"/>
+        
+        <text x="468" y="428.45" class="mconstellation" font-size="10.5" fill="#E9EFF8" text-anchor="middle">glance-ai</text>
+        <text x="468" y="441.45" class="mconstellation" font-size="8.5" fill="#F5C778" text-anchor="middle">★ 1</text>
+      </g>
+      <g>
+        <circle cx="276" cy="350" r="22.45" fill="#7D97BC" opacity="0.05"/>
+        
+        <circle cx="276" cy="350" r="8.45" fill="#081019" stroke="#7D97BC" stroke-width="1" opacity="0.98"/>
+        <circle cx="276" cy="350" r="1.8" fill="#7D97BC"/>
+        
+        <text x="253.55" y="350" class="mconstellation" font-size="10.5" fill="#E9EFF8" text-anchor="end">retrogame-boy</text>
+        <text x="253.55" y="364" class="mconstellation" font-size="8.5" letter-spacing="0.6" fill="#F5C778" text-anchor="end">★ 1</text>
+      </g>
+    <g>
+      <circle class="mo" cx="500" cy="262" r="46" fill="none" stroke="#4EF0C0" stroke-width="1" opacity="0">
+        <animate attributeName="r" values="30;104" dur="5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.35;0" dur="5s" repeatCount="indefinite"/>
+      </circle>
+      <circle class="mo" cx="500" cy="262" r="35" fill="none" stroke="#4EF0C0" stroke-width="0.9" stroke-dasharray="2 6" opacity="0.5">
+        <animateTransform attributeName="transform" type="rotate" from="0 500 262" to="360 500 262" dur="32s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="500" cy="262" r="24" fill="#081019" stroke="#4EF0C0" stroke-width="1.2"/>
+      <text x="500" y="266" class="mconstellation" font-size="9.5" font-weight="700" letter-spacing="1" fill="#4EF0C0" text-anchor="middle">YV</text>
+      <text x="500" y="318" class="mconstellation" font-size="10.5" fill="#E9EFF8" text-anchor="middle">yagyeshVyas</text>
+      <text x="500" y="332" class="mconstellation" font-size="7.5" letter-spacing="1.2" fill="#425167" text-anchor="middle">PROFILE · ★ 1</text>
+    </g>
+    <g class="mo" opacity="0">
+      <circle r="7" fill="#4EF0C0" opacity="0.14"/><circle r="2" fill="#E7FFF9"/>
+      <animateMotion dur="30s" repeatCount="indefinite" path="M 500 130 A 332 132 0 1 1 499.9 130 A 332 132 0 1 1 500 130" transform="rotate(-8 500 262)"/>
+    </g>
+    <line x1="56" y1="452" x2="944" y2="452" stroke="#17202F" stroke-width="1"/>
+    <text x="56" y="474" class="mconstellation" font-size="8" letter-spacing="1.5" fill="#425167">NODE AREA ∝ STARS</text>
+    <text x="500" y="474" class="mconstellation" font-size="8" letter-spacing="1.5" fill="#425167" text-anchor="middle">HAND-PLACED · UPDATED DAILY</text>
+    <text x="944" y="474" class="mconstellation" font-size="8" letter-spacing="1.5" fill="#6C7C93" text-anchor="end">★ 132 ACROSS 8 REPOS</text>
+  </g>
+  <rect x="0.75" y="0.75" width="998.5" height="498.5" rx="17.25" fill="none" stroke="#17202F" stroke-width="1.5"/>
+  <g stroke="#243349" stroke-width="1" opacity="0.75">
+    <path d="M16 23V16h7" fill="none"/>
+    <path d="M977 16h7v7" fill="none"/>
+    <path d="M16 477v7h7" fill="none"/>
+    <path d="M977 484h7v7" fill="none"/>
+  </g>
+</svg>

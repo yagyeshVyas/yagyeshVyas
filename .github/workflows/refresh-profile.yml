@@ -1,18 +1,23 @@
-name: Refresh profile assets
+name: Refresh profile
 
 on:
   schedule:
-    # Daily at 00:00 UTC
-    - cron: "0 0 * * *"
+    # Daily, off the hour to avoid GitHub's busy window.
+    - cron: "17 4 * * *"
   workflow_dispatch:
   push:
     branches: [main]
     paths:
       - "scripts/**"
-      - ".github/workflows/snake.yml"
+      - "package.json"
+      - ".github/workflows/refresh-profile.yml"
 
 permissions:
   contents: write
+
+concurrency:
+  group: refresh-profile
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -26,13 +31,13 @@ jobs:
         with:
           node-version: 20
 
-      - name: Generate stat cards + snake
-        run: node scripts/gen-stats.mjs
+      - name: Generate panels, README and preview
+        run: npm run refresh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit changes
+      - name: Commit refreshed assets
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: refresh profile assets"
-          file_pattern: "assets/*.svg"
+          commit_message: "chore: refresh profile from live GitHub data"
+          file_pattern: "assets/*.svg README.md"
