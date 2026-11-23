@@ -138,7 +138,7 @@ export function hero(data, build) {
         <circle cx="${cx}" cy="${cy}" r="39" fill="none" stroke="${C.mint}" stroke-width="0.9" stroke-dasharray="1 6" opacity="0.5"/>
       </g>
       <text x="${cx}" y="${cy + 5}" class="m${p}" font-size="16" font-weight="700" letter-spacing="2" fill="${C.mint}" text-anchor="middle">YV</text>
-      <g class="mo" opacity="0">
+      <g class="mo" opacity="0.9">
         <circle r="9" fill="${C.mint}" opacity="0.16"/><circle r="2.4" fill="#E7FFF9"/>
         <animateMotion dur="26s" repeatCount="indefinite" path="M ${cx} ${cy - 158} A 158 158 0 1 1 ${cx - 0.1} ${cy - 158} A 158 158 0 1 1 ${cx} ${cy - 158}"/>
       </g>
@@ -524,13 +524,13 @@ export function constellation(data) {
       <text x="${cx}" y="${cy + 56}" class="m${p}" font-size="10.5" fill="${C.text}" text-anchor="middle">${esc(coreLabel)}</text>
       <text x="${cx}" y="${cy + 70}" class="m${p}" font-size="7.5" letter-spacing="1.2" fill="${C.faint}" text-anchor="middle">PROFILE · ${starsLabel(profile?.stars ?? 1)}</text>
     </g>
-    <g class="mo" opacity="0">
+    <g class="mo" opacity="0.9">
       <circle r="7" fill="${C.mint}" opacity="0.14"/><circle r="2" fill="#E7FFF9"/>
       <animateMotion dur="30s" repeatCount="indefinite" path="M ${cx} ${cy - 132} A 332 132 0 1 1 ${cx - 0.1} ${cy - 132} A 332 132 0 1 1 ${cx} ${cy - 132}" transform="rotate(-8 ${cx} ${cy})"/>
     </g>
     <line x1="56" y1="452" x2="944" y2="452" stroke="${C.line}" stroke-width="1"/>
     <text x="56" y="474" class="m${p}" font-size="8" letter-spacing="1.5" fill="${C.faint}">NODE AREA ∝ STARS</text>
-    <text x="500" y="474" class="m${p}" font-size="8" letter-spacing="1.5" fill="${C.faint}" text-anchor="middle">HAND-PLACED · UPDATED DAILY</text>
+    <text x="500" y="474" class="m${p}" font-size="8" letter-spacing="1.5" fill="${C.mint}" text-anchor="middle">↗ OPEN INTERACTIVE</text>
     <text x="944" y="474" class="m${p}" font-size="8" letter-spacing="1.5" fill="${C.muted}" text-anchor="end">★ ${fmt(data.stats.stars)} ACROSS ${data.stats.repos} REPOS</text>`;
 
   return panel({
@@ -761,7 +761,7 @@ export function footer(build) {
       <path class="mo" d="${heartbeat}" fill="none" stroke="${C.mint}" stroke-width="1.2" stroke-opacity="0.55" stroke-dasharray="4 8">
         <animate attributeName="stroke-dashoffset" from="0" to="-96" dur="4s" repeatCount="indefinite"/>
       </path>
-      <g class="mo" opacity="0">
+      <g class="mo" opacity="1">
         <circle r="5" fill="${C.mint}" opacity="0.15"/><circle r="1.7" fill="#E7FFF9"/>
         <animateMotion dur="6s" repeatCount="indefinite" path="${heartbeat}"/>
       </g>

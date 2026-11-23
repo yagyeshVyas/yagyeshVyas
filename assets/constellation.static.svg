@@ -144,13 +144,13 @@
       <text x="500" y="318" class="mconstellation" font-size="10.5" fill="#E9EFF8" text-anchor="middle">yagyeshVyas</text>
       <text x="500" y="332" class="mconstellation" font-size="7.5" letter-spacing="1.2" fill="#425167" text-anchor="middle">PROFILE · ★ 1</text>
     </g>
-    <g class="mo" opacity="0">
+    <g class="mo" opacity="0.9">
       <circle r="7" fill="#4EF0C0" opacity="0.14"/><circle r="2" fill="#E7FFF9"/>
       <animateMotion dur="30s" repeatCount="indefinite" path="M 500 130 A 332 132 0 1 1 499.9 130 A 332 132 0 1 1 500 130" transform="rotate(-8 500 262)"/>
     </g>
     <line x1="56" y1="452" x2="944" y2="452" stroke="#17202F" stroke-width="1"/>
     <text x="56" y="474" class="mconstellation" font-size="8" letter-spacing="1.5" fill="#425167">NODE AREA ∝ STARS</text>
-    <text x="500" y="474" class="mconstellation" font-size="8" letter-spacing="1.5" fill="#425167" text-anchor="middle">HAND-PLACED · UPDATED DAILY</text>
+    <text x="500" y="474" class="mconstellation" font-size="8" letter-spacing="1.5" fill="#4EF0C0" text-anchor="middle">↗ OPEN INTERACTIVE</text>
     <text x="944" y="474" class="mconstellation" font-size="8" letter-spacing="1.5" fill="#6C7C93" text-anchor="end">★ 132 ACROSS 8 REPOS</text>
   </g>
   <rect x="0.75" y="0.75" width="998.5" height="498.5" rx="17.25" fill="none" stroke="#17202F" stroke-width="1.5"/>

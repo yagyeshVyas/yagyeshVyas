@@ -39,7 +39,7 @@
       <path class="mo" d="M 372 62 H 424 l 8 -17 l 10 34 l 8 -28 l 8 11 H 628" fill="none" stroke="#4EF0C0" stroke-width="1.2" stroke-opacity="0.55" stroke-dasharray="4 8">
         <animate attributeName="stroke-dashoffset" from="0" to="-96" dur="4s" repeatCount="indefinite"/>
       </path>
-      <g class="mo" opacity="0">
+      <g class="mo" opacity="1">
         <circle r="5" fill="#4EF0C0" opacity="0.15"/><circle r="1.7" fill="#E7FFF9"/>
         <animateMotion dur="6s" repeatCount="indefinite" path="M 372 62 H 424 l 8 -17 l 10 34 l 8 -28 l 8 11 H 628"/>
       </g>

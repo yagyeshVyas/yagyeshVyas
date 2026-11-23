@@ -108,6 +108,7 @@ export const LINKS = [
 ];
 
 export const PORTFOLIO = 'https://yagyesh-portfolio.vercel.app';
+export const CONSTELLATION_URL = 'https://yagyeshvyas.github.io/yagyeshVyas/';
 
 export const TICKER = [
   'LLM FINE-TUNING',
