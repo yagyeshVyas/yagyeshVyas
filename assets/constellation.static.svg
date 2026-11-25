@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="1000" height="500" role="img" aria-label="Repository constellation: personalforge with 96 stars, linkedin-scraper with 21 stars, VibeGuard with 7 stars, chromex with 3 stars, AI-Career-Suite with 2 stars, glance-ai with 1 stars, retrogame-boy with 1 stars, yagyeshVyas with 1 stars.">
-  <title>Repository constellation: personalforge with 96 stars, linkedin-scraper with 21 stars, VibeGuard with 7 stars, chromex with 3 stars, AI-Career-Suite with 2 stars, glance-ai with 1 stars, retrogame-boy with 1 stars, yagyeshVyas with 1 stars.</title><style>.mo{display:none!important}*{animation:none!important}</style>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="1000" height="500" role="img" aria-label="Repository constellation: personalforge with 96 stars, linkedin-scraper with 22 stars, VibeGuard with 7 stars, chromex with 3 stars, AI-Career-Suite with 2 stars, glance-ai with 1 stars, retrogame-boy with 1 stars, yagyeshVyas with 1 stars.">
+  <title>Repository constellation: personalforge with 96 stars, linkedin-scraper with 22 stars, VibeGuard with 7 stars, chromex with 3 stars, AI-Career-Suite with 2 stars, glance-ai with 1 stars, retrogame-boy with 1 stars, yagyeshVyas with 1 stars.</title><style>.mo{display:none!important}*{animation:none!important}</style>
   <style>
   .mconstellation{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace}
   .sconstellation{font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif}
@@ -75,13 +75,13 @@
         <text x="362.00499947927517" y="184" class="mconstellation" font-size="8.5" letter-spacing="0.6" fill="#F5C778">★ 96</text>
       </g>
       <g>
-        <circle cx="812" cy="262" r="31.22731045264181" fill="#7D97BC" opacity="0.05"/>
+        <circle cx="812" cy="262" r="31.491518611567404" fill="#7D97BC" opacity="0.05"/>
         
-        <circle cx="812" cy="262" r="17.22731045264181" fill="#081019" stroke="#7D97BC" stroke-width="1" opacity="0.98"/>
-        <circle cx="812" cy="262" r="3.1009158814755255" fill="#7D97BC"/>
+        <circle cx="812" cy="262" r="17.491518611567404" fill="#081019" stroke="#7D97BC" stroke-width="1" opacity="0.98"/>
+        <circle cx="812" cy="262" r="3.1484733500821327" fill="#7D97BC"/>
         
-        <text x="780.7726895473581" y="262" class="mconstellation" font-size="10.5" fill="#E9EFF8" text-anchor="end">linkedin-scraper</text>
-        <text x="780.7726895473581" y="276" class="mconstellation" font-size="8.5" letter-spacing="0.6" fill="#F5C778" text-anchor="end">★ 21</text>
+        <text x="780.5084813884326" y="262" class="mconstellation" font-size="10.5" fill="#E9EFF8" text-anchor="end">linkedin-scraper</text>
+        <text x="780.5084813884326" y="276" class="mconstellation" font-size="8.5" letter-spacing="0.6" fill="#F5C778" text-anchor="end">★ 22</text>
       </g>
       <g>
         <circle cx="706" cy="150" r="26.482090712108246" fill="#F5C778" opacity="0.05"/>
@@ -151,7 +151,7 @@
     <line x1="56" y1="452" x2="944" y2="452" stroke="#17202F" stroke-width="1"/>
     <text x="56" y="474" class="mconstellation" font-size="8" letter-spacing="1.5" fill="#425167">NODE AREA ∝ STARS</text>
     <text x="500" y="474" class="mconstellation" font-size="8" letter-spacing="1.5" fill="#4EF0C0" text-anchor="middle">↗ OPEN INTERACTIVE</text>
-    <text x="944" y="474" class="mconstellation" font-size="8" letter-spacing="1.5" fill="#6C7C93" text-anchor="end">★ 132 ACROSS 8 REPOS</text>
+    <text x="944" y="474" class="mconstellation" font-size="8" letter-spacing="1.5" fill="#6C7C93" text-anchor="end">★ 133 ACROSS 8 REPOS</text>
   </g>
   <rect x="0.75" y="0.75" width="998.5" height="498.5" rx="17.25" fill="none" stroke="#17202F" stroke-width="1.5"/>
   <g stroke="#243349" stroke-width="1" opacity="0.75">
