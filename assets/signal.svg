@@ -35,7 +35,7 @@
     
     <text x="30" y="45" class="msignal" font-size="10" letter-spacing="1.6" fill="#4EF0C0">06</text>
     <text x="58.4" y="45" class="msignal" font-size="10.5" letter-spacing="3.4" fill="#9BA9BE">RECENT SIGNAL</text>
-    <text x="970" y="45" class="msignal" font-size="9.5" letter-spacing="1.2" fill="#6C7C93" text-anchor="end">LAST PUSH 1D AGO</text>
+    <text x="970" y="45" class="msignal" font-size="9.5" letter-spacing="1.2" fill="#6C7C93" text-anchor="end">LAST PUSH TODAY</text>
     <line x1="30" y1="62" x2="970" y2="62" stroke="#17202F" stroke-width="1"/>
     <g clip-path="url(#signal-rule)">
       <rect class="mo" x="-90" y="61.2" width="90" height="1.6" fill="url(#signal-ruleG)">
@@ -52,7 +52,7 @@
       <circle cx="74" cy="216" r="3" fill="#F1E05A"/>
         <text x="84" y="219" class="msignal" font-size="8.5" fill="#6C7C93">JavaScript</text>
       <text x="346" y="219" class="msignal" font-size="8.5" fill="#6C7C93" text-anchor="end">★ 1 · 0 FORKS</text>
-      <text x="70" y="240" class="msignal" font-size="8" letter-spacing="1.2" fill="#425167">PUSHED 1D AGO</text><line x1="328" y1="96" x2="328" y2="226" stroke="#17202F" stroke-width="1"/>
+      <text x="70" y="240" class="msignal" font-size="8" letter-spacing="1.2" fill="#425167">PUSHED TODAY</text><line x1="328" y1="96" x2="328" y2="226" stroke="#17202F" stroke-width="1"/>
       <rect x="368" y="96" width="2" height="130" rx="1" fill="#7D97BC" opacity="0.55"/>
       <text x="382" y="110" class="msignal" font-size="8" letter-spacing="1.5" fill="#425167">02</text>
       <text x="382" y="140" class="msignal" font-size="14.5" font-weight="700" fill="#E9EFF8">linkedin-scraper</text>
@@ -60,7 +60,7 @@
       <circle cx="386" cy="216" r="3" fill="#3572A5"/>
         <text x="396" y="219" class="msignal" font-size="8.5" fill="#6C7C93">Python</text>
       <text x="658" y="219" class="msignal" font-size="8.5" fill="#6C7C93" text-anchor="end">★ 22 · 7 FORKS</text>
-      <text x="382" y="240" class="msignal" font-size="8" letter-spacing="1.2" fill="#425167">PUSHED 1D AGO</text><line x1="640" y1="96" x2="640" y2="226" stroke="#17202F" stroke-width="1"/>
+      <text x="382" y="240" class="msignal" font-size="8" letter-spacing="1.2" fill="#425167">PUSHED 2D AGO</text><line x1="640" y1="96" x2="640" y2="226" stroke="#17202F" stroke-width="1"/>
       <rect x="680" y="96" width="2" height="130" rx="1" fill="#F5C778" opacity="0.55"/>
       <text x="694" y="110" class="msignal" font-size="8" letter-spacing="1.5" fill="#425167">03</text>
       <text x="694" y="140" class="msignal" font-size="14.5" font-weight="700" fill="#E9EFF8">VibeGuard</text>
@@ -68,7 +68,7 @@
       <circle cx="698" cy="216" r="3" fill="#F1E05A"/>
         <text x="708" y="219" class="msignal" font-size="8.5" fill="#6C7C93">JavaScript</text>
       <text x="970" y="219" class="msignal" font-size="8.5" fill="#6C7C93" text-anchor="end">★ 7 · 2 FORKS</text>
-      <text x="694" y="240" class="msignal" font-size="8" letter-spacing="1.2" fill="#425167">PUSHED 1D AGO</text>
+      <text x="694" y="240" class="msignal" font-size="8" letter-spacing="1.2" fill="#425167">PUSHED 2D AGO</text>
       <line x1="56" y1="248" x2="944" y2="248" stroke="#17202F" stroke-width="1"/>
       <rect class="mo" x="-140" y="247.4" width="140" height="1.4" fill="url(#signal-run)">
         <animate attributeName="x" values="-140;944" dur="6s" repeatCount="indefinite"/>
